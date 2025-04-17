@@ -131,13 +131,13 @@
 </head>
 <body class="bg-white font-body m-0">
     <!-- Navigation Bar with white background - moved outside header to be sticky throughout the page -->
-    <nav class="bg-white py-4 px-6 shadow-md sticky top-0 z-50">
-        <div class="container mx-auto flex justify-between items-center">
+    <nav class="bg-white py-4 px-6 shadow-md sticky top-0 z-50" style="transform: translateZ(0); height: 70px;">
+        <div class="container mx-auto flex justify-between items-center h-full">
             <a href="index.html" class="text-3xl font-bold text-brand-green font-heading">24ja.at</a>
             <div class="hidden md:flex space-x-6">
-                <a href="#about" class="text-gray-700 hover:text-brand-green transition-colors">Meine Geschichte</a>
-                <a href="#services" class="text-gray-700 hover:text-brand-green transition-colors">Leistungen</a>
-                <a href="#contact" class="text-gray-700 hover:text-brand-green transition-colors">Kontakt</a>
+                <a href="#about" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Meine Geschichte</a>
+                <a href="#services" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Leistungen</a>
+                <a href="#contact" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Kontakt</a>
             </div>
             <!-- Mobile Menu Button -->
             <button class="md:hidden text-gray-700" id="mobile-menu-button">
@@ -149,11 +149,11 @@
     </nav>
     
     <!-- Mobile Menu (Hidden by default) -->
-    <div class="md:hidden hidden bg-white w-full fixed top-[65px] z-40 shadow-md" id="mobile-menu">
+    <div class="md:hidden hidden bg-white w-full fixed top-[70px] z-40 shadow-md" id="mobile-menu" style="transform: translateZ(0);">
         <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-            <a href="#about" class="text-gray-700 hover:text-brand-green transition-colors">Meine Geschichte</a>
-            <a href="#services" class="text-gray-700 hover:text-brand-green transition-colors">Leistungen</a>
-            <a href="#contact" class="text-gray-700 hover:text-brand-green transition-colors">Kontakt</a>
+            <a href="#about" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Meine Geschichte</a>
+            <a href="#services" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Leistungen</a>
+            <a href="#contact" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Kontakt</a>
         </div>
     </div>
 
@@ -182,7 +182,12 @@
                 <!-- Image Container - Larger and centered -->
                 <div class="w-full max-w-2xl mb-12">
                     <div class="bg-gray-200 h-96 md:h-[30rem] rounded-lg shadow-xl overflow-hidden flex items-center justify-center">
-                        <span class="text-gray-400">Bild von Zuzana Jancova</span>
+                        <picture>
+                            <source srcset="assets/images/desktop/this-is-my-dream-job-2025-04-06-11-09-40-utc.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="assets/images/desktop/this-is-my-dream-job-2025-04-06-11-09-40-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
+                            <source srcset="assets/images/mobile/this-is-my-dream-job-2025-04-06-11-09-40-utc.webp" type="image/webp">
+                            <img src="assets/images/mobile/this-is-my-dream-job-2025-04-06-11-09-40-utc.jpg" alt="Zuzana Jancova - Sozialarbeiterin in Wien" class="w-full h-full object-cover">
+                        </picture>
                     </div>
                 </div>
                 
@@ -289,9 +294,12 @@
                 <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
                     <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
                         <!-- Replace with actual image when available -->
-                        <div class="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                            <span class="text-gray-400">Bild: Kinderbetreuung</span>
-                        </div>
+                        <picture>
+                            <source srcset="assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
+                            <source srcset="assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
+                            <img src="assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind" class="w-full h-full object-cover">
+                        </picture>
                     </div>
                 </div>
                 
@@ -334,9 +342,12 @@
                 <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pl-10">
                     <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
                         <!-- Replace with actual image when available -->
-                        <div class="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                            <span class="text-gray-400">Bild: Gesellschaftliche Begleitung</span>
-                        </div>
+                        <picture>
+                            <source srcset="assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
+                            <source srcset="assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
+                            <img src="assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft" class="w-full h-full object-cover">
+                        </picture>
                     </div>
                 </div>
                 
@@ -379,9 +390,12 @@
                 <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
                     <div class="relative h-96 rounded-lg overflow-hidden shadow-xl">
                         <!-- Replace with actual image when available -->
-                        <div class="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                            <span class="text-gray-400">Bild: Personenbetreuung</span>
-                        </div>
+                        <picture>
+                            <source srcset="assets/images/desktop/hand-in-glove-holds-saucepan-2024-09-18-05-30-13-utc.webp" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="assets/images/desktop/hand-in-glove-holds-saucepan-2024-09-18-05-30-13-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
+                            <source srcset="assets/images/mobile/hand-in-glove-holds-saucepan-2024-09-18-05-30-13-utc.webp" type="image/webp">
+                            <img src="assets/images/mobile/hand-in-glove-holds-saucepan-2024-09-18-05-30-13-utc.jpg" alt="Personenbetreuung: Kochen und Haushaltsführung" class="w-full h-full object-cover">
+                        </picture>
                     </div>
                 </div>
                 
@@ -562,9 +576,28 @@
                             <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required>
                         </div>
                         <div class="mb-6">
+                            <label class="block text-gray-700 font-medium mb-3">Ich interessiere mich für:</label>
+                            <div class="space-y-2">
+                                <div class="flex items-center">
+                                    <input type="radio" id="service-kinderbetreuung" name="service" value="Kinderbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                    <label for="service-kinderbetreuung" class="ml-2 block text-gray-700">Kinderbetreuung</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" id="service-begleitung" name="service" value="Gesellschaftliche Begleitung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                    <label for="service-begleitung" class="ml-2 block text-gray-700">Gesellschaftliche Begleitung</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" id="service-personenbetreuung" name="service" value="Personenbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                    <label for="service-personenbetreuung" class="ml-2 block text-gray-700">Personenbetreuung</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
                             <label for="message" class="block text-gray-700 font-medium mb-2">Nachricht</label>
                             <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required></textarea>
                         </div>
+                        
                         <button type="submit" class="w-full bg-brand-green hover:bg-brand-green-light text-white font-bold py-3 px-4 rounded-md transition-colors">
                             Nachricht senden
                         </button>
