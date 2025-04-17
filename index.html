@@ -65,13 +65,14 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: auto;
+            min-height: 100%;
             opacity: 0;
             pointer-events: none;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            padding: 30px;
+            padding: 20px;
+            overflow-y: auto;
         }
         .process-content.active {
             opacity: 1;
@@ -79,8 +80,22 @@
         }
         .process-content-container {
             position: relative;
-            min-height: 414px;
-            height: 100%;
+            min-height: 450px;
+            height: auto;
+            overflow: hidden;
+        }
+        @media (max-width: 768px) {
+            .process-content-container {
+                min-height: 520px;
+            }
+            .process-content {
+                padding: 15px;
+            }
+        }
+        @media (max-width: 640px) {
+            .process-content-container {
+                min-height: 580px;
+            }
         }
         .process-step {
             transition: all 0.3s ease;
@@ -186,7 +201,7 @@
                             <source srcset="assets/images/desktop/this-is-my-dream-job-2025-04-06-11-09-40-utc.webp" media="(min-width: 768px)" type="image/webp">
                             <source srcset="assets/images/desktop/this-is-my-dream-job-2025-04-06-11-09-40-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
                             <source srcset="assets/images/mobile/this-is-my-dream-job-2025-04-06-11-09-40-utc.webp" type="image/webp">
-                            <img src="assets/images/mobile/this-is-my-dream-job-2025-04-06-11-09-40-utc.jpg" alt="Zuzana Jancova - Sozialarbeiterin in Wien" class="w-full h-full object-cover">
+                            <img src="assets/images/mobile/this-is-my-dream-job-2025-04-06-11-09-40-utc.jpg" alt="Zuzana Jancova - Sozialarbeiterin in Wien" class="w-full h-full object-cover" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -298,7 +313,7 @@
                             <source srcset="assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" media="(min-width: 768px)" type="image/webp">
                             <source srcset="assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
                             <source srcset="assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
-                            <img src="assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind" class="w-full h-full object-cover">
+                            <img src="assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind" class="w-full h-full object-cover" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -346,7 +361,7 @@
                             <source srcset="assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" media="(min-width: 768px)" type="image/webp">
                             <source srcset="assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
                             <source srcset="assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
-                            <img src="assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft" class="w-full h-full object-cover">
+                            <img src="assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft" class="w-full h-full object-cover" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -394,7 +409,7 @@
                             <source srcset="assets/images/desktop/hand-in-glove-holds-saucepan-2024-09-18-05-30-13-utc.webp" media="(min-width: 768px)" type="image/webp">
                             <source srcset="assets/images/desktop/hand-in-glove-holds-saucepan-2024-09-18-05-30-13-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
                             <source srcset="assets/images/mobile/hand-in-glove-holds-saucepan-2024-09-18-05-30-13-utc.webp" type="image/webp">
-                            <img src="assets/images/mobile/hand-in-glove-holds-saucepan-2024-09-18-05-30-13-utc.jpg" alt="Personenbetreuung: Kochen und Haushaltsführung" class="w-full h-full object-cover">
+                            <img src="assets/images/mobile/hand-in-glove-holds-saucepan-2024-09-18-05-30-13-utc.jpg" alt="Personenbetreuung: Kochen und Haushaltsführung" class="w-full h-full object-cover" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -463,27 +478,27 @@
                 
                 <!-- Content on the right -->
                 <div class="w-full md:w-[58%] flex-grow order-1 md:order-2 flex">
-                    <div class="bg-white/10 rounded-lg p-8 shadow-lg process-content-container w-full flex">
+                    <div class="bg-white/10 rounded-lg p-6 md:p-8 shadow-lg process-content-container w-full flex">
                         <div id="step1-content" class="process-content active">
-                            <p class="text-white mb-6 leading-relaxed px-3">
+                            <p class="text-white mb-4 leading-relaxed px-2">
                                 Der erste Schritt zu einer erfolgreichen Zusammenarbeit beginnt mit Ihrer Kontaktaufnahme. Sie können mich ganz einfach auf folgende Weise erreichen:
                             </p>
-                            <ul class="list-disc list-inside mb-6 space-y-4 pl-6 pr-3">
+                            <ul class="list-disc list-inside mb-4 space-y-3 pl-4 pr-2">
                                 <li>Über das Kontaktformular auf dieser Website</li>
                                 <li>Per Telefon unter 0677 61385769</li>
                                 <li>Per WhatsApp-Nachricht</li>
                                 <li>Per E-Mail an goodnews@24ja.at</li>
                             </ul>
-                            <p class="text-white leading-relaxed px-3">
+                            <p class="text-white leading-relaxed px-2">
                                 Ich lege großen Wert auf zeitnahe Kommunikation und antworte in der Regel innerhalb von 24 Stunden auf Ihre Anfrage.
                             </p>
                         </div>
                         
                         <div id="step2-content" class="process-content">
-                            <p class="text-white mb-6 leading-relaxed px-3">
+                            <p class="text-white mb-4 leading-relaxed px-2">
                                 Nach der ersten Kontaktaufnahme vereinbaren wir ein unverbindliches Gespräch, das entweder telefonisch oder persönlich stattfinden kann.
                             </p>
-                            <ul class="list-disc list-inside mb-6 space-y-4 pl-6 pr-3">
+                            <ul class="list-disc list-inside mb-4 space-y-3 pl-4 pr-2">
                                 <li>Ihre individuellen Bedürfnisse und Wünsche genau zu verstehen</li>
                                 <li>Den zeitlichen Rahmen und die Häufigkeit der benötigten Unterstützung zu klären</li>
                                 <li>Besondere Anforderungen oder Erwartungen zu besprechen</li>
@@ -492,31 +507,31 @@
                         </div>
                         
                         <div id="step3-content" class="process-content">
-                            <p class="text-white mb-6 leading-relaxed px-3">
+                            <p class="text-white mb-4 leading-relaxed px-2">
                                 Basierend auf den Erkenntnissen aus unserem Gespräch erstelle ich ein transparentes und faires Angebot für Sie.
                             </p>
-                            <ul class="list-disc list-inside mb-6 space-y-4 pl-6 pr-3">
+                            <ul class="list-disc list-inside mb-4 space-y-3 pl-4 pr-2">
                                 <li>Eine detaillierte Beschreibung der angebotenen Leistungen</li>
                                 <li>Die vereinbarten Zeiten und den Umfang der Betreuung</li>
                                 <li>Eine transparente Preisgestaltung ohne versteckte Kosten</li>
                                 <li>Vertragliche Rahmenbedingungen wie Kündigungsfristen</li>
                             </ul>
-                            <p class="text-white leading-relaxed px-3">
+                            <p class="text-white leading-relaxed px-2">
                                 Sie haben selbstverständlich die Möglichkeit, das Angebot in Ruhe zu prüfen und bei Bedarf Anpassungen vorzuschlagen.
                             </p>
                         </div>
                         
                         <div id="step4-content" class="process-content">
-                            <p class="text-white mb-6 leading-relaxed px-3">
+                            <p class="text-white mb-4 leading-relaxed px-2">
                                 Nach Ihrer Zustimmung zum Angebot beginnen wir mit der konkreten Umsetzung unserer Zusammenarbeit:
                             </p>
-                            <ul class="list-disc list-inside mb-6 space-y-4 pl-6 pr-3">
+                            <ul class="list-disc list-inside mb-4 space-y-3 pl-4 pr-2">
                                 <li>Wir vereinbaren einen konkreten Starttermin</li>
                                 <li>Ich passe mich flexibel an Ihre Bedürfnisse und Ihren Zeitplan an</li>
                                 <li>Bei Bedarf können wir einen sanften Einstieg mit einer Probephase vereinbaren</li>
                                 <li>Regelmäßige Feedback-Gespräche stellen sicher, dass Sie rundum zufrieden sind</li>
                             </ul>
-                            <p class="text-white leading-relaxed px-3">
+                            <p class="text-white leading-relaxed px-2">
                                 Mein Ziel ist es, Ihnen durch meine Dienstleistungen mehr Zeit und Freiraum für die wirklich wichtigen Dinge zu verschaffen.
                             </p>
                         </div>
@@ -576,19 +591,19 @@
                             <input type="email" id="email" name="email" autocomplete="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required>
                         </div>
                         <div class="mb-6">
-                            <label class="block text-gray-700 font-medium mb-3">Ich interessiere mich für:</label>
+                            <h4 class="block text-gray-700 font-medium mb-3">Ich interessiere mich für:</h4>
                             <div class="space-y-2">
                                 <div class="flex items-center">
-                                    <input type="radio" id="service-kinderbetreuung" name="service" value="Kinderbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-                                    <label for="service-kinderbetreuung" class="ml-2 block text-gray-700">Kinderbetreuung</label>
+                                    <input type="radio" id="radio-kinderbetreuung" name="service" value="Kinderbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                    <label for="radio-kinderbetreuung" class="ml-2 block text-gray-700">Kinderbetreuung</label>
                                 </div>
                                 <div class="flex items-center">
-                                    <input type="radio" id="service-begleitung" name="service" value="Gesellschaftliche Begleitung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-                                    <label for="service-begleitung" class="ml-2 block text-gray-700">Gesellschaftliche Begleitung</label>
+                                    <input type="radio" id="radio-begleitung" name="service" value="Gesellschaftliche Begleitung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                    <label for="radio-begleitung" class="ml-2 block text-gray-700">Gesellschaftliche Begleitung</label>
                                 </div>
                                 <div class="flex items-center">
-                                    <input type="radio" id="service-personenbetreuung" name="service" value="Personenbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-                                    <label for="service-personenbetreuung" class="ml-2 block text-gray-700">Personenbetreuung</label>
+                                    <input type="radio" id="radio-personenbetreuung" name="service" value="Personenbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                    <label for="radio-personenbetreuung" class="ml-2 block text-gray-700">Personenbetreuung</label>
                                 </div>
                             </div>
                         </div>
