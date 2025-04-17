@@ -1,0 +1,8 @@
+# Supported browsers configuration
+# See https://github.com/browserslist/browserslist for format
+
+# Modern browsers only
+last 2 versions
+> 0.5%
+not dead
+not ie 11 
