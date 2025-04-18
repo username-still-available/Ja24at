@@ -20,6 +20,9 @@ module.exports = {
         'cormorant': ['Cormorant Garamond', 'Times New Roman', 'serif'],
         'sans': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
+      transform: {
+        'translate-z-0': 'translateZ(0)',
+      },
     },
   },
   safelist: [
@@ -31,6 +34,7 @@ module.exports = {
     'focus:ring-brand-green-light',
     'border-gray-300',
     'space-y-2',
+    'translate-z-0',
   ],
   plugins: [],
 } 
