@@ -45,16 +45,16 @@
   pretty_urls = true
 
 # Files to be excluded from deployment
-[[plugins]]
-  package = "netlify-plugin-checklinks"
-
-  [plugins.inputs]
-    skipPatterns = [
-      "node_modules/*",
-      "plan/*",   
-      "documentation/*",
-      "todo.md",
-      "README.md",      
-      "optimize_images.sh",
-      "resize_images.sh"
-    ] 
+# [[plugins]]
+#   package = "netlify-plugin-checklinks"
+# 
+#   [plugins.inputs]
+#     skipPatterns = [
+#       "node_modules/*",
+#       "plan/*",   
+#       "documentation/*",
+#       "todo.md",
+#       "README.md",      
+#       "optimize_images.sh",
+#       "resize_images.sh"
+#     ] 
