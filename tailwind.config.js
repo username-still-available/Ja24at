@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./**/*.{html,js}"],
+  content: [
+    "./*.html",
+    "./js/*.js"
+  ],
   theme: {
     extend: {
       colors: {
@@ -19,5 +22,15 @@ module.exports = {
       },
     },
   },
+  safelist: [
+    'hover:bg-brand-green',
+    'hover:text-white',
+    'duration-500',
+    'h-full',
+    'text-brand-green',
+    'focus:ring-brand-green-light',
+    'border-gray-300',
+    'space-y-2',
+  ],
   plugins: [],
 } 

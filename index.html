@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Professionelle Sozialarbeit von Zuzana Jancova in Wien. Kinderbetreuung, gesellschaftliche Begleitung und individuelle Personenbetreuung - 24ja.at macht Ihr Leben leichter.">
+    <meta name="keywords" content="Sozialarbeiterin Wien, Kinderbetreuung, Personenbetreuung, gesellschaftliche Begleitung, Zuzana Jancova">
+    <meta name="author" content="Zuzana Jancova">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="24ja.at - Macht das Leben leichter">
+    <meta property="og:description" content="Professionelle Sozialarbeit von Zuzana Jancova in Wien. Kinderbetreuung, gesellschaftliche Begleitung und Personenbetreuung.">
+    <meta property="og:image" content="https://24ja.at/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://24ja.at">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://24ja.at/">
     <title>24ja.at - Macht das Leben leichter</title>
     
     <!-- Critical CSS inlined for faster page rendering -->
@@ -61,32 +70,23 @@
         /* Process section animations */
         .process-content {
             transition: opacity 0.3s ease;
-            position: absolute;
-            top: 0;
-            left: 0;
+            display: none;
             width: 100%;
             height: auto;
-            min-height: 100%;
-            opacity: 0;
-            pointer-events: none;
-            display: flex;
-            flex-direction: column;
             padding: 20px;
-            overflow-y: auto;
         }
         .process-content.active {
+            display: block;
             opacity: 1;
-            pointer-events: auto;
         }
         .process-content-container {
             position: relative;
-            min-height: 450px;
+            min-height: 300px;
             height: auto;
-            overflow: hidden;
         }
         @media (max-width: 768px) {
             .process-content-container {
-                min-height: 520px;
+                min-height: 350px;
             }
             .process-content {
                 padding: 15px;
@@ -94,7 +94,7 @@
         }
         @media (max-width: 640px) {
             .process-content-container {
-                min-height: 580px;
+                min-height: 400px;
             }
         }
         .process-step {
@@ -143,6 +143,73 @@
     </script>
     
     <script src="js/script.js" defer></script>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "24ja - Macht das Leben leichter e.U.",
+      "image": "https://24ja.at/assets/images/og-image.jpg",
+      "url": "https://24ja.at",
+      "telephone": "+436776138576",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tuchlauben 7/A",
+        "addressLocality": "Wien",
+        "postalCode": "1010",
+        "addressCountry": "AT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.2102,
+        "longitude": 16.3695
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://wa.me/4367761385769"
+      ],
+      "priceRange": "€€",
+      "description": "Professionelle Sozialarbeit von Zuzana Jancova in Wien. Kinderbetreuung, gesellschaftliche Begleitung und individuelle Personenbetreuung.",
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 48.2102,
+          "longitude": 16.3695
+        },
+        "geoRadius": 50000
+      },
+      "services": [
+        {
+          "@type": "Service",
+          "name": "Kinderbetreuung",
+          "description": "Pädagogisch wertvolle Betreuung für Kinder aller Altersgruppen"
+        },
+        {
+          "@type": "Service",
+          "name": "Gesellschaftliche Begleitung",
+          "description": "Professionelles Auftreten bei geschäftlichen und sozialen Anlässen"
+        },
+        {
+          "@type": "Service",
+          "name": "Personenbetreuung",
+          "description": "Hilfe im Alltag und bei der Haushaltsführung"
+        }
+      ]
+    }
+    </script>
 </head>
 <body class="bg-white font-body m-0">
     <!-- Navigation Bar with white background - moved outside header to be sticky throughout the page -->
@@ -164,7 +231,7 @@
     </nav>
     
     <!-- Mobile Menu (Hidden by default) -->
-    <div class="md:hidden hidden bg-white w-full fixed top-[70px] z-40 shadow-md" id="mobile-menu" style="transform: translateZ(0);">
+    <div class="md:hidden hidden bg-white w-full fixed top-[4.375rem] z-40 shadow-md" id="mobile-menu" style="transform: translateZ(0);">
         <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
             <a href="#about" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Meine Geschichte</a>
             <a href="#services" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Leistungen</a>
@@ -197,12 +264,7 @@
                 <!-- Image Container - Larger and centered -->
                 <div class="w-full max-w-2xl mb-12">
                     <div class="bg-gray-200 h-96 md:h-[30rem] rounded-lg shadow-xl overflow-hidden flex items-center justify-center">
-                        <picture>
-                            <source srcset="assets/images/desktop/this-is-my-dream-job-2025-04-06-11-09-40-utc.webp" media="(min-width: 768px)" type="image/webp">
-                            <source srcset="assets/images/desktop/this-is-my-dream-job-2025-04-06-11-09-40-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
-                            <source srcset="assets/images/mobile/this-is-my-dream-job-2025-04-06-11-09-40-utc.webp" type="image/webp">
-                            <img src="assets/images/mobile/this-is-my-dream-job-2025-04-06-11-09-40-utc.jpg" alt="Zuzana Jancova - Sozialarbeiterin in Wien" class="w-full h-full object-cover" loading="lazy">
-                        </picture>
+
                     </div>
                 </div>
                 
@@ -478,7 +540,7 @@
                 
                 <!-- Content on the right -->
                 <div class="w-full md:w-[58%] flex-grow order-1 md:order-2 flex">
-                    <div class="bg-white/10 rounded-lg p-6 md:p-8 shadow-lg process-content-container w-full flex">
+                    <div class="bg-white/10 rounded-lg p-6 md:p-8 shadow-lg process-content-container w-full">
                         <div id="step1-content" class="process-content active">
                             <p class="text-white mb-4 leading-relaxed px-2">
                                 Der erste Schritt zu einer erfolgreichen Zusammenarbeit beginnt mit Ihrer Kontaktaufnahme. Sie können mich ganz einfach auf folgende Weise erreichen:
@@ -504,6 +566,9 @@
                                 <li>Besondere Anforderungen oder Erwartungen zu besprechen</li>
                                 <li>Offene Fragen zu beantworten und gegenseitiges Vertrauen aufzubauen</li>
                             </ul>
+                            <p class="text-white leading-relaxed px-2">
+                                Dieses Gespräch dient dazu, Ihre Situation umfassend zu verstehen und eine optimale Grundlage für mein späteres Angebot zu schaffen.
+                            </p>
                         </div>
                         
                         <div id="step3-content" class="process-content">

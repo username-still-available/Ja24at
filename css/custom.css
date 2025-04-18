@@ -1,0 +1,6 @@
+/* Custom styles for navigation hover effects */
+.hover-nav-link:hover {
+    background-color: #0A4835; /* brand-green */
+    color: white;
+    border-radius: 0.375rem; /* rounded-md */
+} 
