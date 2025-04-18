@@ -1,0 +1,41 @@
+[build]
+  publish = "."
+  command = "npm run build"
+
+# Redirects and headers
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "no-referrer-when-downgrade"
+
+# Exclude internal files from deployment
+[functions]
+  directory = "functions"
+
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = true
+
+# Files to be excluded from deployment
+[[plugins]]
+  package = "netlify-plugin-checklinks"
+
+  [plugins.inputs]
+    skipPatterns = [
+      "documentation/internal/*",
+      "node_modules/*",
+      "documentation/internal",
+      "todo.md",
+      "optimize_images.sh",
+      "resize_images.sh"
+    ] 
