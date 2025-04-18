@@ -44,17 +44,36 @@
 [build.processing.html]
   pretty_urls = true
 
-# Files to be excluded from deployment
-# [[plugins]]
+# Build Plugins Configuration
+
+# [[plugins]] # Keep checklinks commented out for now
 #   package = "netlify-plugin-checklinks"
-# 
+#
 #   [plugins.inputs]
 #     skipPatterns = [
 #       "node_modules/*",
-#       "plan/*",   
+#       "plan/*",
 #       "documentation/*",
 #       "todo.md",
-#       "README.md",      
+#       "README.md",
 #       "optimize_images.sh",
 #       "resize_images.sh"
-#     ] 
+#     ]
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+
+  # Optional: Configure specific audits or thresholds
+  # See plugin docs for options: https://github.com/netlify/netlify-plugin-lighthouse
+  # [plugins.inputs.audits]
+  #   # Example: Only run performance and accessibility audits
+  #   performance = true
+  #   accessibility = true
+  #   "best-practices" = false
+  #   seo = false
+  #   pwa = false
+
+  # Example: Set score thresholds (scores below these will cause a warning in the deploy summary)
+  # [plugins.inputs.thresholds]
+  #   performance = 0.9
+  #   accessibility = 0.9
