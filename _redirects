@@ -1,8 +1,0 @@
-# Redirect all requests to index.html for SPA routing
-/*    /index.html   200
-
-# Block access to internal files
-/documentation/internal/*    /404.html    404
-/todo.md    /404.html    404
-/optimize_images.sh    /404.html    404
-/resize_images.sh    /404.html    404 

@@ -36,9 +36,6 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "no-referrer-when-downgrade"
 
-# Exclude internal files from deployment
-[functions]
-  directory = "functions"
 
 [build.processing]
   skip_processing = false
@@ -52,10 +49,11 @@
 
   [plugins.inputs]
     skipPatterns = [
-      "documentation/internal/*",
       "node_modules/*",
-      "documentation/internal",
+      "plan/*",   
+      "documentation/*",
       "todo.md",
+      "README.md",      
       "optimize_images.sh",
       "resize_images.sh"
     ] 
