@@ -39,8 +39,9 @@ temp/
 .env.production.local
 
 # Internal documentation files
-documentation/internal/
+documentation/ # Ignore entire documentation folder
 todo.md
+plan/
 
 # Shell scripts
 *.sh
