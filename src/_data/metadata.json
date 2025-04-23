@@ -1,0 +1,58 @@
+{
+  "title": "24ja.at - Macht das Leben leichter",
+  "description": "Professionelle Sozialarbeit von Zuzana Jancova in Wien. Kinderbetreuung, gesellschaftliche Begleitung und individuelle Personenbetreuung - 24ja.at macht Ihr Leben leichter.",
+  "keywords": "Sozialarbeiterin Wien, Kinderbetreuung, Personenbetreuung, gesellschaftliche Begleitung, Zuzana Jancova",
+  "author": "Zuzana Jancova",
+  "baseUrl": "https://24ja.at", // Your production base URL
+  "structuredData": {
+    "name": "24ja - Macht das Leben leichter e.U.",
+    "image": "https://24ja.at/assets/images/og-image.jpg", // Or use a relative path if preferred /assets/images/og-image.jpg
+    "telephone": "+436776138576",
+    "address": {
+      "streetAddress": "Tuchlauben 7/A",
+      "addressLocality": "Wien",
+      "postalCode": "1010",
+      "addressCountry": "AT"
+    },
+    "geo": {
+      "latitude": 48.2102,
+      "longitude": 16.3695
+    },
+    "openingHoursSpecification": {
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "09:00",
+      "closes": "18:00"
+    },
+    "sameAs": [
+      "https://wa.me/4367761385769"
+    ],
+    "priceRange": "€€",
+    "serviceArea": {
+      "geoMidpoint": {
+        "latitude": 48.2102,
+        "longitude": 16.3695
+      },
+      "geoRadius": 50000
+    },
+    "services": [
+      {
+        "name": "Kinderbetreuung",
+        "description": "Pädagogisch wertvolle Betreuung für Kinder aller Altersgruppen"
+      },
+      {
+        "name": "Gesellschaftliche Begleitung",
+        "description": "Professionelles Auftreten bei geschäftlichen und sozialen Anlässen"
+      },
+      {
+        "name": "Personenbetreuung",
+        "description": "Hilfe im Alltag und bei der Haushaltsführung"
+      }
+    ]
+  }
+} 
