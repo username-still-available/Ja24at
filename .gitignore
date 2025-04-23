@@ -37,6 +37,7 @@ temp/
 # Build files (if you have any)
 dist/
 build/
+_site/ # Eleventy output directory
 
 # Environment variables
 .env
@@ -44,3 +45,5 @@ build/
 .env.development.local
 .env.test.local
 .env.production.local 
+# Local Netlify folder
+.netlify
