@@ -3,10 +3,10 @@
   "description": "Professionelle Sozialarbeit von Zuzana Jancova in Wien. Kinderbetreuung, gesellschaftliche Begleitung und individuelle Personenbetreuung - 24ja.at macht Ihr Leben leichter.",
   "keywords": "Sozialarbeiterin Wien, Kinderbetreuung, Personenbetreuung, gesellschaftliche Begleitung, Zuzana Jancova",
   "author": "Zuzana Jancova",
-  "baseUrl": "https://24ja.at", // Your production base URL
+  "baseUrl": "https://24ja.at",
   "structuredData": {
     "name": "24ja - Macht das Leben leichter e.U.",
-    "image": "https://24ja.at/assets/images/og-image.jpg", // Or use a relative path if preferred /assets/images/og-image.jpg
+    "image": "https://24ja.at/assets/images/og-image.jpg",
     "telephone": "+436776138576",
     "address": {
       "streetAddress": "Tuchlauben 7/A",

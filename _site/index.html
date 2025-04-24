@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professionelle Sozialarbeit von Zuzana Jancova in Wien. Kinderbetreuung, gesellschaftliche Begleitung und individuelle Personenbetreuung - 24ja.at macht Ihr Leben leichter.">
+    <meta name="keywords" content="Sozialarbeiterin Wien, Kinderbetreuung, Personenbetreuung, gesellschaftliche Begleitung, Zuzana Jancova">
+    <meta name="author" content="Zuzana Jancova">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Home">
+    <meta property="og:description" content="Professionelle Sozialarbeit von Zuzana Jancova in Wien. Kinderbetreuung, gesellschaftliche Begleitung und individuelle Personenbetreuung - 24ja.at macht Ihr Leben leichter.">
+    <meta property="og:image" content="https://24ja.at/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://24ja.at/">
+    <meta property="og:type" content="website">
+    <link rel="canonical" href="https://24ja.at/">
+    <title>Home</title>
+
+    <!-- Critical CSS inlined for faster page rendering -->
+    <style>
+        /* Critical font definitions */
+        @font-face {
+            font-family: 'Playfair Display';
+            src: url('/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf') format('truetype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Epilogue';
+            src: url('/fonts/Epilogue/static/Epilogue-Regular.ttf') format('truetype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* Basic Resets & Body */
+        *, ::before, ::after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
+        html { line-height: 1.5; -webkit-text-size-adjust: 100%; tab-size: 4; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; }
+        body { margin: 0; line-height: inherit; background-color: #fff; font-family: Epilogue, Arial, sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+        a { color: inherit; text-decoration: inherit; }
+        img, video { max-width: 100%; height: auto; }
+        /* Container Base */
+        .container { width: 100%; margin-left: auto; margin-right: auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+        @media (min-width: 640px) { .container { max-width: 640px; } }
+        @media (min-width: 768px) { .container { max-width: 768px; } }
+        @media (min-width: 1024px) { .container { max-width: 1024px; } }
+        @media (min-width: 1280px) { .container { max-width: 1280px; } }
+        @media (min-width: 1536px) { .container { max-width: 1536px; } }
+        /* Navigation */
+        nav { background-color: #fff; padding-top: 1rem; padding-bottom: 1rem; padding-left: 1.5rem; padding-right: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1); position: sticky; top: 0; z-index: 50; height: 70px; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; height: 100%; }
+        nav a.font-heading { font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; color: #0A4835; font-family: 'Playfair Display', Georgia, serif; }
+        /* Hero Section */
+        header { position: relative; }
+        header > div { background-color: #0A4835; color: #fff; }
+        header .container { padding-top: 4rem; padding-bottom: 4rem; display: flex; flex-direction: column; align-items: center; text-align: center; }
+        header h1 { font-size: 2.25rem; line-height: 2.5rem; font-weight: 700; color: #fff; margin-bottom: 1.5rem; font-family: 'Playfair Display', Georgia, serif; }
+        header p { font-size: 1.25rem; line-height: 1.75rem; color: #fff; max-width: 42rem; margin-bottom: 2.5rem; }
+        header a { display: inline-block; background-color: #fff; color: #0A4835; font-weight: 700; padding: 0.75rem 2rem; border-radius: 9999px; box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1); }
+        /* Responsive Hero Styles (Basic) */
+        @media (min-width: 768px) {
+            header .container { padding-top: 6rem; padding-bottom: 6rem; }
+            header h1 { font-size: 3rem; line-height: 1; }
+        }
+        /* Add any other absolutely critical above-the-fold styles here */
+
+    </style>
+
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/fonts/Epilogue/static/Epilogue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+
+    <!-- Load non-critical CSS asynchronously -->
+    <!-- Note: Path updated to reflect assets being served from root -->
+    <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+
+    <link rel="preload" href="/css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/fonts.css"></noscript>
+
+    <!-- Fallback for browsers that don't support JS-loaded CSS -->
+    <script>
+        /* Critical polyfill for CSS loading */
+        !function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+    </script>
+
+    <!-- Note: Path updated to reflect assets being served from root -->
+    <script src="/js/script.js" defer></script>
+
+    <!-- Structured Data for SEO -->
+    <!-- Consider moving this to _data/metadata.json or making parts dynamic -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "24ja - Macht das Leben leichter e.U.",
+      "image": "https://24ja.at/assets/images/og-image.jpg",
+      "url": "https://24ja.at",
+      "telephone": "+436776138576",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Tuchlauben 7/A",
+        "addressLocality": "Wien",
+        "postalCode": "1010",
+        "addressCountry": "AT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 48.2102,
+        "longitude": 16.3695
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": ["https://wa.me/4367761385769"],
+      "priceRange": "€€",
+      "description": "Professionelle Sozialarbeit von Zuzana Jancova in Wien. Kinderbetreuung, gesellschaftliche Begleitung und individuelle Personenbetreuung - 24ja.at macht Ihr Leben leichter.",
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 48.2102,
+          "longitude": 16.3695
+        },
+        "geoRadius": 50000
+      },
+      "services": [{"name":"Kinderbetreuung","description":"Pädagogisch wertvolle Betreuung für Kinder aller Altersgruppen"},{"name":"Gesellschaftliche Begleitung","description":"Professionelles Auftreten bei geschäftlichen und sozialen Anlässen"},{"name":"Personenbetreuung","description":"Hilfe im Alltag und bei der Haushaltsführung"}]
+    }
+    </script>
+</head>
+<body class="bg-white font-body m-0">
+    <!-- Navigation Bar with white background - moved outside header to be sticky throughout the page -->
+    <nav class="bg-white py-4 px-6 shadow-md sticky top-0 z-50 h-[70px]">
+        <div class="container mx-auto flex justify-between items-center h-full">
+            <!-- Update link to point to root -->
+            <a href="/" class="text-3xl font-bold text-brand-green font-heading">24ja - Macht das Leben leichter e.U.</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="/#about" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Meine Geschichte</a>
+                <a href="/#services" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Leistungen</a>
+                <a href="/#contact" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Kontakt</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-gray-700" id="mobile-menu-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="md:hidden hidden bg-white w-full fixed top-[4.375rem] z-40 shadow-md translate-z-0" id="mobile-menu">
+        <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+            <a href="/#about" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Meine Geschichte</a>
+            <a href="/#services" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Leistungen</a>
+            <a href="/#contact" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Kontakt</a>
+        </div>
+    </div>
+
+    <!-- Hero Section with brand-green background -->
+    <header class="relative">
+        <!-- Hero Content with brand-green background -->
+        <div class="bg-brand-green text-white">
+            <div class="container mx-auto px-6 py-16 md:py-24 flex flex-col items-center text-center">
+                <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 font-heading">Alltagsunterstützung für Ihre höhere Lebensqualität und mehr Flexibilität</h1>
+                <p class="text-xl text-white max-w-2xl mb-10">
+                    Der Ort, an dem sich im Leben Exzellenz und Leidenschaft treffen.
+                </p>
+                <a href="/#contact" class="bg-white hover:bg-gray-100 text-brand-green font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
+                    Kontakt aufnehmen
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- About Section - Moved here and redesigned -->
+<section id="about" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <!-- Image centered and made more prominent -->
+        <div class="flex flex-col items-center">
+            <!-- Image Container - Larger and centered -->
+            <div class="w-full max-w-2xl mb-12">
+                <div class="bg-gray-200 h-96 md:h-[30rem] rounded-lg shadow-xl overflow-hidden flex items-center justify-center">
+                    <!-- Placeholder for image -->
+                </div>
+            </div>
+<p><!-- Heading now below image -->
+<h2 class="text-3xl font-bold text-center text-gray-800 mb-8 font-heading">Meine Geschichte</h2></p>
+<p><!-- About Text - Now below heading -->
+<div class="w-full max-w-3xl text-center md:text-left">
+<p class="text-gray-700 mb-6">
+Nach meinem abgeschlossenen Magisterstudium der Sozialen Arbeit an der Universität Bratislava in der Slowakei und einem zweijährigen Aufenthalt in den USA, wo ich ein Praktikum absolvierte, begann meine &quot;Reise&quot; in Österreich als Putzfrau in einem Hotel im ersten Bezirk in Wien. Nach dem Erlernen der deutschen Sprache und dem Bestehen der rechtlichen Prüfung zur Anerkennung meiner Ausbildung für Sozialarbeit gemäß § 7 des WKJHG, die ich erfolgreich beim Magistrat 11 der Stadt Wien ablegte, qualifizierte ich mich als Sozialarbeiterin in Österreich.
+</p>
+<div class="border-l-4 border-brand-green pl-10 py-4 my-8">
+<p class="text-gray-700 italic font-medium text-lg font-heading">
+&quot;Glück ist das einzige, was sich verdoppelt, wenn man es teilt.&quot;<br>
+<span class="text-sm mt-2 block">- Albert Schweitzer</span>
+</p>
+</div>
+<p class="text-gray-700 italic">
+Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen Lebenssituationen zur Seite zu stehen. Mein Ziel ist es, diesen nicht nur Unterstützung anzubieten, sondern ihnen auch Zuversicht und Freude zu schenken, um ein Lächeln auf ihre Gesichter zu bringen.
+</p>
+</div>
+</div>
+</div></p>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-16 bg-brand-green">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-white mb-12 font-heading">Meine Leistungen</h2>
+<p><div class="flex flex-col md:flex-row max-w-5xl mx-auto space-y-4 md:space-y-0 md:space-x-2">
+<!-- Service 1 -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex-1">
+<div class="bg-brand-green-light h-2"></div>
+<div class="p-6 flex flex-col h-full">
+<h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Kinderbetreuung</h3>
+<p class="text-gray-600 mb-6 flex-grow">
+Ich unterstütze Sie in Ihrem Alltag, sodass Sie sich auf Ihre wichtigen geschäftlichen Termine konzentrieren können, ohne sich Sorgen um Ihre Kinder machen zu müssen.
+</p>
+<a href="/#service-kinderbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors">
+Mehr erfahren →
+</a>
+</div>
+</div></p>
+<p><!-- Service 2 -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex-1">
+<div class="bg-brand-green-light h-2"></div>
+<div class="p-6 flex flex-col h-full">
+<h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Gesellschaftliche Begleitung</h3>
+<p class="text-gray-600 mb-6 flex-grow">
+Ich unterstütze Sie gern, falls Sie für Ihren wichtigen Termin eine Begleitperson brauchen.
+</p>
+<a href="/#service-begleitung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors">
+Mehr erfahren →
+</a>
+</div>
+</div></p>
+<p><!-- Service 3 -->
+<div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex-1">
+<div class="bg-brand-green-light h-2"></div>
+<div class="p-6 flex flex-col h-full">
+<h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Personenbetreuung</h3>
+<p class="text-gray-600 mb-6 flex-grow">
+Nach einem anstrengenden Tag würden Sie gerne nach Hause kommen, wo bereits ein frisch gekochtes Essen auf dem Tisch auf Sie wartet?
+</p>
+<a href="/#service-personenbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors">
+Mehr erfahren →
+</a>
+</div>
+</div>
+</div></p>
+<p><div class="text-center mt-12">
+<p class="text-white italic">Für Ihr persönliches Angebot kontaktieren Sie mich bitte.</p>
+</div>
+</div></p>
+</section>
+<!-- Detailed Services Sections -->
+<!-- Kinderbetreuung Detailed Section -->
+<section id="service-kinderbetreuung" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+            <!-- Service Image -->
+            <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                <div id="slideshow-kinderbetreuung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
+                    <!-- Slideshow Image 1 (Visible by default) -->
+                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
+                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
+                        <source srcset="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
+                        <img src="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                    </picture>
+                     <!-- Slideshow Image 2 (Hidden by default) -->
+                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
+                        <source srcset="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
+                        <img src="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind 2" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                    </picture>
+                     <!-- Slideshow Image 3 (Hidden by default) -->
+                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
+                        <source srcset="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
+                        <img src="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind 3" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                    </picture>
+                </div>
+            </div>
+<p><!-- Service Content -->
+<div class="w-full md:w-1/2">
+<h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Professionelle Kinderbetreuung</h2></p>
+<p><!-- Feature Box -->
+<div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
+<h3 class="text-lg font-bold text-brand-green mb-2 font-heading">Mein Angebot umfasst:</h3>
+<ul class="list-disc list-inside text-gray-700 space-y-2">
+<li><strong>Flexible Zeitgestaltung:</strong> Ich stelle 24 Stunden Flexibilität zur Verfügung, um auf Ihre Bedürfnisse einzugehen.</li>
+<li><strong>Altersgerechte Beschäftigungen:</strong> Die Aktivitäten sind auf das Alter und den Entwicklungsstand der Kinder abgestimmt. Dazu gehören verschiedene Angebote wie z.B. gemeinsames Kochen, Basteln und /oder Spielen, die sowohl Spaß machen als auch die Entwicklung der Kinder fördern.</li>
+</ul>
+</div></p>
+<p><p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg max-w-prose">
+Als Sozialarbeiterin mit einem Studium der Sozialarbeit an der Pädagogischen Fakultät der Comenius Universität in Bratislava, Slowakei (2003 - 2010) und einer Prüfung zur Anerkennung meiner Ausbildung gemäß §7 des WKJHG Sozialarbeit bei der Stadt Wien - Magistrat der Stadt Wien MA 11-Amt für Jugend und Familie (2021), sowie einem zusätzlich erworbenen UBV-Zertifikat (UBV 100-43) &quot;Unterstützung bei der Basisversorgung&quot; bei der Caritas der Erzdiözese Wien, biete ich individuelle professionelle Kinderbetreuung für Kinder mit oder ohne Beeinträchtigungen an.
+</p></p>
+<p><p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg max-w-prose">
+Ich setze mich dafür ein, jedem Kind eine einladende, förderliche und inspirierende Atmosphäre anzubieten, in der es sich frei entfalten und seine Talente entdecken kann.
+</p></p>
+<p><a href="/#contact" class="inline-block bg-brand-green hover:bg-brand-green-light text-white font-medium py-2 px-6 rounded-lg transition-colors">
+Anfrage stellen
+</a>
+</div>
+</div>
+</div></p>
+</section>
+<!-- Gesellschaftliche Begleitung Detailed Section -->
+<section id="service-begleitung" class="py-16">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row-reverse items-center">
+            <!-- Service Image -->
+            <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pl-10">
+                 <div id="slideshow-begleitung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
+                     <!-- Slideshow Image 1 -->
+                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
+                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
+                        <source srcset="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
+                        <img src="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                    </picture>
+                     <!-- Slideshow Image 2 -->
+                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
+                        <source srcset="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
+                        <img src="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft 2" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                    </picture>
+                     <!-- Slideshow Image 3 -->
+                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
+                        <source srcset="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
+                        <img src="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft 3" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                    </picture>
+                </div>
+            </div>
+<p><!-- Service Content -->
+<div class="w-full md:w-1/2">
+<h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Gesellschaftliche Begleitung</h2></p>
+<p><!-- Feature Box -->
+<div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
+<h3 class="text-lg font-bold text-brand-green mb-2 font-heading">Mein Angebot umfasst:</h3>
+<ul class="list-disc list-inside text-gray-700 space-y-2">
+<li>Begleitung zum Geschäftsessen, Kulturveranstaltungen usw.</li>
+</ul>
+</div></p>
+<p><p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg max-w-prose">
+Da mir die Bewahrung der guten Reputation meiner Klienten sehr am Herzen liegt, garantiere ich Ihnen, dass Ihre Begleitperson nicht aus dem Escort-Bereich stammt und keinerlei Fotos oder Videos mit erotischen Inhalten jeglicher Art im Internet veröffentlicht hat. Ihr Vertrauen ist mir äußerst wichtig, und ich setze alles daran, Ihnen eine respektvolle und professionelle Dienstleistung anzubieten.
+</p></p>
+<p><a href="/#contact" class="inline-block bg-brand-green hover:bg-brand-green-light text-white font-medium py-2 px-6 rounded-lg transition-colors">
+Anfrage stellen
+</a>
+</div>
+</div>
+</div></p>
+</section>
+<!-- Personenbetreuung Detailed Section -->
+<section id="service-personenbetreuung" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+            <!-- Service Image -->
+            <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                <div id="slideshow-personenbetreuung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
+                    <!-- Slideshow Images - Updated Paths -->
+                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
+                        <source srcset="/assets/images/desktop/20250420_132453.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/mobile/20250420_132453.webp" type="image/webp">
+                        <img src="/assets/images/mobile/20250420_132453.jpg" alt="Personenbetreuung: Suzana 1" class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/20250420_141037.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/mobile/20250420_141037.webp" type="image/webp">
+                        <img src="/assets/images/mobile/20250420_141037.jpg" alt="Personenbetreuung: Suzana 2" class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/20250420_141114.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/mobile/20250420_141114.webp" type="image/webp">
+                        <img src="/assets/images/mobile/20250420_141114.jpg" alt="Personenbetreuung: Suzana 3" class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/20250420_141212.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/mobile/20250420_141212.webp" type="image/webp">
+                        <img src="/assets/images/mobile/20250420_141212.jpg" alt="Personenbetreuung: Suzana 4" class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/20250420_141312.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/mobile/20250420_141312.webp" type="image/webp">
+                        <img src="/assets/images/mobile/20250420_141312.jpg" alt="Personenbetreuung: Suzana 5" class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/20250420_144108.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/mobile/20250420_144108.webp" type="image/webp">
+                        <img src="/assets/images/mobile/20250420_144108.jpg" alt="Personenbetreuung: Suzana 6" class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/IMG-20250420-WA0005.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/mobile/IMG-20250420-WA0005.webp" type="image/webp">
+                        <img src="/assets/images/mobile/IMG-20250420-WA0005.jpg" alt="Personenbetreuung: Suzana 7" class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/IMG-20250420-WA0008.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/mobile/IMG-20250420-WA0008.webp" type="image/webp">
+                        <img src="/assets/images/mobile/IMG-20250420-WA0008.jpg" alt="Personenbetreuung: Suzana 8" class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                        <source srcset="/assets/images/desktop/IMG-20250421-WA0000.webp" media="(min-width: 768px)" type="image/webp">
+                        <source srcset="/assets/images/mobile/IMG-20250421-WA0000.webp" type="image/webp">
+                        <img src="/assets/images/mobile/IMG-20250421-WA0000.jpg" alt="Personenbetreuung: Suzana 9" class="w-full h-full object-cover" loading="lazy">
+                    </picture>
+                </div>
+            </div>
+<p><!-- Service Content -->
+<div class="w-full md:w-1/2">
+<h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Individuelle Personenbetreuung</h2></p>
+<p><!-- Feature Box -->
+<div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
+<h3 class="text-lg font-bold text-brand-green mb-2 font-heading">Im Angebot sind folgende haushaltsnahe Dienstleistungen enthalten:</h3>
+<ul class="list-disc list-inside text-gray-700 space-y-2">
+<li><strong>Erledigung von Besorgungen:</strong> Unterstützung bei Einkäufen und anderen notwendigen Erledigungen.</li>
+<li><strong>Durchführung von verschiedenen Hausarbeiten:</strong> Reinigung, Wäschewaschen und weitere Aufgaben im Haushalt.</li>
+<li><strong>Hilfestellung bei alltäglichen Verrichtungen:</strong> Unterstützung bei persönlichen Aktivitäten wie Körperpflege und Mobilität.</li>
+<li><strong>Begleitung bei diversen Aktivitäten:</strong> Hilfe und Begleitung bei Freizeitaktivitäten oder Arztterminen.</li>
+<li><strong>Zubereitung von Mahlzeiten:</strong> Planung, Einkauf der Zutaten und das Kochen gesunder und schmackhafter Gerichte, die auf Ihre individuellen Vorlieben abgestimmt sind.</li>
+</ul>
+</div></p>
+<p><p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg max-w-prose">
+Dienstleistungen sind darauf ausgelegt, Ihnen den Alltag zu erleichtern und Ihre Lebensqualität zu verbessern.
+</p></p>
+<p><p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg max-w-prose">
+Die Dienstleistungen zielen darauf ab, Ihren Alltag zu erleichtern und Ihre Lebensqualität zu erhöhen, weil ich verstehe, dass Unterstützung in verschiedenen Lebensbereichen entscheidend ist, um Stress zu reduzieren und Ihnen mehr Spielraum zu ermöglichen.
+</p></p>
+<p><a href="/#contact" class="inline-block bg-brand-green hover:bg-brand-green-light text-white font-medium py-2 px-6 rounded-lg transition-colors">
+Anfrage stellen
+</a>
+</div>
+</div>
+</div></p>
+</section>
+<!-- Process Section: How We Work - With interactive tabs -->
+<section id="process" class="py-16 bg-brand-green text-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-white mb-12 font-heading">So einfach arbeiten wir zusammen</h2>
+<p><div class="flex flex-col md:flex-row items-stretch justify-center max-w-5xl mx-auto gap-6">
+<!-- Steps on the left -->
+<div class="w-full md:w-96 mb-8 md:mb-0 md:self-center order-2 md:order-1 flex flex-col justify-between">
+<div class="process-steps">
+<button id="step1-tab" class="process-step active flex items-center w-full text-left p-4 mb-4 bg-white/20 rounded-lg transition-all hover:bg-white/30" onclick="showStep(1)">
+<div class="w-10 h-10 rounded-full bg-white text-brand-green flex items-center justify-center pt-0 -mb-0.5 text-xl font-bold mr-4">1</div>
+<h3 class="text-xl md:text-2xl font-bold font-heading">Erstkontakt</h3>
+</button></p>
+<p><button id="step2-tab" class="process-step flex items-center w-full text-left p-4 mb-4 bg-white/10 rounded-lg transition-all hover:bg-white/30" onclick="showStep(2)">
+<div class="w-10 h-10 rounded-full bg-white text-brand-green flex items-center justify-center pt-0 -mb-0.5 text-xl font-bold mr-4">2</div>
+<h3 class="text-xl md:text-2xl font-bold font-heading">Bedarfsanalyse</h3>
+</button></p>
+<p><button id="step3-tab" class="process-step flex items-center w-full text-left p-4 mb-4 bg-white/10 rounded-lg transition-all hover:bg-white/30" onclick="showStep(3)">
+<div class="w-10 h-10 rounded-full bg-white text-brand-green flex items-center justify-center pt-0 -mb-0.5 text-xl font-bold mr-4">3</div>
+<h3 class="text-xl md:text-2xl font-bold font-heading">Angebotslegung</h3>
+</button></p>
+<p><button id="step4-tab" class="process-step flex items-center w-full text-left p-4 bg-white/10 rounded-lg transition-all hover:bg-white/30" onclick="showStep(4)">
+<div class="w-10 h-10 rounded-full bg-white text-brand-green flex items-center justify-center pt-0 -mb-0.5 text-xl font-bold mr-4">4</div>
+<h3 class="text-xl md:text-2xl font-bold font-heading">Zusammenarbeit</h3>
+</button>
+</div>
+</div></p>
+<p><!-- Content on the right -->
+<div class="w-full md:w-[58%] flex-grow order-1 md:order-2 flex">
+<div class="bg-white/10 rounded-lg p-6 md:p-8 shadow-lg process-content-container w-full">
+<div id="step1-content" class="process-content active">
+<p class="text-white mb-4 leading-relaxed px-2">
+Der erste Schritt zu einer erfolgreichen Zusammenarbeit beginnt mit Ihrer Kontaktaufnahme. Sie können mich ganz einfach auf folgende Weise erreichen:
+</p>
+<ul class="list-disc list-inside mb-4 space-y-3 pl-4 pr-2">
+<li>Über das Kontaktformular auf dieser Website</li>
+<li>Per Telefon unter 0677 61385769</li>
+<li>Per WhatsApp-Nachricht</li>
+<li>Per E-Mail an goodnews@24ja.at</li>
+</ul>
+<p class="text-white leading-relaxed px-2">
+Ich lege großen Wert auf zeitnahe Kommunikation und antworte in der Regel innerhalb von 24 Stunden auf Ihre Anfrage.
+</p>
+</div></p>
+<p><div id="step2-content" class="process-content">
+<p class="text-white mb-4 leading-relaxed px-2">
+Nach der ersten Kontaktaufnahme vereinbaren wir ein unverbindliches Gespräch, das entweder telefonisch oder persönlich stattfinden kann. Dieses Gespräch dient dazu, Ihre Bedürfnisse und Wünsche umfassend zu verstehen und eine optimale Grundlage für mein Angebot für Sie zu schaffen.
+</p>
+<ul class="list-disc list-inside mb-4 space-y-3 pl-4 pr-2">
+<li>Den zeitlichen Rahmen und die Häufigkeit der gewünschten Unterstützung zu klären.</li>
+<li>Besondere Anforderungen oder Erwartungen zu besprechen.</li>
+<li>Offene Fragen zu beantworten und gegenseitiges Vertrauen aufzubauen</li>
+</ul>
+</div></p>
+<p><div id="step3-content" class="process-content">
+<p class="text-white mb-4 leading-relaxed px-2">
+Basierend auf den Erkenntnissen aus unserem Gespräch erstelle ich ein Angebot mit einer detaillierten Beschreibung der angebotenen Leistungen. Dieses Angebot wird die vereinbarten Zeiten, den Umfang der Leistungen sowie die Zahlungsbedingungen für Sie umfassen.
+</p>
+</div></p>
+<p><div id="step4-content" class="process-content">
+<p class="text-white mb-4 leading-relaxed px-2">
+Nach Ihrer Zustimmung zum Angebot beginnen wir mit der konkreten Umsetzung unserer Zusammenarbeit, ich passe mich Ihrer Wünsche, Bedürfnisse und Zeitpläne an.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+</section>
+<!-- JavaScript for process steps interaction -->
+<!-- Removed inline script -->
+<!-- <script>
+    function showStep(stepNumber) {
+        // Hide all content sections
+        document.querySelectorAll('.process-content').forEach(content => {
+            content.classList.remove('active');
+        });
+
+        // Update tab styling
+        document.querySelectorAll('.process-step').forEach(tab => {
+            tab.classList.remove('active');
+            tab.classList.remove('bg-white/20');
+            tab.classList.add('bg-white/10');
+        });
+
+        // Style the active tab
+        const activeTab = document.getElementById(`step${stepNumber}-tab`);
+        activeTab.classList.add('active');
+        activeTab.classList.remove('bg-white/10');
+        activeTab.classList.add('bg-white/20');
+
+        // Show the selected content
+        const selectedContent = document.getElementById(`step${stepNumber}-content`);
+        selectedContent.classList.add('active');
+    }
+
+    // Initialize the first tab
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('step1-content').classList.add('active');
+    });
+</script> -->
+<!-- Contact Section -->
+<section id="contact" class="py-16">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-heading">Kontakt</h2>
+<p><div class="flex flex-col md:flex-row">
+<!-- Contact Form -->
+<div class="w-full md:w-1/2 md:pr-8 mb-10 md:mb-0">
+<form name="contact-form" id="contact-form" action="#" method="POST" class="bg-white p-8 rounded-lg shadow-lg">
+<div class="mb-6">
+<label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
+<input type="text" id="name" name="name" autocomplete="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required>
+</div>
+<div class="mb-6">
+<label for="email" class="block text-gray-700 font-medium mb-2">E-Mail</label>
+<input type="email" id="email" name="email" autocomplete="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required>
+</div>
+<div class="mb-6">
+<h3 class="block text-gray-700 font-medium mb-3">Ich interessiere mich für:</h3>
+<div class="space-y-2">
+<div class="flex items-center">
+<input type="radio" id="radio-kinderbetreuung" name="service" value="Kinderbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+<label for="radio-kinderbetreuung" class="ml-2 block text-gray-700">Kinderbetreuung</label>
+</div>
+<div class="flex items-center">
+<input type="radio" id="radio-begleitung" name="service" value="Gesellschaftliche Begleitung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+<label for="radio-begleitung" class="ml-2 block text-gray-700">Gesellschaftliche Begleitung</label>
+</div>
+<div class="flex items-center">
+<input type="radio" id="radio-personenbetreuung" name="service" value="Personenbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+<label for="radio-personenbetreuung" class="ml-2 block text-gray-700">Personenbetreuung</label>
+</div>
+</div>
+</div></p>
+<p><div class="mb-6">
+<label for="message" class="block text-gray-700 font-medium mb-2">Nachricht</label>
+<textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required></textarea>
+</div></p>
+<p><button type="submit" class="w-full bg-brand-green hover:bg-brand-green-light text-white font-bold py-3 px-4 rounded-md transition-colors">
+Nachricht senden
+</button>
+</form>
+</div></p>
+<p><!-- Contact Details -->
+<div class="w-full md:w-1/2 md:pl-8">
+<div class="bg-white p-8 rounded-lg shadow-lg h-full flex flex-col justify-center">
+<h3 class="text-xl font-bold text-gray-800 mb-6 font-heading">Kontaktdaten</h3></p>
+<p><div class="mb-6">
+<h4 class="text-gray-700 font-medium mb-2 font-heading">Anschrift</h4>
+<p class="text-gray-600">
+24ja - Macht das Leben leichter e.U.<br>
+Collection Business Center Wien Goldenes Quartier<br>
+Tuchlauben 7/A, AT - 1010 Wien
+</p>
+</div></p>
+<p><div class="mb-6">
+<h4 class="text-gray-700 font-medium mb-2 font-heading">Telefon</h4>
+<p class="text-gray-600">0677 61385769</p>
+</div></p>
+<p><div class="mb-6">
+<h4 class="text-gray-700 font-medium mb-2 font-heading">E-Mail</h4>
+<p class="text-gray-600">goodnews@24ja.at</p>
+</div></p>
+<p><div class="mt-8">
+<a href="https://wa.me/4367761385769" class="inline-flex items-center bg-brand-green hover:bg-brand-green-light text-white font-medium py-2 px-4 rounded-md transition-colors">
+<img src="/assets/icons/whatsapp.svg" alt="WhatsApp Icon" class="w-5 h-5 mr-2">
+WhatsApp
+</a>
+</div>
+</div>
+</div>
+</div>
+</div></p>
+</section>
+<!-- Ethical Statement Section -->
+<section class="py-10 bg-brand-green">
+    <div class="container mx-auto px-6">
+        <div class="max-w-3xl mx-auto text-center">
+            <p class="text-white italic font-medium">
+                In meinem Unternehmen lege ich großen Wert auf Ethik.
+                Daher möchte ich Sie darauf hinweisen, dass hier keinesfalls intime körperliche Leistungen angeboten werden.
+                Ich bitte um Ihr Verständnis, falls Sie als Kunde solche Dienstleistungen in Erwägung ziehen.
+                Vielen Dank für Ihre Rücksichtnahme.
+            </p>
+        </div>
+    </div>
+</section> 
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="text-center md:text-left mb-6 md:mb-0">
+                    <h3 class="text-2xl font-bold mb-2 font-heading">24ja - Macht das Leben leichter e.U.</h3>
+                </div>
+
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400">&copy; 2025 24ja - Macht das Leben leichter e.U.</p>
+                    <div class="mt-2">
+                        <!-- Update links to point to root -->
+                        <a href="/impressum/" class="text-gray-400 hover:text-white mr-4">Impressum</a>
+                        <a href="/datenschutz/" class="text-gray-400 hover:text-white">Datenschutz</a>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-4">Mit ❤️ in Velden durch <a href="https://geschäftswebseite.at" target="_blank" rel="noopener" class="text-gray-500 hover:text-white underline">geschäftswebseite.at</a> programmiert und betreut.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to the external script file -->
+    <!-- Note: Path updated to reflect assets being served from root -->
+    <script src="/js/process-steps.js" defer></script>
+    <script src="/js/script.js" defer></script> 
+</body>
+</html> 
