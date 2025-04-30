@@ -14,6 +14,31 @@
 
 /* Add any other custom styles below */
 
+/* Force styles for elements not picked up by Tailwind scan/safelist on Netlify */
+
+/* Disclaimer Box */
+.ethics-disclaimer {
+    @apply max-w-2xl mx-auto mb-12 p-4 border border-yellow-400 bg-yellow-100 rounded-lg shadow;
+}
+.ethics-disclaimer p {
+    @apply text-yellow-800 text-sm italic font-medium text-center;
+}
+
+/* Process Steps Content - Base hidden state and transition */
+.process-content {
+    @apply opacity-0 h-0 overflow-hidden transition-opacity duration-500 ease-in-out;
+}
+/* Process Steps Content - Active visible state */
+.process-content.active {
+    @apply opacity-100 h-auto overflow-visible;
+}
+
+/* Slideshow Images - Base styles and transition */
+.slideshow-image {
+    @apply absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out;
+}
+/* Opacity/Z-index will be handled by JS adding opacity-0/opacity-100 */
+
 /* Process section animations/visibility (MOVED TO input.css) */
 /*
 .process-content {

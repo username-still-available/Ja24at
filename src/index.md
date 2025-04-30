@@ -371,8 +371,8 @@ title: Home
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-6 font-heading">Kontakt</h2>
 
         <!-- Ethics Disclaimer (Moved and Restyled) -->
-        <div class="max-w-2xl mx-auto mb-12 p-4 border border-yellow-400 bg-yellow-100 rounded-lg shadow">
-            <p class="text-yellow-800 text-sm italic font-medium text-center">
+        <div class="ethics-disclaimer">
+            <p>
                 <strong>Wichtiger Hinweis:</strong> In meinem Unternehmen lege ich großen Wert auf Ethik. Daher möchte ich Sie darauf hinweisen, dass hier keinesfalls intime körperliche Leistungen angeboten werden. Ich bitte um Ihr Verständnis, falls Sie als Kunde solche Dienstleistungen in Erwägung ziehen. Vielen Dank für Ihre Rücksichtnahme.
             </p>
         </div>
