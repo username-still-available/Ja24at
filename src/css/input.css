@@ -2,15 +2,77 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Process section animations/visibility (Moved from custom.css) */
-.process-content {
-    transition: opacity 0.3s ease;
-    display: none; /* Hide by default */
-    width: 100%;   /* Ensure it takes full width */
-}
-.process-content.active {
-    display: block; /* Show when active */
-    opacity: 1;
+@layer base {
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Raleway', sans-serif;
+        /* Example: Apply bold by default to headings if desired */
+        /* font-weight: 700; */
+    }
+    /* Add other base styles if needed */
 }
 
-@import 'custom.css';
+/* Custom Styles */
+.font-heading {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Slideshow styles */
+.slideshow-image {
+    transition: opacity 1s ease-in-out;
+}
+
+/* Process Steps Interaction */
+.process-content {
+    @apply hidden; /* Hide content by default using Tailwind */
+}
+
+.process-content.active {
+    @apply block; /* Show active content using Tailwind */
+}
+
+/* Ensure buttons have pointer cursor */
+.process-step {
+    cursor: pointer;
+}
+
+/* Add more specific styles if needed */
+
+@layer components {
+    /* Base rules for all process content */
+    .process-content {
+        display: none !important;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Active state overrides all other states */
+    .process-content.active {
+        display: block !important;
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        overflow: visible;
+    }
+    
+    /* Handle paragraph wrapping in Eleventy-processed content */
+    p > .process-content {
+        display: none !important;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        overflow: hidden;
+    }
+    
+    p > .process-content.active {
+        display: block !important;
+        opacity: 1;
+        visibility: visible;
+        height: auto;
+        overflow: visible;
+    }
+}
+
+@import 'custom.css'; 
