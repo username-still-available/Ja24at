@@ -45,7 +45,10 @@ module.exports = {
     'z-0',
     'z-10',
     'h-0',
-    'overflow-hidden'
+    'overflow-hidden',
+    'bg-yellow-100',
+    'border-yellow-400',
+    'text-yellow-800'
   ],
   plugins: [],
 } 
