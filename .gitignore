@@ -44,6 +44,10 @@ _site/ # Eleventy output directory
 .env.local
 .env.development.local
 .env.test.local
-.env.production.local 
+.env.production.local
+
 # Local Netlify folder
 .netlify
+
+# Project-specific ignores
+assets/rezepte-assets/
