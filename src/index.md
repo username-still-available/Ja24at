@@ -42,50 +42,42 @@ title: Home
     <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center text-white mb-12 font-heading">Meine Leistungen</h2>
 
-        <div class="flex flex-col md:flex-row max-w-5xl mx-auto space-y-4 md:space-y-0 md:space-x-2">
-            <!-- Service 1 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex-1">
+        <!-- Use Grid for equal columns, increased gap -->
+        <div class="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto gap-6">
+            <!-- Service 1: Removed md:basis-1/3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <div class="bg-brand-green-light h-2"></div>
-                <div class="p-6 flex flex-col h-full">
+                <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Kinderbetreuung</h3>
-                    <p class="text-gray-600 mb-6 flex-grow">
-                        Ich unterstütze Sie in Ihrem Alltag, sodass Sie sich auf Ihre wichtigen geschäftlichen Termine konzentrieren können, ohne sich Sorgen um Ihre Kinder machen zu müssen.
-                    </p>
-                    <a href="/#service-kinderbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors">
+                    <p class="text-gray-600 mb-6 flex-grow">Ich unterstütze Sie in Ihrem Alltag, sodass Sie sich auf Ihre wichtigen geschäftlichen Termine konzentrieren können, ohne sich Sorgen um Ihre Kinder machen zu müssen.</p>
+                    <a href="/#service-kinderbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
                         Mehr erfahren →
                     </a>
                 </div>
             </div>
-
-            <!-- Service 2 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex-1">
+            <!-- Service 2: Removed md:basis-1/3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <div class="bg-brand-green-light h-2"></div>
-                <div class="p-6 flex flex-col h-full">
+                <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Gesellschaftliche Begleitung</h3>
-                    <p class="text-gray-600 mb-6 flex-grow">
-                        Ich unterstütze Sie gern, falls Sie für Ihren wichtigen Termin eine Begleitperson brauchen.
-                    </p>
-                    <a href="/#service-begleitung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors">
+                    <p class="text-gray-600 mb-6 flex-grow">Ich unterstütze Sie gern, falls Sie für Ihren wichtigen Termin eine Begleitperson brauchen.</p>
+                    <a href="/#service-begleitung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
                         Mehr erfahren →
                     </a>
                 </div>
             </div>
-
-            <!-- Service 3 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden md:flex-1">
+            <!-- Service 3: Removed md:basis-1/3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
                 <div class="bg-brand-green-light h-2"></div>
-                <div class="p-6 flex flex-col h-full">
+                <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Personenbetreuung</h3>
-                    <p class="text-gray-600 mb-6 flex-grow">
-                        Nach einem anstrengenden Tag würden Sie gerne nach Hause kommen, wo bereits ein frisch gekochtes Essen auf dem Tisch auf Sie wartet?
-                    </p>
-                    <a href="/#service-personenbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors">
+                    <p class="text-gray-600 mb-6 flex-grow">Nach einem anstrengenden Tag würden Sie gerne nach Hause kommen, wo bereits ein frisch gekochtes Essen auf dem Tisch auf Sie wartet?</p>
+                    <a href="/#service-personenbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
                         Mehr erfahren →
                     </a>
                 </div>
             </div>
         </div>
-
         <div class="text-center mt-12">
             <p class="text-white italic">Für Ihr persönliches Angebot kontaktieren Sie mich bitte.</p>
         </div>
@@ -217,47 +209,48 @@ title: Home
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
                 <div id="slideshow-personenbetreuung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
                     <!-- Slideshow Images - Updated Paths -->
-                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
+                    <!-- Added transition utility classes -->
+                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100 z-10">
                         <source srcset="/assets/images/desktop/20250420_132453.webp" media="(min-width: 768px)" type="image/webp">
                         <source srcset="/assets/images/mobile/20250420_132453.webp" type="image/webp">
                         <img src="/assets/images/mobile/20250420_132453.jpg" alt="Personenbetreuung: Suzana 1" class="w-full h-full object-cover" loading="lazy">
                     </picture>
-                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
                         <source srcset="/assets/images/desktop/20250420_141037.webp" media="(min-width: 768px)" type="image/webp">
                         <source srcset="/assets/images/mobile/20250420_141037.webp" type="image/webp">
                         <img src="/assets/images/mobile/20250420_141037.jpg" alt="Personenbetreuung: Suzana 2" class="w-full h-full object-cover" loading="lazy">
                     </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
                         <source srcset="/assets/images/desktop/20250420_141114.webp" media="(min-width: 768px)" type="image/webp">
                         <source srcset="/assets/images/mobile/20250420_141114.webp" type="image/webp">
                         <img src="/assets/images/mobile/20250420_141114.jpg" alt="Personenbetreuung: Suzana 3" class="w-full h-full object-cover" loading="lazy">
                     </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
                         <source srcset="/assets/images/desktop/20250420_141212.webp" media="(min-width: 768px)" type="image/webp">
                         <source srcset="/assets/images/mobile/20250420_141212.webp" type="image/webp">
                         <img src="/assets/images/mobile/20250420_141212.jpg" alt="Personenbetreuung: Suzana 4" class="w-full h-full object-cover" loading="lazy">
                     </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
                         <source srcset="/assets/images/desktop/20250420_141312.webp" media="(min-width: 768px)" type="image/webp">
                         <source srcset="/assets/images/mobile/20250420_141312.webp" type="image/webp">
                         <img src="/assets/images/mobile/20250420_141312.jpg" alt="Personenbetreuung: Suzana 5" class="w-full h-full object-cover" loading="lazy">
                     </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
                         <source srcset="/assets/images/desktop/20250420_144108.webp" media="(min-width: 768px)" type="image/webp">
                         <source srcset="/assets/images/mobile/20250420_144108.webp" type="image/webp">
                         <img src="/assets/images/mobile/20250420_144108.jpg" alt="Personenbetreuung: Suzana 6" class="w-full h-full object-cover" loading="lazy">
                     </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
                         <source srcset="/assets/images/desktop/IMG-20250420-WA0005.webp" media="(min-width: 768px)" type="image/webp">
                         <source srcset="/assets/images/mobile/IMG-20250420-WA0005.webp" type="image/webp">
                         <img src="/assets/images/mobile/IMG-20250420-WA0005.jpg" alt="Personenbetreuung: Suzana 7" class="w-full h-full object-cover" loading="lazy">
                     </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
                         <source srcset="/assets/images/desktop/IMG-20250420-WA0008.webp" media="(min-width: 768px)" type="image/webp">
                         <source srcset="/assets/images/mobile/IMG-20250420-WA0008.webp" type="image/webp">
                         <img src="/assets/images/mobile/IMG-20250420-WA0008.jpg" alt="Personenbetreuung: Suzana 8" class="w-full h-full object-cover" loading="lazy">
                     </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
+                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
                         <source srcset="/assets/images/desktop/IMG-20250421-WA0000.webp" media="(min-width: 768px)" type="image/webp">
                         <source srcset="/assets/images/mobile/IMG-20250421-WA0000.webp" type="image/webp">
                         <img src="/assets/images/mobile/IMG-20250421-WA0000.jpg" alt="Personenbetreuung: Suzana 9" class="w-full h-full object-cover" loading="lazy">
@@ -375,7 +368,14 @@ title: Home
 <!-- Contact Section -->
 <section id="contact" class="py-16">
     <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-heading">Kontakt</h2>
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-6 font-heading">Kontakt</h2>
+
+        <!-- Ethics Disclaimer (Moved and Restyled) -->
+        <div class="max-w-2xl mx-auto mb-12 p-4 border border-yellow-400 bg-yellow-100 rounded-lg shadow">
+            <p class="text-yellow-800 text-sm italic font-medium text-center">
+                <strong>Wichtiger Hinweis:</strong> In meinem Unternehmen lege ich großen Wert auf Ethik. Daher möchte ich Sie darauf hinweisen, dass hier keinesfalls intime körperliche Leistungen angeboten werden. Ich bitte um Ihr Verständnis, falls Sie als Kunde solche Dienstleistungen in Erwägung ziehen. Vielen Dank für Ihre Rücksichtnahme.
+            </p>
+        </div>
 
         <div class="flex flex-col md:flex-row">
             <!-- Contact Form -->
@@ -450,20 +450,6 @@ title: Home
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- Ethical Statement Section -->
-<section class="py-10 bg-brand-green">
-    <div class="container mx-auto px-6">
-        <div class="max-w-3xl mx-auto text-center">
-            <p class="text-white italic font-medium">
-                In meinem Unternehmen lege ich großen Wert auf Ethik.
-                Daher möchte ich Sie darauf hinweisen, dass hier keinesfalls intime körperliche Leistungen angeboten werden.
-                Ich bitte um Ihr Verständnis, falls Sie als Kunde solche Dienstleistungen in Erwägung ziehen.
-                Vielen Dank für Ihre Rücksichtnahme.
-            </p>
         </div>
     </div>
 </section> 

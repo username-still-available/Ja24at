@@ -134,6 +134,7 @@
     </script>
 </head>
 <body class="bg-white font-body m-0">
+    {% if pageType != 'legal' %}
     <!-- Navigation Bar with white background - moved outside header to be sticky throughout the page -->
     <nav class="bg-white py-4 px-6 shadow-md sticky top-0 z-50 h-[70px]">
         <div class="container mx-auto flex justify-between items-center h-full">
@@ -177,11 +178,24 @@
             </div>
         </div>
     </header>
+    {% endif %}
+
+    {% if pageType == 'legal' %}
+    <div class="container mx-auto px-6" style="padding-top: 3rem; padding-bottom: 1rem;">
+        <a href="/" class="text-brand-green hover:underline">&larr; Zurück zur Startseite</a>
+    </div>
+    {% endif %}
 
     <!-- Main content area -->
     <main>
         {{ content | safe }}
     </main>
+
+    {% if pageType == 'legal' %}
+    <div class="container mx-auto px-6" style="padding-top: 2rem; padding-bottom: 2rem;">
+        <a href="/" class="text-brand-green hover:underline">&larr; Zurück zur Startseite</a>
+    </div>
+    {% endif %}
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-10">

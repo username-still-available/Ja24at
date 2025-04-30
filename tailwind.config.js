@@ -37,6 +37,15 @@ module.exports = {
     'border-gray-300',
     'space-y-2',
     'translate-z-0',
+    'transition-opacity',
+    'duration-1000',
+    'ease-in-out',
+    'opacity-0',
+    'opacity-100',
+    'z-0',
+    'z-10',
+    'h-0',
+    'overflow-hidden'
   ],
   plugins: [],
 } 

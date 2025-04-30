@@ -29,9 +29,11 @@
 */
 
 /* Basic styling for process step buttons (active state handled by JS classes) */
+/* REMOVED CONFLICTING RULE
 .process-step {
     transition: all 0.3s ease;
 }
+*/
 
 /* Optional: Add pulse animation back if desired (was in original inline style) */
 /*

@@ -1,10 +1,11 @@
 ---
 layout: base.njk
 title: Datenschutz
+pageType: legal
 ---
 
 <!-- Content Section -->
-<section class="py-16">
+<section>
     <div class="container mx-auto px-6">
         <h1 class="text-3xl font-bold text-gray-800 mb-8 font-heading">Datenschutzerklärung</h1>
         

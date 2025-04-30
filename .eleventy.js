@@ -2,7 +2,16 @@
 
 module.exports = function(eleventyConfig) {
   // Passthrough Copy: Copy static assets directly to output
-  eleventyConfig.addPassthroughCopy("src/assets"); // Copy content of src/assets to _site/assets
+  // Remove the general src/assets rule
+  // eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
+
+  // Explicitly copy subdirectories within assets to preserve structure
+  eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
+  eleventyConfig.addPassthroughCopy({"src/assets/icons": "assets/icons"});
+  eleventyConfig.addPassthroughCopy({"src/assets/logo": "assets/logo"});
+  // Add other subdirectories like 'stock' if needed
+  // eleventyConfig.addPassthroughCopy({"src/assets/stock": "assets/stock"});
+
   eleventyConfig.addPassthroughCopy("src/fonts");  // Copy content of src/fonts to _site/fonts
   eleventyConfig.addPassthroughCopy("src/css");    // Copy content of src/css to _site/css
   eleventyConfig.addPassthroughCopy("src/js");     // Copy content of src/js to _site/js

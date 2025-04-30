@@ -33,6 +33,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Basic structure and content for Home, Impressum, Datenschutz pages.
 - Netlify configuration added.
 
+## [0.3.1] - 2025-04-30
+
+### Changed
+- Adjusted service card layout (`#services`) to use CSS Grid for consistent equal height and width.
+- Modified Impressum and Datenschutz pages:
+    - Hid main navigation bar and hero section using Eleventy front matter (`pageType: legal`) and layout logic.
+    - Added "Zurück zur Startseite" links at the top and bottom for navigation.
+    - Adjusted vertical spacing for the added links.
+- Relocated the Ethics disclaimer to appear below the "Kontakt" heading and above the contact form.
+- Restyled the Ethics disclaimer as a yellow notice box.
+
+### Fixed
+- Resolved slideshow transition issues for service images by adding necessary classes to the Tailwind safelist and restarting the build process.
+- Addressed process steps animation issues by modifying JS and CSS, removing conflicting rules. (Note: Fade transition still WIP, requires further investigation).
+
 ## [0.3.0] - 2025-04-24
 
 ### Added

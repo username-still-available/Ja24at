@@ -105,17 +105,28 @@ function initSlideshow(containerId, intervalTime) {
 
     let currentImageIndex = 0;
 
+    // Ensure initial state is correct (first image visible and on top)
+    images.forEach((img, index) => {
+        if (index === currentImageIndex) {
+            img.classList.remove('opacity-0', 'z-0');
+            img.classList.add('opacity-100', 'z-10');
+        } else {
+            img.classList.remove('opacity-100', 'z-10');
+            img.classList.add('opacity-0', 'z-0');
+        }
+    });
+
     setInterval(() => {
-        // Hide current image
-        images[currentImageIndex].classList.remove('opacity-100');
-        images[currentImageIndex].classList.add('opacity-0');
+        // Hide current image and send to back
+        images[currentImageIndex].classList.remove('opacity-100', 'z-10');
+        images[currentImageIndex].classList.add('opacity-0', 'z-0');
 
         // Calculate next index
         currentImageIndex = (currentImageIndex + 1) % images.length;
 
-        // Show next image
-        images[currentImageIndex].classList.remove('opacity-0');
-        images[currentImageIndex].classList.add('opacity-100');
+        // Show next image and bring to front
+        images[currentImageIndex].classList.remove('opacity-0', 'z-0');
+        images[currentImageIndex].classList.add('opacity-100', 'z-10');
 
     }, intervalTime);
 }

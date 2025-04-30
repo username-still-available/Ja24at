@@ -16,10 +16,12 @@
     font-family: 'Raleway', sans-serif;
 }
 
-/* Slideshow styles */
+/* Slideshow styles - MOVED to @layer components */
+/*
 .slideshow-image {
     transition: opacity 1s ease-in-out;
 }
+*/
 
 /* Process Steps Interaction */
 .process-content {
@@ -38,21 +40,25 @@
 /* Add more specific styles if needed */
 
 @layer components {
-    /* Base rules for all process content */
-    .process-content {
-        display: none !important;
-        opacity: 0;
-        visibility: hidden;
-        height: 0;
-        overflow: hidden;
-        transition: all 0.3s ease-in-out;
+    /* Slideshow transition */
+    .slideshow-image {
+        transition: opacity 1s ease-in-out;
     }
 
-    /* Active state overrides all other states */
+    /* Base rules for all process content (Rely on JS for display/hide) */
+    .process-content {
+        /* display: none !important; <-- REMOVED */
+        opacity: 0;
+        /* visibility: hidden; <-- REMOVED (Redundant) */
+        /* height: 0; <-- REMOVED */
+        /* overflow: hidden; <-- REMOVED */
+    }
+
+    /* Active state overrides all other states (Rely on JS for display/hide) */
     .process-content.active {
-        display: block !important;
+        /* display: block !important; <-- REMOVED */
         opacity: 1;
-        visibility: visible;
+        /* visibility: visible; <-- REMOVED (Redundant) */
         height: auto;
         overflow: visible;
     }

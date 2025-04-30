@@ -3,12 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const stepContents = document.querySelectorAll('.process-content');
 
     function showStep(stepNumber) {
-        // Hide all content sections
+        // Hide all content sections using opacity
         stepContents.forEach(content => {
-            // Instead of just removing 'active', ensure it's hidden.
-            // We'll use a combination of 'active' for logic and Tailwind's 'hidden' for display.
-            content.classList.remove('active');
-            content.classList.add('hidden'); // Add hidden class
+            content.classList.remove('active', 'opacity-100');
+            content.classList.add('opacity-0'); // ONLY toggle opacity
         });
 
         // Deactivate all tabs visually
@@ -24,11 +22,11 @@ document.addEventListener('DOMContentLoaded', function() {
             activeTab.classList.remove('bg-white/10'); // Remove inactive state class
         }
 
-        // Show the selected content section
+        // Show the selected content section using opacity
         const selectedContent = document.getElementById(`step${stepNumber}-content`);
         if (selectedContent) {
-            selectedContent.classList.add('active');
-            selectedContent.classList.remove('hidden'); // Remove hidden class to show it
+            selectedContent.classList.add('active', 'opacity-100');
+            selectedContent.classList.remove('opacity-0'); // ONLY toggle opacity
         }
     }
 
@@ -41,14 +39,26 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Initialize the first tab/content as active
+    // Ensure all content elements have base transition classes and initial state
+    stepContents.forEach((content, index) => {
+        content.classList.add('transition-opacity', 'duration-500', 'ease-in-out'); // Add base transition classes
+        if (index === 0) {
+            content.classList.add('active', 'opacity-100');
+            content.classList.remove('opacity-0');
+        } else {
+            content.classList.remove('active', 'opacity-100');
+            content.classList.add('opacity-0');
+        }
+    });
+
     // Check if elements exist before trying to access them
     const firstTab = document.getElementById('step1-tab');
-    const firstContent = document.getElementById('step1-content');
-
-    if (firstTab && firstContent) {
-        showStep(1); // Call showStep to correctly initialize the first step
+    // No need to explicitly show first content here, it's handled in the loop above
+    if (firstTab) {
+        firstTab.classList.add('active', 'bg-white/20'); // Set first tab visual state
+        firstTab.classList.remove('bg-white/10');
     } else {
-        console.error("Initial process step elements (step1-tab or step1-content) not found.");
+        console.error("Initial process step tab (step1-tab) not found.");
     }
 
     // Make showStep globally accessible IF it's called via inline onclick (which we removed)
