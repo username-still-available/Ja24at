@@ -72,11 +72,14 @@
     <link rel="preload" href="/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf" as="font" type="font/ttf" crossorigin>
     <link rel="preload" href="/fonts/Epilogue/static/Epilogue-Regular.ttf" as="font" type="font/ttf" crossorigin>
 
-    <!-- Load non-critical CSS asynchronously -->
+    <!-- Load CSS synchronously -->
     <!-- Note: Path updated to reflect assets being served from root -->
-    <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Async loading removed for style.css -->
+    <!-- <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+    <!-- <noscript><link rel="stylesheet" href="/css/style.css"></noscript> -->
 
+    <!-- Load fonts.css asynchronously (remains unchanged) -->
     <link rel="preload" href="/css/fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/fonts.css"></noscript>
 

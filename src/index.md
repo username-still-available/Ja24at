@@ -93,26 +93,23 @@ title: Home
             <!-- Service Image -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
                 <div id="slideshow-kinderbetreuung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
-                    <!-- Slideshow Image 1 (Visible by default) -->
+                    <!-- Slideshow Image 1 (Visible by default) - Updated Path -->
                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
-                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
-                        <source srcset="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
-                        <img src="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
+                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
                     </picture>
-                     <!-- Slideshow Image 2 (Hidden by default) -->
+                     <!-- Slideshow Image 2 (Hidden by default) - Placeholder/Same Image, Update if needed -->
                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
-                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
-                        <source srcset="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
-                        <img src="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind 2" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
+                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind 2" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
                     </picture>
-                     <!-- Slideshow Image 3 (Hidden by default) -->
+                     <!-- Slideshow Image 3 (Hidden by default) - Placeholder/Same Image, Update if needed -->
                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
-                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/desktop/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
-                        <source srcset="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
-                        <img src="/assets/images/mobile/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind 3" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
+                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind 3" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
                     </picture>
                 </div>
             </div>
@@ -153,26 +150,23 @@ title: Home
             <!-- Service Image -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pl-10">
                  <div id="slideshow-begleitung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
-                     <!-- Slideshow Image 1 -->
+                     <!-- Slideshow Image 1 - Updated Path -->
                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
-                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
-                        <source srcset="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
-                        <img src="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
+                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
                     </picture>
-                     <!-- Slideshow Image 2 -->
+                     <!-- Slideshow Image 2 - Placeholder/Same Image, Update if needed -->
                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
-                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
-                        <source srcset="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
-                        <img src="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft 2" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
+                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft 2" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
                     </picture>
-                     <!-- Slideshow Image 3 -->
+                     <!-- Slideshow Image 3 - Placeholder/Same Image, Update if needed -->
                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
-                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/desktop/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" media="(min-width: 768px)" type="image/jpeg">
-                        <source srcset="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
-                        <img src="/assets/images/mobile/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft 3" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
+                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
+                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft 3" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
                     </picture>
                 </div>
             </div>
@@ -209,51 +203,50 @@ title: Home
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
                 <div id="slideshow-personenbetreuung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
                     <!-- Slideshow Images - Updated Paths -->
-                    <!-- Added transition utility classes -->
                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100 z-10">
-                        <source srcset="/assets/images/desktop/20250420_132453.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/mobile/20250420_132453.webp" type="image/webp">
-                        <img src="/assets/images/mobile/20250420_132453.jpg" alt="Personenbetreuung: Suzana 1" class="w-full h-full object-cover" loading="lazy">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_132453.webp" type="image/webp">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_132453.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_132453.jpg" alt="Personenbetreuung: Suzana 1" class="w-full h-full object-cover" loading="lazy">
                     </picture>
                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/desktop/20250420_141037.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/mobile/20250420_141037.webp" type="image/webp">
-                        <img src="/assets/images/mobile/20250420_141037.jpg" alt="Personenbetreuung: Suzana 2" class="w-full h-full object-cover" loading="lazy">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141037.webp" type="image/webp">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141037.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_141037.jpg" alt="Personenbetreuung: Suzana 2" class="w-full h-full object-cover" loading="lazy">
                     </picture>
                      <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/desktop/20250420_141114.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/mobile/20250420_141114.webp" type="image/webp">
-                        <img src="/assets/images/mobile/20250420_141114.jpg" alt="Personenbetreuung: Suzana 3" class="w-full h-full object-cover" loading="lazy">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141114.webp" type="image/webp">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141114.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_141114.jpg" alt="Personenbetreuung: Suzana 3" class="w-full h-full object-cover" loading="lazy">
                     </picture>
                      <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/desktop/20250420_141212.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/mobile/20250420_141212.webp" type="image/webp">
-                        <img src="/assets/images/mobile/20250420_141212.jpg" alt="Personenbetreuung: Suzana 4" class="w-full h-full object-cover" loading="lazy">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141212.webp" type="image/webp">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141212.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_141212.jpg" alt="Personenbetreuung: Suzana 4" class="w-full h-full object-cover" loading="lazy">
                     </picture>
                      <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/desktop/20250420_141312.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/mobile/20250420_141312.webp" type="image/webp">
-                        <img src="/assets/images/mobile/20250420_141312.jpg" alt="Personenbetreuung: Suzana 5" class="w-full h-full object-cover" loading="lazy">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141312.webp" type="image/webp">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141312.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_141312.jpg" alt="Personenbetreuung: Suzana 5" class="w-full h-full object-cover" loading="lazy">
                     </picture>
                      <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/desktop/20250420_144108.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/mobile/20250420_144108.webp" type="image/webp">
-                        <img src="/assets/images/mobile/20250420_144108.jpg" alt="Personenbetreuung: Suzana 6" class="w-full h-full object-cover" loading="lazy">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_144108.webp" type="image/webp">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_144108.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_144108.jpg" alt="Personenbetreuung: Suzana 6" class="w-full h-full object-cover" loading="lazy">
                     </picture>
                      <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/desktop/IMG-20250420-WA0005.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/mobile/IMG-20250420-WA0005.webp" type="image/webp">
-                        <img src="/assets/images/mobile/IMG-20250420-WA0005.jpg" alt="Personenbetreuung: Suzana 7" class="w-full h-full object-cover" loading="lazy">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0005.webp" type="image/webp">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0005.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0005.jpg" alt="Personenbetreuung: Suzana 7" class="w-full h-full object-cover" loading="lazy">
                     </picture>
                      <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/desktop/IMG-20250420-WA0008.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/mobile/IMG-20250420-WA0008.webp" type="image/webp">
-                        <img src="/assets/images/mobile/IMG-20250420-WA0008.jpg" alt="Personenbetreuung: Suzana 8" class="w-full h-full object-cover" loading="lazy">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0008.webp" type="image/webp">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0008.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0008.jpg" alt="Personenbetreuung: Suzana 8" class="w-full h-full object-cover" loading="lazy">
                     </picture>
                      <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/desktop/IMG-20250421-WA0000.webp" media="(min-width: 768px)" type="image/webp">
-                        <source srcset="/assets/images/mobile/IMG-20250421-WA0000.webp" type="image/webp">
-                        <img src="/assets/images/mobile/IMG-20250421-WA0000.jpg" alt="Personenbetreuung: Suzana 9" class="w-full h-full object-cover" loading="lazy">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250421-WA0000.webp" type="image/webp">
+                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250421-WA0000.jpg" type="image/jpeg">
+                        <img src="/assets/images/original/erwachsenenbetreuung/IMG-20250421-WA0000.jpg" alt="Personenbetreuung: Suzana 9" class="w-full h-full object-cover" loading="lazy">
                     </picture>
                 </div>
             </div>
