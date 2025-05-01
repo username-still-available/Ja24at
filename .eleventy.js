@@ -1,6 +1,129 @@
 // Eleventy configuration file
+const Image = require("@11ty/eleventy-img");
+const path = require("path");
+
+// Image shortcode function
+async function imageShortcode(src, alt, sizes, className = "", loading = "lazy") {
+  if (!src) {
+    throw new Error(`Missing image source for image with alt: "${alt}"`);
+  }
+
+  if (!alt) {
+    throw new Error(`Missing alt text for image: ${src}`);
+  }
+
+  // Resolve the image path
+  let inputPath = src;
+  if (!src.startsWith("http")) {
+    inputPath = path.join("src", src);
+  }
+
+  // Default image widths
+  const widths = [320, 640, 960, 1280];
+  
+  // Generate optimized images
+  let metadata = await Image(inputPath, {
+    widths: widths,
+    formats: ["avif", "webp", "jpeg"],
+    outputDir: "_site/img/", // Where optimized images will be output
+    urlPath: "/img/",        // URL path for the optimized images
+    sharpJpegOptions: {
+      quality: 80,
+      progressive: true
+    },
+    sharpWebpOptions: {
+      quality: 75
+    },
+    sharpAvifOptions: {
+      quality: 60
+    },
+    filenameFormat: function(id, src, width, format) {
+      const extension = path.extname(src);
+      const basename = path.basename(src, extension);
+      return `${basename}-${width}w.${format}`;
+    }
+  });
+
+  // Generate the HTML markup
+  let imageAttributes = {
+    alt,
+    sizes,
+    loading,
+    decoding: "async",
+  };
+
+  // Add class if provided
+  if (className) {
+    imageAttributes.class = className;
+  }
+
+  // Generate the responsive image HTML
+  return Image.generateHTML(metadata, imageAttributes);
+}
+
+// Picture shortcode function for more control
+async function pictureShortcode(src, alt, sizes, className = "", loading = "lazy") {
+  if (!src || !alt) {
+    throw new Error(`Missing src or alt for picture: ${src}`);
+  }
+  
+  // Resolve the image path
+  let inputPath = src;
+  if (!src.startsWith("http")) {
+    inputPath = path.join("src", src);
+  }
+
+  // Generate optimized images
+  const metadata = await Image(inputPath, {
+    widths: [320, 640, 960, 1280],
+    formats: ["avif", "webp", "jpeg"],
+    outputDir: "_site/img/",
+    urlPath: "/img/",
+    sharpJpegOptions: {
+      quality: 80,
+      progressive: true
+    },
+    sharpWebpOptions: {
+      quality: 75
+    },
+    sharpAvifOptions: {
+      quality: 60
+    }
+  });
+
+  // Generate picture HTML
+  const pictureClass = className ? `class="${className}"` : '';
+  let pictureHtml = `<picture ${pictureClass}>`;
+  
+  // AVIF format
+  if (metadata.avif) {
+    pictureHtml += `<source type="image/avif" srcset="${metadata.avif.map(img => `${img.url} ${img.width}w`).join(", ")}" sizes="${sizes}">`;
+  }
+  
+  // WebP format
+  if (metadata.webp) {
+    pictureHtml += `<source type="image/webp" srcset="${metadata.webp.map(img => `${img.url} ${img.width}w`).join(", ")}" sizes="${sizes}">`;
+  }
+  
+  // JPEG fallback
+  const jpeg = metadata.jpeg;
+  if (!jpeg || jpeg.length === 0) {
+    throw new Error(`No JPEG format generated for ${src}`);
+  }
+  
+  const imgClass = className ? `class="${className}"` : '';
+  pictureHtml += `<img src="${jpeg[0].url}" srcset="${jpeg.map(img => `${img.url} ${img.width}w`).join(", ")}" 
+                      sizes="${sizes}" alt="${alt}" ${imgClass} loading="${loading}" decoding="async">`;
+  pictureHtml += `</picture>`;
+  
+  return pictureHtml;
+}
 
 module.exports = function(eleventyConfig) {
+  // Add image shortcodes
+  eleventyConfig.addAsyncShortcode("image", imageShortcode);
+  eleventyConfig.addAsyncShortcode("picture", pictureShortcode);
+
   // Passthrough Copy: Copy static assets directly to output
   // Remove the general src/assets rule
   // eleventyConfig.addPassthroughCopy({"src/assets": "assets"});
@@ -9,6 +132,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/assets/images": "assets/images"});
   eleventyConfig.addPassthroughCopy({"src/assets/icons": "assets/icons"});
   eleventyConfig.addPassthroughCopy({"src/assets/logo": "assets/logo"});
+  
+  // Explicitly copy recipe directories with special characters and spaces
+  eleventyConfig.addPassthroughCopy({"src/assets/images/original/erwachsenenbetreuung/_Käsecracker_ Demeter": "assets/images/original/erwachsenenbetreuung/_Käsecracker_ Demeter"});
+  eleventyConfig.addPassthroughCopy({"src/assets/images/original/erwachsenenbetreuung/_Delikate Lammrippen mit Knoblauch und Oregano": "assets/images/original/erwachsenenbetreuung/_Delikate Lammrippen mit Knoblauch und Oregano"});
+  eleventyConfig.addPassthroughCopy({"src/assets/images/original/erwachsenenbetreuung/_Erfrischender Ananas-Banana Cocktail": "assets/images/original/erwachsenenbetreuung/_Erfrischender Ananas-Banana Cocktail"});
+  eleventyConfig.addPassthroughCopy({"src/assets/images/original/erwachsenenbetreuung/_Marinierte pikante Lammrippchen mit Honig": "assets/images/original/erwachsenenbetreuung/_Marinierte pikante Lammrippchen mit Honig"});
   // Add other subdirectories like 'stock' if needed
   // eleventyConfig.addPassthroughCopy({"src/assets/stock": "assets/stock"});
 
