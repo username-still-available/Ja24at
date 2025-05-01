@@ -37,6 +37,17 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "no-referrer-when-downgrade"
 
+# Force browsers to not cache CSS and images
+[[headers]]
+  for = "/*.(css|jpg|jpeg|png|webp|svg)"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Also force no cache on the main stylesheet specifically
+[[headers]]
+  for = "/css/style.css"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
 
 [build.processing]
   skip_processing = false
@@ -77,3 +88,7 @@
   # [plugins.inputs.thresholds]
   #   performance = 0.9
   #   accessibility = 0.9
+
+# Use our custom cache control plugin
+[[plugins]]
+  package = "./netlify-cache-plugin.js"

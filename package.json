@@ -14,7 +14,7 @@
     "postbuild": "npm run verify:js",
     "watch:11ty": "eleventy --serve",
     "start": "npm-run-all --parallel watch:*",
-    "netlify": "npm install @11ty/eleventy-img sharp && npm run clean && npx tailwindcss -i ./src/css/input.css -o ./src/css/style.css && eleventy"
+    "netlify": "npm install @11ty/eleventy-img sharp && npm run clean && npx tailwindcss -i ./src/css/input.css -o ./src/css/style-production.css && cp ./src/css/style-production.css ./src/css/style.css && eleventy"
   },
   "keywords": [],
   "author": "",
