@@ -3,11 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const stepContents = document.querySelectorAll('.process-content');
 
     function showStep(stepNumber) {
-        // First, set all content to fade out
+        // First, set all content to fade out and move down
         stepContents.forEach(content => {
             // Start the fade out transition
             content.classList.remove('active', 'opacity-100');
             content.classList.add('opacity-0');
+            content.style.transform = 'translateY(20px)';
+            content.style.pointerEvents = 'none'; // Prevent interaction during animation
         });
 
         // Deactivate all tabs visually
@@ -25,11 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Use a small delay before showing the new content for a smoother transition
         setTimeout(() => {
-            // Now fade in the selected content
+            // Now fade in the selected content and move it up
             const selectedContent = document.getElementById(`step${stepNumber}-content`);
             if (selectedContent) {
                 selectedContent.classList.add('active', 'opacity-100');
                 selectedContent.classList.remove('opacity-0');
+                selectedContent.style.transform = 'translateY(0)';
+                selectedContent.style.pointerEvents = 'auto'; // Re-enable interaction
             }
         }, 300); // Delay of 300ms allows for a nice transition
     }
@@ -40,25 +44,37 @@ document.addEventListener('DOMContentLoaded', function() {
         tab.addEventListener('click', () => showStep(stepNumber));
     });
 
-    // Initialize all content elements with enhanced transition classes
+    // Set up initial styles for animation
     stepContents.forEach((content, index) => {
-        // Set longer duration for smoother animation
-        content.classList.add('transition-opacity', 'duration-500', 'ease-in-out');
+        // Apply base styles for transitions
+        content.style.position = 'absolute';
+        content.style.width = '100%';
         content.style.transitionProperty = 'opacity, transform';
-        content.style.transitionDuration = '500ms';
+        content.style.transitionDuration = '400ms';
         content.style.transitionTimingFunction = 'cubic-bezier(0.4, 0, 0.2, 1)';
-        
-        // Add a slight fade and slide effect
+
+        // Initialize positions and visibility
         if (index === 0) {
             content.classList.add('active', 'opacity-100');
             content.style.transform = 'translateY(0)';
-            content.classList.remove('opacity-0');
+            content.style.zIndex = '1';
+            content.style.pointerEvents = 'auto';
         } else {
-            content.classList.remove('active', 'opacity-100');
             content.classList.add('opacity-0');
-            content.style.transform = 'translateY(10px)';
+            content.classList.remove('active', 'opacity-100');
+            content.style.transform = 'translateY(20px)';
+            content.style.zIndex = '0';
+            content.style.pointerEvents = 'none';
         }
     });
+
+    // Create a container with proper height
+    const firstContent = document.querySelector('.process-content');
+    if (firstContent && firstContent.parentNode) {
+        const container = firstContent.parentNode;
+        container.style.position = 'relative';
+        container.style.minHeight = `${firstContent.offsetHeight + 40}px`; // Add some extra space
+    }
 
     // Initialize the first tab as active
     const firstTab = document.getElementById('step1-tab');
