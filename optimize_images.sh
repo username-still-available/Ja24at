@@ -41,4 +41,12 @@ du -sh assets/images/desktop assets/images/mobile
 echo "Optimized sizes:"
 du -sh assets/images/optimized/desktop assets/images/optimized/mobile
 
-echo "Optimization complete!" 
+echo "Optimization complete!"
+
+echo "Optimizing images..."
+find src/assets/images/original -type f \( -name '*.jpg' -o -name '*.png' \) -print0 | while IFS= read -r -d $'\0' file; do
+  output="$(echo "$file" | sed 's/\.[^.]\+$/.webp/')"
+  echo "Converting '$file' to '$output'"
+  npx sharp-cli -i "$file" -o "$output" -f webp -q 80
+done
+echo "Image optimization complete." 
