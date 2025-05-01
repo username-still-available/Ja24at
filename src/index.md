@@ -8,10 +8,10 @@ title: Home
     <div class="container mx-auto px-6">
         <!-- Image centered and made more prominent -->
         <div class="flex flex-col items-center">
-            <!-- Image Container - Larger and centered -->
-            <div class="w-full max-w-2xl mb-12">
+            <!-- Image Container - Reduced size by 50% -->
+            <div class="w-full max-w-md mb-12 mx-auto">
                 <div class="rounded-lg shadow-xl overflow-hidden flex items-center justify-center">
-                    {% picture "/assets/images/original/stock/this-is-my-dream-job-2025-04-06-11-09-40-utc.jpg", "Sozialarbeit als Berufung - Zuzana Jancova", "100vw", "w-full h-full object-cover" %}
+                    {% picture "/assets/images/original/Zuzanna/Zuzanna Foto.jpg", "Zuzana Jancova - Professionelle Betreuung", "100vw", "w-full h-full object-cover" %}
                 </div>
             </div>
 
@@ -191,7 +191,7 @@ title: Home
                 
                 <!-- Recipe Gallery - Desktop only -->
                 <div id="recipe-gallery-container" class="mt-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Meine kulinarischen Favoriten</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Meine kulinarischen Spezialitäten</h3>
                     <div id="recipe-thumbnails" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-4"></div>
                 </div>
             </div>
@@ -315,6 +315,8 @@ title: Home
         </div>
     </div>
 </section>
+
+<!-- The proper contact section is kept at the end of the file, and this duplicated section is removed -->
 
 <!-- Contact Section -->
 <section id="contact" class="py-16">

@@ -131,6 +131,9 @@ function initSlideshow(containerId, intervalTime) {
     }, intervalTime);
 }
 
+// Expose the function globally
+window.initSlideshow = initSlideshow;
+
 // Helper functions for form validation
 function isValidEmail(email) {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

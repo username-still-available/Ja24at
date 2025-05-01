@@ -4,27 +4,30 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Track the currently active step
     let activeStepNumber = 1;
-    
-    // Set up the container for content
-    const contentContainer = document.querySelector('.process-content').parentNode;
-    if (contentContainer) {
-        contentContainer.style.position = 'relative';
-        contentContainer.style.overflow = 'hidden'; // Prevent content overflow during transitions
-    }
+    let isAnimating = false;
+
+    // Add basic fade transition to all content elements immediately
+    stepContents.forEach(content => {
+        content.style.transition = 'opacity 200ms ease';
+    });
 
     function showStep(stepNumber) {
-        // Don't do anything if clicking the already active step
-        if (stepNumber === activeStepNumber) return;
+        // Don't do anything if clicking the already active step or if animation is in progress
+        if (stepNumber === activeStepNumber || isAnimating) return;
+        isAnimating = true;
         
         // Update active step tracker
         const previousStepNumber = activeStepNumber;
         activeStepNumber = stepNumber;
         
-        // Get both previous and new content elements
+        // Get relevant elements
         const previousContent = document.getElementById(`step${previousStepNumber}-content`);
         const newContent = document.getElementById(`step${stepNumber}-content`);
         
-        if (!previousContent || !newContent) return;
+        if (!previousContent || !newContent) {
+            isAnimating = false;
+            return;
+        }
         
         // Update tab styling
         stepTabs.forEach(tab => {
@@ -38,30 +41,27 @@ document.addEventListener('DOMContentLoaded', function() {
             activeTab.classList.remove('bg-white/10');
         }
         
-        // 1. First fade out the previous content
+        // Super simple approach - just fade between contents quickly with no height animation
+        // 1. Fade out current content
         previousContent.style.opacity = '0';
-        previousContent.style.transform = 'translateY(10px)';
         
-        // 2. After fade-out is complete, hide previous and prepare new content
+        // 2. After fade out is complete, swap contents quickly
         setTimeout(() => {
-            // Hide previous content completely
+            // Hide old content and show new content simultaneously to avoid layout shift
             previousContent.style.display = 'none';
-            
-            // Prepare new content (visible but transparent)
             newContent.style.display = 'block';
-            newContent.style.opacity = '0';
-            newContent.style.transform = 'translateY(-10px)';
             
-            // 3. Force a reflow to ensure display changes are processed
+            // Force reflow
             void newContent.offsetWidth;
             
-            // 4. Now fade in the new content
-            setTimeout(() => {
-                newContent.style.opacity = '1';
-                newContent.style.transform = 'translateY(0)';
-            }, 50); // Small delay to ensure previous changes have rendered
+            // Fade in new content
+            newContent.style.opacity = '1';
             
-        }, 300); // Wait for previous content to fade out completely
+            // Animation complete
+            setTimeout(() => {
+                isAnimating = false;
+            }, 200);
+        }, 200);
     }
 
     // Add click event listeners to tabs
@@ -70,19 +70,13 @@ document.addEventListener('DOMContentLoaded', function() {
         tab.addEventListener('click', () => showStep(stepNumber));
     });
 
-    // Initialize all content with proper transition styles
+    // Initialize content state
     stepContents.forEach((content, index) => {
-        // Set transition properties
-        content.style.transition = 'opacity 250ms ease-out, transform 250ms ease-out';
-        
-        // Initialize state
         if (index === 0) {
             content.style.opacity = '1';
-            content.style.transform = 'translateY(0)';
             content.style.display = 'block';
         } else {
             content.style.opacity = '0';
-            content.style.transform = 'translateY(-10px)';
             content.style.display = 'none';
         }
     });
