@@ -347,7 +347,7 @@ title: Home
                         </p>
                     </div>
 
-                    <div id="step4-content" class="process-content">
+                    <div id="step4-content" class="process-content transition-opacity duration-500 ease-in-out opacity-0">
                         <p class="text-white mb-4 leading-relaxed">
                             Nach Ihrer Zustimmung zum Angebot beginnen wir mit der konkreten Umsetzung unserer Zusammenarbeit, ich passe mich Ihrer Wünsche, Bedürfnisse und Zeitpläne an.
                         </p>
@@ -364,8 +364,8 @@ title: Home
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-6 font-heading">Kontakt</h2>
 
         <!-- Ethics Disclaimer (Moved and Restyled) -->
-        <div class="ethics-disclaimer">
-            <p>
+        <div class="ethics-disclaimer max-w-2xl mx-auto mb-10 bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-center shadow-sm">
+            <p class="text-gray-700">
                 <strong>Wichtiger Hinweis:</strong> In meinem Unternehmen lege ich großen Wert auf Ethik. Daher möchte ich Sie darauf hinweisen, dass hier keinesfalls intime körperliche Leistungen angeboten werden. Ich bitte um Ihr Verständnis, falls Sie als Kunde solche Dienstleistungen in Erwägung ziehen. Vielen Dank für Ihre Rücksichtnahme.
             </p>
         </div>

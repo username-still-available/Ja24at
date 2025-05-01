@@ -3,65 +3,69 @@ document.addEventListener('DOMContentLoaded', function() {
     const stepContents = document.querySelectorAll('.process-content');
 
     function showStep(stepNumber) {
-        // Hide all content sections using opacity
+        // First, set all content to fade out
         stepContents.forEach(content => {
+            // Start the fade out transition
             content.classList.remove('active', 'opacity-100');
-            content.classList.add('opacity-0'); // ONLY toggle opacity
+            content.classList.add('opacity-0');
         });
 
         // Deactivate all tabs visually
         stepTabs.forEach(tab => {
-            tab.classList.remove('active', 'bg-white/20'); // Remove active state classes
-            tab.classList.add('bg-white/10'); // Add inactive state class
+            tab.classList.remove('active', 'bg-white/20'); 
+            tab.classList.add('bg-white/10');
         });
 
-        // Activate the selected tab visually
+        // Activate the selected tab visually immediately
         const activeTab = document.getElementById(`step${stepNumber}-tab`);
         if (activeTab) {
-            activeTab.classList.add('active', 'bg-white/20'); // Add active state classes
-            activeTab.classList.remove('bg-white/10'); // Remove inactive state class
+            activeTab.classList.add('active', 'bg-white/20');
+            activeTab.classList.remove('bg-white/10');
         }
 
-        // Show the selected content section using opacity
-        const selectedContent = document.getElementById(`step${stepNumber}-content`);
-        if (selectedContent) {
-            selectedContent.classList.add('active', 'opacity-100');
-            selectedContent.classList.remove('opacity-0'); // ONLY toggle opacity
-        }
+        // Use a small delay before showing the new content for a smoother transition
+        setTimeout(() => {
+            // Now fade in the selected content
+            const selectedContent = document.getElementById(`step${stepNumber}-content`);
+            if (selectedContent) {
+                selectedContent.classList.add('active', 'opacity-100');
+                selectedContent.classList.remove('opacity-0');
+            }
+        }, 300); // Delay of 300ms allows for a nice transition
     }
 
     // Add click event listeners to tabs
     stepTabs.forEach((tab, index) => {
-        // Assign the click handler directly if the function exists globally or is defined within scope
-        // Or better, add an event listener
         const stepNumber = index + 1; // Assuming steps are 1-based
         tab.addEventListener('click', () => showStep(stepNumber));
     });
 
-    // Initialize the first tab/content as active
-    // Ensure all content elements have base transition classes and initial state
+    // Initialize all content elements with enhanced transition classes
     stepContents.forEach((content, index) => {
-        content.classList.add('transition-opacity', 'duration-500', 'ease-in-out'); // Add base transition classes
+        // Set longer duration for smoother animation
+        content.classList.add('transition-opacity', 'duration-500', 'ease-in-out');
+        content.style.transitionProperty = 'opacity, transform';
+        content.style.transitionDuration = '500ms';
+        content.style.transitionTimingFunction = 'cubic-bezier(0.4, 0, 0.2, 1)';
+        
+        // Add a slight fade and slide effect
         if (index === 0) {
             content.classList.add('active', 'opacity-100');
+            content.style.transform = 'translateY(0)';
             content.classList.remove('opacity-0');
         } else {
             content.classList.remove('active', 'opacity-100');
             content.classList.add('opacity-0');
+            content.style.transform = 'translateY(10px)';
         }
     });
 
-    // Check if elements exist before trying to access them
+    // Initialize the first tab as active
     const firstTab = document.getElementById('step1-tab');
-    // No need to explicitly show first content here, it's handled in the loop above
     if (firstTab) {
-        firstTab.classList.add('active', 'bg-white/20'); // Set first tab visual state
+        firstTab.classList.add('active', 'bg-white/20');
         firstTab.classList.remove('bg-white/10');
     } else {
         console.error("Initial process step tab (step1-tab) not found.");
     }
-
-    // Make showStep globally accessible IF it's called via inline onclick (which we removed)
-    // If not needed globally, keep it scoped within this event listener.
-    // window.showStep = showStep; // Uncomment if needed globally, but it's better practice to use event listeners as done above.
 }); 
