@@ -315,7 +315,7 @@ title: Home
             <!-- Content on the right -->
             <div class="w-full md:w-[58%] flex-grow order-1 md:order-2">
                 <div class="bg-white/10 rounded-lg p-6 md:p-8 shadow-lg">
-                    <div id="step1-content" class="process-content active">
+                    <div id="step1-content" class="process-content active transition-opacity duration-500 ease-in-out opacity-100">
                         <p class="text-white mb-4 leading-relaxed">
                             Der erste Schritt zu einer erfolgreichen Zusammenarbeit beginnt mit Ihrer Kontaktaufnahme. Sie können mich ganz einfach auf folgende Weise erreichen:
                         </p>
@@ -330,7 +330,7 @@ title: Home
                         </p>
                     </div>
 
-                    <div id="step2-content" class="process-content">
+                    <div id="step2-content" class="process-content transition-opacity duration-500 ease-in-out opacity-0" style="opacity: 0 !important;">
                         <p class="text-white mb-4 leading-relaxed">
                             Nach der ersten Kontaktaufnahme vereinbaren wir ein unverbindliches Gespräch, das entweder telefonisch oder persönlich stattfinden kann. Dieses Gespräch dient dazu, Ihre Bedürfnisse und Wünsche umfassend zu verstehen und eine optimale Grundlage für mein Angebot für Sie zu schaffen.
                         </p>
@@ -341,7 +341,7 @@ title: Home
                         </ul>
                     </div>
 
-                    <div id="step3-content" class="process-content">
+                    <div id="step3-content" class="process-content transition-opacity duration-500 ease-in-out opacity-0">
                         <p class="text-white mb-4 leading-relaxed">
                             Basierend auf den Erkenntnissen aus unserem Gespräch erstelle ich ein Angebot mit einer detaillierten Beschreibung der angebotenen Leistungen. Dieses Angebot wird die vereinbarten Zeiten, den Umfang der Leistungen sowie die Zahlungsbedingungen für Sie umfassen.
                         </p>
