@@ -174,49 +174,16 @@ document.addEventListener('DOMContentLoaded', function() {
         // Create slideshow content
         let slideshowContent = '';
         
-        /* TODO: Future Recipe Image Optimization with Eleventy Image
-         * For proper integration with the Eleventy Image optimization pipeline:
-         * 
-         * 1. Create a data file in src/_data/recipes.json with the image paths for all recipes
-         * 2. In .eleventy.js, add code to process these images during build:
-         *    
-         *    // Process recipe images
-         *    eleventyConfig.addJavaScriptFunction("processRecipeImages", async function() {
-         *      const recipes = require('./src/_data/recipes.json');
-         *      for(const recipe of recipes) {
-         *        for(const image of recipe.images) {
-         *          await Image(path.join("src", image.src), {
-         *            widths: [320, 640, 960, 1280],
-         *            formats: ["avif", "webp", "jpeg"],
-         *            outputDir: "_site/img/"
-         *          });
-         *        }
-         *      }
-         *    });
-         *    
-         *    // Call this during build
-         *    eleventyConfig.on('beforeBuild', () => {
-         *      eleventyConfig.javascriptFunctions.processRecipeImages();
-         *    });
-         * 
-         * 3. Then update this JavaScript to use the optimized image paths with the
-         *    naming format used by Eleventy Image
-         */
-        
         recipe.images.forEach((image, index) => {
-            // Use the original image paths directly
-            // The images haven't been processed by the Eleventy Image plugin yet
+            // Use the original image paths directly - don't try to use WebP alternatives
+            // as they might not exist or be in the wrong location
             const originalSrc = image.src;
             
-            // For WebP images, we can use them directly
-            const isWebP = originalSrc.toLowerCase().endsWith('.webp');
-            
-            // Create responsive image markup using original images
+            // Create image markup using original paths
             slideshowContent += `
-                <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0'}">
-                    ${isWebP ? '' : `<source type="image/webp" srcset="${originalSrc.replace(/\.(jpg|jpeg|png)$/i, '.webp')}" media="(min-width: 640px)">`}
+                <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out ${index === 0 ? 'opacity-100 z-10' : 'opacity-0 z-0'}">
                     <img src="${originalSrc}" alt="${image.alt}" class="w-full h-full object-cover" loading="lazy">
-                </picture>
+                </div>
             `;
         });
         

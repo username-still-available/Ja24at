@@ -127,6 +127,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy({"src/assets/images/original/erwachsenenbetreuung/_Delikate Lammrippen mit Knoblauch und Oregano": "assets/images/original/erwachsenenbetreuung/_Delikate Lammrippen mit Knoblauch und Oregano"});
   eleventyConfig.addPassthroughCopy({"src/assets/images/original/erwachsenenbetreuung/_Erfrischender Ananas-Banana Cocktail": "assets/images/original/erwachsenenbetreuung/_Erfrischender Ananas-Banana Cocktail"});
   eleventyConfig.addPassthroughCopy({"src/assets/images/original/erwachsenenbetreuung/_Marinierte pikante Lammrippchen mit Honig": "assets/images/original/erwachsenenbetreuung/_Marinierte pikante Lammrippchen mit Honig"});
+  
+  // Add more subdirectories for recipe gallery
+  eleventyConfig.addPassthroughCopy({"src/assets/images/original/erwachsenenbetreuung/Grillhendl": "assets/images/original/erwachsenenbetreuung/Grillhendl"});
+  eleventyConfig.addPassthroughCopy({"src/assets/images/original/erwachsenenbetreuung/Jause": "assets/images/original/erwachsenenbetreuung/Jause"});
+  eleventyConfig.addPassthroughCopy({"src/assets/images/original/erwachsenenbetreuung/Torten": "assets/images/original/erwachsenenbetreuung/Torten"});
+  
   // Add other subdirectories like 'stock' if needed
   // eleventyConfig.addPassthroughCopy({"src/assets/stock": "assets/stock"});
 
