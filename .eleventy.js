@@ -24,7 +24,7 @@ async function imageShortcode(src, alt, sizes, className = "", loading = "lazy")
   // Generate optimized images
   let metadata = await Image(inputPath, {
     widths: widths,
-    formats: ["avif", "webp", "jpeg"],
+    formats: ["webp", "jpeg"],
     outputDir: "_site/img/", // Where optimized images will be output
     urlPath: "/img/",        // URL path for the optimized images
     sharpJpegOptions: {
@@ -33,9 +33,6 @@ async function imageShortcode(src, alt, sizes, className = "", loading = "lazy")
     },
     sharpWebpOptions: {
       quality: 75
-    },
-    sharpAvifOptions: {
-      quality: 60
     },
     filenameFormat: function(id, src, width, format) {
       const extension = path.extname(src);
@@ -76,7 +73,7 @@ async function pictureShortcode(src, alt, sizes, className = "", loading = "lazy
   // Generate optimized images
   const metadata = await Image(inputPath, {
     widths: [320, 640, 960, 1280],
-    formats: ["avif", "webp", "jpeg"],
+    formats: ["webp", "jpeg"],
     outputDir: "_site/img/",
     urlPath: "/img/",
     sharpJpegOptions: {
@@ -85,20 +82,12 @@ async function pictureShortcode(src, alt, sizes, className = "", loading = "lazy
     },
     sharpWebpOptions: {
       quality: 75
-    },
-    sharpAvifOptions: {
-      quality: 60
     }
   });
 
   // Generate picture HTML
   const pictureClass = className ? `class="${className}"` : '';
   let pictureHtml = `<picture ${pictureClass}>`;
-  
-  // AVIF format
-  if (metadata.avif) {
-    pictureHtml += `<source type="image/avif" srcset="${metadata.avif.map(img => `${img.url} ${img.width}w`).join(", ")}" sizes="${sizes}">`;
-  }
   
   // WebP format
   if (metadata.webp) {

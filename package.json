@@ -14,7 +14,7 @@
     "postbuild": "npm run verify:js",
     "watch:11ty": "eleventy --serve",
     "start": "npm-run-all --parallel watch:*",
-    "netlify": "npm install @11ty/eleventy-img && npm run clean && npm run build:css && eleventy"
+    "netlify": "npm install @11ty/eleventy-img sharp && npm run clean && npm run build:css && eleventy"
   },
   "keywords": [],
   "author": "",
