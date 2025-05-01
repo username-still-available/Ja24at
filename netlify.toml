@@ -1,6 +1,6 @@
 [build]
   publish = "_site"
-  command = "rm -rf js && npx tailwindcss -i ./src/css/input.css -o ./src/css/style.css && eleventy"
+  command = "npm install && npm run netlify # Updated build command"
   functions = "functions"
 
 # Redirects and headers

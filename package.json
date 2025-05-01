@@ -7,12 +7,14 @@
     "build:css": "npx tailwindcss -i ./src/css/input.css -o ./_site/css/style.css",
     "watch:css": "npx tailwindcss -i ./src/css/input.css -o ./_site/css/style.css --watch",
     "build:11ty": "eleventy",
-    "optimize:images": "bash optimize_images.sh",
-    "build": "npm run optimize:images && npm run build:css && npm run build:11ty",
+    "build": "npm run build:css && npm run build:11ty",
+    "clean": "rimraf _site",
+    "fullbuild": "npm run clean && npm run build",
     "verify:js": "echo \"Verifying JavaScript files are correctly placed in build output...\"",
     "postbuild": "npm run verify:js",
     "watch:11ty": "eleventy --serve",
-    "start": "npm-run-all --parallel watch:*"
+    "start": "npm-run-all --parallel watch:*",
+    "netlify": "npm install @11ty/eleventy-img && npm run clean && npm run build:css && eleventy"
   },
   "keywords": [],
   "author": "",
@@ -20,9 +22,10 @@
   "description": "",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-img": "^3.1.8",
     "@netlify/plugin-lighthouse": "^6.0.1",
     "npm-run-all": "^4.1.5",
-    "sharp-cli": "^5.1.0",
+    "rimraf": "^6.0.1",
     "tailwindcss": "^3.3.3"
   }
 }
