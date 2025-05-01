@@ -4,7 +4,7 @@
 
 @layer base {
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Calibri', Arial, sans-serif;
+        font-family: 'Calibri', Arial, sans-serif !important;
         /* Example: Apply bold by default to headings if desired */
         /* font-weight: 700; */
     }
@@ -13,7 +13,7 @@
 
 /* Custom Styles */
 .font-heading {
-    font-family: 'Calibri', Arial, sans-serif;
+    font-family: 'Calibri', Arial, sans-serif !important;
 }
 
 /* Slideshow styles - MOVED to @layer components */
