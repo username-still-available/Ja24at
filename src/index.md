@@ -330,7 +330,7 @@ title: Home
                         </p>
                     </div>
 
-                    <div id="step2-content" class="process-content transition-opacity duration-500 ease-in-out opacity-0" style="opacity: 0 !important;">
+                    <div id="step2-content" class="process-content transition-opacity duration-500 ease-in-out opacity-0">
                         <p class="text-white mb-4 leading-relaxed">
                             Nach der ersten Kontaktaufnahme vereinbaren wir ein unverbindliches Gespräch, das entweder telefonisch oder persönlich stattfinden kann. Dieses Gespräch dient dazu, Ihre Bedürfnisse und Wünsche umfassend zu verstehen und eine optimale Grundlage für mein Angebot für Sie zu schaffen.
                         </p>
