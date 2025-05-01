@@ -51,5 +51,6 @@ plan/
 .gitignore
 
 # Netlify specific
-netlify.toml
-.gitignore-netlify 
+# Do not exclude netlify.toml anymore
+# netlify.toml
+# .gitignore-netlify 
