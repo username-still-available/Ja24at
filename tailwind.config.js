@@ -16,7 +16,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        'heading': ['Playfair Display', 'Georgia', 'serif'],
+        'heading': ['Calibri', 'Arial', 'sans-serif'],
         'body': ['Epilogue', 'Arial', 'sans-serif'],
         'merriweather': ['Merriweather', 'Georgia', 'serif'],
         'cormorant': ['Cormorant Garamond', 'Times New Roman', 'serif'],
