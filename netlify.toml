@@ -88,7 +88,3 @@
   # [plugins.inputs.thresholds]
   #   performance = 0.9
   #   accessibility = 0.9
-
-# Use our custom cache control plugin
-[[plugins]]
-  package = "./netlify-cache-plugin.js"
