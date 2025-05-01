@@ -14,6 +14,10 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy("src/fonts");  // Copy content of src/fonts to _site/fonts
   eleventyConfig.addPassthroughCopy("src/css");    // Copy content of src/css to _site/css
+  
+  // Ensure the generated style.css is copied as well
+  eleventyConfig.addPassthroughCopy("src/css/style.css");
+
   eleventyConfig.addPassthroughCopy("src/js");     // Copy content of src/js to _site/js
   eleventyConfig.addPassthroughCopy("robots.txt"); // Copy robots.txt to _site/robots.txt
   eleventyConfig.addPassthroughCopy("sitemap.xml"); // Copy sitemap.xml to _site/sitemap.xml

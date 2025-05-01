@@ -1,6 +1,6 @@
 [build]
   publish = "_site"
-  command = "npm run build"
+  command = "rm -rf js && npx tailwindcss -i ./src/css/input.css -o ./src/css/style.css && eleventy"
   functions = "functions"
 
 # Redirects and headers

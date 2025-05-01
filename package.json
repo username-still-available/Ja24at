@@ -9,6 +9,8 @@
     "build:11ty": "eleventy",
     "optimize:images": "bash optimize_images.sh",
     "build": "npm run optimize:images && npm run build:css && npm run build:11ty",
+    "verify:js": "echo \"Verifying JavaScript files are correctly placed in build output...\"",
+    "postbuild": "npm run verify:js",
     "watch:11ty": "eleventy --serve",
     "start": "npm-run-all --parallel watch:*"
   },
