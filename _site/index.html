@@ -7,6 +7,10 @@
     <meta name="keywords" content="Sozialarbeiterin Wien, Kinderbetreuung, Personenbetreuung, gesellschaftliche Begleitung, Zuzana Jancova">
     <meta name="author" content="Zuzana Jancova">
     <meta name="robots" content="index, follow">
+    <!-- Prevent browser caching -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <meta property="og:title" content="Home">
     <meta property="og:description" content="Professionelle Sozialarbeit von Zuzana Jancova in Wien. Kinderbetreuung, gesellschaftliche Begleitung und individuelle Personenbetreuung - 24ja.at macht Ihr Leben leichter.">
     <meta property="og:image" content="https://24ja.at/assets/images/og-image.jpg">
@@ -17,28 +21,39 @@
 
     <!-- Critical CSS inlined for faster page rendering -->
     <style>
-        /* Critical font definitions */
+        /* Critical font definitions for Fira Sans */
         @font-face {
-            font-family: 'Playfair Display';
-            src: url('/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf') format('truetype');
-            font-weight: 700;
+            font-family: 'Fira Sans';
+            src: url('/fonts/Fira_Sans/FiraSans-Regular.ttf') format('truetype');
+            font-weight: 400;
             font-style: normal;
             font-display: swap;
         }
 
         @font-face {
-            font-family: 'Epilogue';
-            src: url('/fonts/Epilogue/static/Epilogue-Regular.ttf') format('truetype');
-            font-weight: 400;
+            font-family: 'Fira Sans';
+            src: url('/fonts/Fira_Sans/FiraSans-Bold.ttf') format('truetype');
+            font-weight: 700;
             font-style: normal;
             font-display: swap;
         }
 
         /* Basic Resets & Body */
         *, ::before, ::after { box-sizing: border-box; border-width: 0; border-style: solid; border-color: #e5e7eb; }
-        html { line-height: 1.5; -webkit-text-size-adjust: 100%; tab-size: 4; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; }
-        body { margin: 0; line-height: inherit; background-color: #fff; font-family: Epilogue, Arial, sans-serif; }
-        h1, h2, h3, h4, h5, h6 { font-size: inherit; font-weight: inherit; }
+        html { line-height: 1.5; -webkit-text-size-adjust: 100%; tab-size: 4; font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif; }
+        body { margin: 0; line-height: inherit; background-color: #fff; font-family: 'Fira Sans', Arial, sans-serif; }
+        
+        /* Force all headings to use Fira Sans */
+        h1, h2, h3, h4, h5, h6 { 
+            font-size: inherit; 
+            font-weight: inherit; /* Will be styled by Tailwind utilities or specific classes */
+            font-family: 'Fira Sans', Arial, sans-serif !important;
+        }
+        
+        .font-heading { /* This class can be used for emphasis if needed, otherwise headings are already Fira Sans */
+            font-family: 'Fira Sans', Arial, sans-serif !important;
+        }
+        
         a { color: inherit; text-decoration: inherit; }
         img, video { max-width: 100%; height: auto; }
         /* Container Base */
@@ -51,12 +66,12 @@
         /* Navigation */
         nav { background-color: #fff; padding-top: 1rem; padding-bottom: 1rem; padding-left: 1.5rem; padding-right: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1); position: sticky; top: 0; z-index: 50; height: 70px; }
         nav .container { display: flex; justify-content: space-between; align-items: center; height: 100%; }
-        nav a.font-heading { font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; color: #0A4835; font-family: 'Playfair Display', Georgia, serif; }
+        nav a.font-heading { font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; color: #0A4835; font-family: 'Fira Sans', Arial, sans-serif !important; }
         /* Hero Section */
         header { position: relative; }
         header > div { background-color: #0A4835; color: #fff; }
         header .container { padding-top: 4rem; padding-bottom: 4rem; display: flex; flex-direction: column; align-items: center; text-align: center; }
-        header h1 { font-size: 2.25rem; line-height: 2.5rem; font-weight: 700; color: #fff; margin-bottom: 1.5rem; font-family: 'Playfair Display', Georgia, serif; }
+        header h1 { font-size: 2.25rem; line-height: 2.5rem; font-weight: 700; color: #fff; margin-bottom: 1.5rem; font-family: 'Fira Sans', Arial, sans-serif !important; }
         header p { font-size: 1.25rem; line-height: 1.75rem; color: #fff; max-width: 42rem; margin-bottom: 2.5rem; }
         header a { display: inline-block; background-color: #fff; color: #0A4835; font-weight: 700; padding: 0.75rem 2rem; border-radius: 9999px; box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1); }
         /* Responsive Hero Styles (Basic) */
@@ -68,13 +83,12 @@
 
     </style>
 
-    <!-- Preload critical fonts -->
-    <link rel="preload" href="/fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/fonts/Epilogue/static/Epilogue-Regular.ttf" as="font" type="font/ttf" crossorigin>
+    <!-- Preload critical Fira Sans font -->
+    <link rel="preload" href="/fonts/Fira_Sans/FiraSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
 
     <!-- Load CSS synchronously -->
     <!-- Note: Path updated to reflect assets being served from root -->
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/style.css?v=1746527818885">
     <!-- Async loading removed for style.css -->
     <!-- <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
     <!-- <noscript><link rel="stylesheet" href="/css/style.css"></noscript> -->
@@ -141,8 +155,10 @@
     <!-- Navigation Bar with white background - moved outside header to be sticky throughout the page -->
     <nav class="bg-white py-4 px-6 shadow-md sticky top-0 z-50 h-[70px]">
         <div class="container mx-auto flex justify-between items-center h-full">
-            <!-- Update link to point to root -->
-            <a href="/" class="text-3xl font-bold text-brand-green font-heading">24ja - Macht das Leben leichter e.U.</a>
+            <!-- Update link to point to root, replace text with logo -->
+            <a href="/" class="flex items-center"> <!-- Use flex to align image if needed -->
+                <img src="/assets/logo/Logo_24JA.png" alt="24ja Logo" class="h-14 w-auto"> <!-- Increased height to h-14 (56px) -->
+            </a>
             <div class="hidden md:flex space-x-6">
                 <a href="/#about" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Meine Geschichte</a>
                 <a href="/#services" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Leistungen</a>
@@ -192,10 +208,11 @@
     <div class="container mx-auto px-6">
         <!-- Image centered and made more prominent -->
         <div class="flex flex-col items-center">
-            <!-- Image Container - Larger and centered -->
-            <div class="w-full max-w-2xl mb-12">
-                <div class="bg-gray-200 h-96 md:h-[30rem] rounded-lg shadow-xl overflow-hidden flex items-center justify-center">
-                    <!-- Placeholder for image -->
+            <!-- Image Container - Fixed aspect ratio and improved size -->
+            <div class="w-full max-w-xs mb-12 mx-auto">
+                <div class="rounded-lg shadow-xl overflow-hidden flex items-center justify-center aspect-[3/4]">
+                    <picture class="w-full h-full object-cover"><source type="image/webp" srcset="/img/oT0YfgBzj5-320.webp 320w" sizes="100vw"><img src="/img/oT0YfgBzj5-320.jpeg" srcset="/img/oT0YfgBzj5-320.jpeg 320w" 
+                      sizes="100vw" alt="Zuzana Jancova - Professionelle Betreuung" class="w-full h-full object-cover" loading="lazy" decoding="async"></picture>
                 </div>
             </div>
 <p><!-- Heading now below image -->
@@ -263,6 +280,7 @@ Mehr erfahren →
 </div>
 </div></p>
 </section>
+<!-- Testimonials Section REMOVED FROM HERE -->
 <!-- Detailed Services Sections -->
 <!-- Kinderbetreuung Detailed Section -->
 <section id="service-kinderbetreuung" class="py-16 bg-gray-50">
@@ -270,25 +288,12 @@ Mehr erfahren →
         <div class="flex flex-col md:flex-row items-center">
             <!-- Service Image -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                <div id="slideshow-kinderbetreuung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
-                    <!-- Slideshow Image 1 (Visible by default) - Updated Path -->
-                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
-                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
-                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
-                    </picture>
-                     <!-- Slideshow Image 2 (Hidden by default) - Placeholder/Same Image, Update if needed -->
-                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
-                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
-                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind 2" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
-                    </picture>
-                     <!-- Slideshow Image 3 (Hidden by default) - Placeholder/Same Image, Update if needed -->
-                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
-                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.webp" type="image/webp">
-                        <source srcset="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/stock/child-care-happy-woman-making-gymnastics-to-her-b-2025-03-18-16-11-26-utc.jpg" alt="Kinderbetreuung: Sozialarbeiterin spielt mit Kind 3" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
-                    </picture>
+                <div id="slideshow-kinderbetreuung" class="w-full relative h-96 md:h-[30rem] rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
+                    <!-- Using the picture shortcode for the slideshow images -->
+                    <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
+                        <picture class="w-full h-full object-cover"><source type="image/webp" srcset="/img/dUj5FT3QdY-320.webp 320w, /img/dUj5FT3QdY-640.webp 640w" sizes="(min-width: 768px) 50vw, 100vw"><img src="/img/dUj5FT3QdY-320.jpeg" srcset="/img/dUj5FT3QdY-320.jpeg 320w, /img/dUj5FT3QdY-640.jpeg 640w" 
+                      sizes="(min-width: 768px) 50vw, 100vw" alt="Kinderbetreuung: Suzana mit Kind" class="w-full h-full object-cover" loading="lazy" decoding="async"></picture>
+                    </div>
                 </div>
             </div>
 <p><!-- Service Content -->
@@ -321,25 +326,12 @@ Anfrage stellen
         <div class="flex flex-col md:flex-row-reverse items-center">
             <!-- Service Image -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pl-10">
-                 <div id="slideshow-begleitung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
-                     <!-- Slideshow Image 1 - Updated Path -->
-                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
-                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
-                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
-                    </picture>
-                     <!-- Slideshow Image 2 - Placeholder/Same Image, Update if needed -->
-                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
-                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
-                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft 2" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
-                    </picture>
-                     <!-- Slideshow Image 3 - Placeholder/Same Image, Update if needed -->
-                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0">
-                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.webp" type="image/webp">
-                        <source srcset="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg" alt="Gesellschaftliche Begleitung: Senior in Gesellschaft 3" class="w-full h-full object-cover" loading="lazy" width="1024" height="683">
-                    </picture>
+                <div id="slideshow-begleitung" class="w-full relative h-96 md:h-[30rem] rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
+                    <!-- Using the picture shortcode for the slideshow, adding multiple images -->
+                    <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100 z-10">
+                        <picture class="w-full h-full object-cover"><source type="image/webp" srcset="/img/J55jmATz_h-320.webp 320w, /img/J55jmATz_h-640.webp 640w" sizes="(min-width: 768px) 50vw, 100vw"><img src="/img/J55jmATz_h-320.jpeg" srcset="/img/J55jmATz_h-320.jpeg 320w, /img/J55jmATz_h-640.jpeg 640w" 
+                      sizes="(min-width: 768px) 50vw, 100vw" alt="Gesellschaftliche Begleitung: Seniorin" class="w-full h-full object-cover" loading="lazy" decoding="async"></picture>
+                    </div>
                 </div>
             </div>
 <p><!-- Service Content -->
@@ -350,6 +342,8 @@ Anfrage stellen
 <h3 class="text-lg font-bold text-brand-green mb-2 font-heading">Mein Angebot umfasst:</h3>
 <ul class="list-disc list-inside text-gray-700 space-y-2">
 <li>Begleitung zum Geschäftsessen, Kulturveranstaltungen usw.</li>
+<li>Begleitung bei Familienfeiern oder wichtigen sozialen Anlässen</li>
+<li>Betreuung bei Arztbesuchen und Behördengängen</li>
 </ul>
 </div></p>
 <p><p class="text-gray-700 mb-6 leading-relaxed text-base md:text-lg max-w-prose">
@@ -366,57 +360,33 @@ Anfrage stellen
 <section id="service-personenbetreuung" class="py-16 bg-gray-50">
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center">
-            <!-- Service Image -->
-            <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                <div id="slideshow-personenbetreuung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
-                    <!-- Slideshow Images - Updated Paths -->
-                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100 z-10">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_132453.webp" type="image/webp">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_132453.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_132453.jpg" alt="Personenbetreuung: Suzana 1" class="w-full h-full object-cover" loading="lazy">
-                    </picture>
-                    <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141037.webp" type="image/webp">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141037.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_141037.jpg" alt="Personenbetreuung: Suzana 2" class="w-full h-full object-cover" loading="lazy">
-                    </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141114.webp" type="image/webp">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141114.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_141114.jpg" alt="Personenbetreuung: Suzana 3" class="w-full h-full object-cover" loading="lazy">
-                    </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141212.webp" type="image/webp">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141212.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_141212.jpg" alt="Personenbetreuung: Suzana 4" class="w-full h-full object-cover" loading="lazy">
-                    </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141312.webp" type="image/webp">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_141312.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_141312.jpg" alt="Personenbetreuung: Suzana 5" class="w-full h-full object-cover" loading="lazy">
-                    </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_144108.webp" type="image/webp">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/20250420_144108.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/erwachsenenbetreuung/20250420_144108.jpg" alt="Personenbetreuung: Suzana 6" class="w-full h-full object-cover" loading="lazy">
-                    </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0005.webp" type="image/webp">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0005.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0005.jpg" alt="Personenbetreuung: Suzana 7" class="w-full h-full object-cover" loading="lazy">
-                    </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0008.webp" type="image/webp">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0008.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/erwachsenenbetreuung/IMG-20250420-WA0008.jpg" alt="Personenbetreuung: Suzana 8" class="w-full h-full object-cover" loading="lazy">
-                    </picture>
-                     <picture class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250421-WA0000.webp" type="image/webp">
-                        <source srcset="/assets/images/original/erwachsenenbetreuung/IMG-20250421-WA0000.jpg" type="image/jpeg">
-                        <img src="/assets/images/original/erwachsenenbetreuung/IMG-20250421-WA0000.jpg" alt="Personenbetreuung: Suzana 9" class="w-full h-full object-cover" loading="lazy">
-                    </picture>
-                </div>
-            </div>
+            <!-- Service Image - Hidden on mobile -->
+            <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10 block">
+                <!-- <h3 class="text-2xl font-bold mb-4 text-center">Hausgemachte Spezialitäten</h3> -->
+<p><!-- Slideshow container -->
+<div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
+<!-- Image 1 -->
+<div class="slide">
+<img src="/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg" alt="Erfrischender Ananas-Banana Cocktail" class="w-full h-full object-contain">
+<div class="slide-caption">Erfrischender Ananas-Banana Cocktail</div>
+</div>
+<!-- Image 2 -->
+<div class="slide">
+<img src="/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg" alt="Delikate Lammrippen mit Knoblauch und Oregano" class="w-full h-full object-contain">
+<div class="slide-caption">Delikate Lammrippen mit Knoblauch und Oregano</div>
+</div>
+<!-- Image 3 -->
+<div class="slide">
+<img src="/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg" alt="Käsecracker Demeter" class="w-full h-full object-contain">
+<div class="slide-caption">Käsecracker Demeter</div>
+</div>
+<!-- Image 4 -->
+<div class="slide">
+<img src="/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg" alt="Marinierte pikante Lammrippchen mit Honig" class="w-full h-full object-contain">
+<div class="slide-caption">Marinierte pikante Lammrippchen mit Honig</div>
+</div>
+</div>
+</div></p>
 <p><!-- Service Content -->
 <div class="w-full md:w-1/2">
 <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Individuelle Personenbetreuung</h2></p>
@@ -442,6 +412,39 @@ Anfrage stellen
 </a>
 </div>
 </div>
+</div></p>
+</section>
+<!-- Testimonials Section MOVED TO HERE -->
+<section id="testimonials" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-heading">Was Kunden sagen</h2>
+        <!-- Changed from grid to relative container for slideshow -->
+        <div class="css-slideshow-fade relative max-w-2xl mx-auto min-h-[15rem]">
+<p><!-- Placeholder Quote 1 -->
+<div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+<!-- Circular Image Placeholder -->
+<div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+<!-- Quote Text -->
+<p class="text-gray-600 italic mb-4">&quot;Placeholder Zitat: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&quot;</p>
+<p class="text-gray-800 font-semibold">- Name Kunde/Kundin 1</p>
+</div></p>
+<p><!-- Placeholder Quote 2 -->
+<div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+<!-- Circular Image Placeholder -->
+<div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+<!-- Quote Text -->
+<p class="text-gray-600 italic mb-4">&quot;Placeholder Zitat: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&quot;</p>
+<p class="text-gray-800 font-semibold">- Name Kunde/Kundin 2</p>
+</div></p>
+<p><!-- Placeholder Quote 3 -->
+<div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+<!-- Circular Image Placeholder -->
+<div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+<!-- Quote Text -->
+<p class="text-gray-600 italic mb-4">&quot;Placeholder Zitat: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&quot;</p>
+<p class="text-gray-800 font-semibold">- Name Kunde/Kundin 3</p>
+</div></p>
+<p></div>
 </div></p>
 </section>
 <!-- Process Section: How We Work - With interactive tabs -->
@@ -471,7 +474,7 @@ Anfrage stellen
 <p><!-- Content on the right -->
 <div class="w-full md:w-[58%] flex-grow order-1 md:order-2">
 <div class="bg-white/10 rounded-lg p-6 md:p-8 shadow-lg">
-<div id="step1-content" class="process-content active">
+<div id="step1-content" class="process-content active transition-opacity duration-500 ease-in-out opacity-100">
 <p class="text-white mb-4 leading-relaxed">
 Der erste Schritt zu einer erfolgreichen Zusammenarbeit beginnt mit Ihrer Kontaktaufnahme. Sie können mich ganz einfach auf folgende Weise erreichen:
 </p>
@@ -485,7 +488,7 @@ Der erste Schritt zu einer erfolgreichen Zusammenarbeit beginnt mit Ihrer Kontak
 Ich lege großen Wert auf zeitnahe Kommunikation und antworte in der Regel innerhalb von 24 Stunden auf Ihre Anfrage.
 </p>
 </div></p>
-<p><div id="step2-content" class="process-content">
+<p><div id="step2-content" class="process-content transition-opacity duration-500 ease-in-out opacity-0">
 <p class="text-white mb-4 leading-relaxed">
 Nach der ersten Kontaktaufnahme vereinbaren wir ein unverbindliches Gespräch, das entweder telefonisch oder persönlich stattfinden kann. Dieses Gespräch dient dazu, Ihre Bedürfnisse und Wünsche umfassend zu verstehen und eine optimale Grundlage für mein Angebot für Sie zu schaffen.
 </p>
@@ -495,12 +498,12 @@ Nach der ersten Kontaktaufnahme vereinbaren wir ein unverbindliches Gespräch, d
 <li>Offene Fragen zu beantworten und gegenseitiges Vertrauen aufzubauen</li>
 </ul>
 </div></p>
-<p><div id="step3-content" class="process-content">
+<p><div id="step3-content" class="process-content transition-opacity duration-500 ease-in-out opacity-0">
 <p class="text-white mb-4 leading-relaxed">
 Basierend auf den Erkenntnissen aus unserem Gespräch erstelle ich ein Angebot mit einer detaillierten Beschreibung der angebotenen Leistungen. Dieses Angebot wird die vereinbarten Zeiten, den Umfang der Leistungen sowie die Zahlungsbedingungen für Sie umfassen.
 </p>
 </div></p>
-<p><div id="step4-content" class="process-content">
+<p><div id="step4-content" class="process-content transition-opacity duration-500 ease-in-out opacity-0">
 <p class="text-white mb-4 leading-relaxed">
 Nach Ihrer Zustimmung zum Angebot beginnen wir mit der konkreten Umsetzung unserer Zusammenarbeit, ich passe mich Ihrer Wünsche, Bedürfnisse und Zeitpläne an.
 </p>
@@ -515,8 +518,8 @@ Nach Ihrer Zustimmung zum Angebot beginnen wir mit der konkreten Umsetzung unser
     <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center text-gray-800 mb-6 font-heading">Kontakt</h2>
 <p><!-- Ethics Disclaimer (Moved and Restyled) -->
-<div class="ethics-disclaimer">
-<p>
+<div class="ethics-disclaimer max-w-2xl mx-auto mb-10 bg-yellow-50 border border-yellow-200 rounded-lg p-4 text-center shadow-sm">
+<p class="text-gray-700">
 <strong>Wichtiger Hinweis:</strong> In meinem Unternehmen lege ich großen Wert auf Ethik. Daher möchte ich Sie darauf hinweisen, dass hier keinesfalls intime körperliche Leistungen angeboten werden. Ich bitte um Ihr Verständnis, falls Sie als Kunde solche Dienstleistungen in Erwägung ziehen. Vielen Dank für Ihre Rücksichtnahme.
 </p>
 </div></p>
@@ -560,9 +563,9 @@ Nachricht senden
 </div></p>
 <p><!-- Contact Details -->
 <div class="w-full md:w-1/2 md:pl-8">
-<div class="bg-white p-8 rounded-lg shadow-lg h-full flex flex-col justify-center">
+<div class="bg-white p-8 rounded-lg shadow-lg flex flex-col justify-center">
 <h3 class="text-xl font-bold text-gray-800 mb-6 font-heading">Kontaktdaten</h3></p>
-<p><div class="mb-6">
+<p><div class="mb-4">
 <h4 class="text-gray-700 font-medium mb-2 font-heading">Anschrift</h4>
 <p class="text-gray-600">
 24ja - Macht das Leben leichter e.U.<br>
@@ -570,19 +573,13 @@ Collection Business Center Wien Goldenes Quartier<br>
 Tuchlauben 7/A, AT - 1010 Wien
 </p>
 </div></p>
-<p><div class="mb-6">
+<p><div class="mb-4">
 <h4 class="text-gray-700 font-medium mb-2 font-heading">Telefon</h4>
 <p class="text-gray-600">0677 61385769</p>
 </div></p>
-<p><div class="mb-6">
+<p><div class="mb-4">
 <h4 class="text-gray-700 font-medium mb-2 font-heading">E-Mail</h4>
 <p class="text-gray-600">goodnews@24ja.at</p>
-</div></p>
-<p><div class="mt-8">
-<a href="https://wa.me/4367761385769" class="inline-flex items-center bg-brand-green hover:bg-brand-green-light text-white font-medium py-2 px-4 rounded-md transition-colors">
-<img src="/assets/icons/whatsapp.svg" alt="WhatsApp Icon" class="w-5 h-5 mr-2">
-WhatsApp
-</a>
 </div>
 </div>
 </div>
@@ -598,7 +595,8 @@ WhatsApp
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="text-center md:text-left mb-6 md:mb-0">
-                    <h3 class="text-2xl font-bold mb-2 font-heading">24ja - Macht das Leben leichter e.U.</h3>
+                    <!-- Replace H3 text with logo -->
+                    <img src="/assets/logo/Logo_24JA.png" alt="24ja Logo" class="h-14 w-auto mx-auto md:mx-0"> <!-- Added mx-auto md:mx-0 for centering on mobile -->
                 </div>
 
                 <div class="text-center md:text-right">

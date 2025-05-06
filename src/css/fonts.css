@@ -1,117 +1,32 @@
-/* Self-hosted Playfair Display font */
+/* Fira Sans font definitions */
 @font-face {
-  font-family: 'Playfair Display';
-  src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-family: 'Fira Sans';
+  src: url('../fonts/Fira_Sans/FiraSans-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Playfair Display';
-  src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-family: 'Fira Sans';
+  src: url('../fonts/Fira_Sans/FiraSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Fira Sans';
+  src: url('../fonts/Fira_Sans/FiraSans-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Playfair Display';
-  src: url('../fonts/Playfair_Display/static/PlayfairDisplay-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* Self-hosted Merriweather font */
-@font-face {
-  font-family: 'Merriweather';
-  src: url('../fonts/Merriweather/static/Merriweather_36pt-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url('../fonts/Merriweather/static/Merriweather_36pt-Bold.ttf') format('truetype');
+  font-family: 'Fira Sans';
+  src: url('../fonts/Fira_Sans/FiraSans-BoldItalic.ttf') format('truetype');
   font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Merriweather';
-  src: url('../fonts/Merriweather/static/Merriweather_36pt-Italic.ttf') format('truetype');
-  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
-
-/* Self-hosted Cormorant Garamond font */
-@font-face {
-  font-family: 'Cormorant Garamond';
-  src: url('../fonts/Cormorant_Garamond/static/CormorantGaramond-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cormorant Garamond';
-  src: url('../fonts/Cormorant_Garamond/static/CormorantGaramond-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cormorant Garamond';
-  src: url('../fonts/Cormorant_Garamond/static/CormorantGaramond-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* Self-hosted Epilogue font */
-@font-face {
-  font-family: 'Epilogue';
-  src: url('../fonts/Epilogue/static/Epilogue-Regular.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Epilogue';
-  src: url('../fonts/Epilogue/static/Epilogue-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Epilogue';
-  src: url('../fonts/Epilogue/static/Epilogue-Italic.ttf') format('truetype');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-}
-
-/* Font classes */
-.font-heading {
-  font-family: 'Playfair Display', Georgia, serif;
-}
-
-.font-body {
-  font-family: 'Epilogue', 'Arial', sans-serif;
-}
-
-/* Additional available font classes */
-.font-merriweather {
-  font-family: 'Merriweather', Georgia, serif;
-}
-
-.font-cormorant {
-  font-family: 'Cormorant Garamond', 'Times New Roman', serif;
-} 

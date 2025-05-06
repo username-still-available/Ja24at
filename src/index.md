@@ -8,9 +8,9 @@ title: Home
     <div class="container mx-auto px-6">
         <!-- Image centered and made more prominent -->
         <div class="flex flex-col items-center">
-            <!-- Image Container - Reduced size by 50% -->
-            <div class="w-full max-w-md mb-12 mx-auto">
-                <div class="rounded-lg shadow-xl overflow-hidden flex items-center justify-center">
+            <!-- Image Container - Fixed aspect ratio and improved size -->
+            <div class="w-full max-w-xs mb-12 mx-auto">
+                <div class="rounded-lg shadow-xl overflow-hidden flex items-center justify-center aspect-[3/4]">
                     {% picture "/assets/images/original/Zuzanna/Zuzanna Foto.jpg", "Zuzana Jancova - Professionelle Betreuung", "100vw", "w-full h-full object-cover" %}
                 </div>
             </div>
@@ -84,6 +84,8 @@ title: Home
     </div>
 </section>
 
+<!-- Testimonials Section REMOVED FROM HERE -->
+
 <!-- Detailed Services Sections -->
 
 <!-- Kinderbetreuung Detailed Section -->
@@ -92,7 +94,7 @@ title: Home
         <div class="flex flex-col md:flex-row items-center">
             <!-- Service Image -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                <div id="slideshow-kinderbetreuung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
+                <div id="slideshow-kinderbetreuung" class="w-full relative h-96 md:h-[30rem] rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
                     <!-- Using the picture shortcode for the slideshow images -->
                     <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
                         {% picture "/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg", "Kinderbetreuung: Suzana mit Kind", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
@@ -135,10 +137,10 @@ title: Home
         <div class="flex flex-col md:flex-row-reverse items-center">
             <!-- Service Image -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pl-10">
-                <div id="slideshow-begleitung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
+                <div id="slideshow-begleitung" class="w-full relative h-96 md:h-[30rem] rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
                     <!-- Using the picture shortcode for the slideshow, adding multiple images -->
                     <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100 z-10">
-                        {% picture "/assets/images/original/stock/happy-senior-man-in-admidst-group-of-people-in-a-p-2025-02-10-03-53-47-utc.jpg", "Gesellschaftliche Begleitung: Senior in Gesellschaft", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
+                        {% picture "/assets/images/original/gesellschaftliche-begleitung/Seniorin.jpg", "Gesellschaftliche Begleitung: Seniorin", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
                     </div>
                 </div>
             </div>
@@ -153,8 +155,7 @@ title: Home
                     <ul class="list-disc list-inside text-gray-700 space-y-2">
                         <li>Begleitung zum Geschäftsessen, Kulturveranstaltungen usw.</li>
                         <li>Begleitung bei Familienfeiern oder wichtigen sozialen Anlässen</li>
-                        <li>Diskreter und professioneller Begleitservice für Businessreisen</li>
-                        <li>Begleitung und Unterstützung bei Arztbesuchen und Behördengängen</li>
+                        <li>Betreuung bei Arztbesuchen und Behördengängen</li>
                     </ul>
                 </div>
 
@@ -175,24 +176,31 @@ title: Home
     <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row items-center">
             <!-- Service Image - Hidden on mobile -->
-            <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10 hidden md:block">
-                <div id="slideshow-personenbetreuung" class="relative h-96 rounded-lg overflow-hidden shadow-xl">
-                    <!-- Slideshow Images - Updated to use existing .webp files -->
-                    <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100 z-10">
-                        {% picture "/assets/images/original/erwachsenenbetreuung/Grillhendl/20250420_132453.webp", "Personenbetreuung: Suzana 1", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
-                    </div>
-                     <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        {% picture "/assets/images/original/erwachsenenbetreuung/Grillhendl/20250420_141212.webp", "Personenbetreuung: Suzana 2", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
-                    </div>
-                     <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-0 z-0">
-                        {% picture "/assets/images/original/erwachsenenbetreuung/Grillhendl/20250420_144108.webp", "Personenbetreuung: Suzana 3", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
-                    </div>
-                </div>
+            <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10 block">
+                <!-- <h3 class="text-2xl font-bold mb-4 text-center">Hausgemachte Spezialitäten</h3> -->
                 
-                <!-- Recipe Gallery - Desktop only -->
-                <div id="recipe-gallery-container" class="mt-6">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Meine kulinarischen Spezialitäten</h3>
-                    <div id="recipe-thumbnails" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 gap-2 mb-4"></div>
+                <!-- Slideshow container -->
+                <div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
+                    <!-- Image 1 -->
+                    <div class="slide">
+                        <img src="/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg" alt="Erfrischender Ananas-Banana Cocktail" class="w-full h-full object-contain">
+                        <div class="slide-caption">Erfrischender Ananas-Banana Cocktail</div>
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="slide">
+                        <img src="/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg" alt="Delikate Lammrippen mit Knoblauch und Oregano" class="w-full h-full object-contain">
+                        <div class="slide-caption">Delikate Lammrippen mit Knoblauch und Oregano</div>
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="slide">
+                        <img src="/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg" alt="Käsecracker Demeter" class="w-full h-full object-contain">
+                        <div class="slide-caption">Käsecracker Demeter</div>
+                    </div>
+                    <!-- Image 4 -->
+                    <div class="slide">
+                        <img src="/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg" alt="Marinierte pikante Lammrippchen mit Honig" class="w-full h-full object-contain">
+                        <div class="slide-caption">Marinierte pikante Lammrippchen mit Honig</div>
+                    </div>
                 </div>
             </div>
 
@@ -223,20 +231,45 @@ title: Home
                 <a href="/#contact" class="inline-block bg-brand-green hover:bg-brand-green-light text-white font-medium py-2 px-6 rounded-lg transition-colors">
                     Anfrage stellen
                 </a>
-                
-                <!-- Mobile Recipe Gallery with Slideshow -->
-                <div class="block md:hidden mt-10">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Meine kulinarischen Spezialitäten</h3>
-                    
-                    <!-- Mobile Slideshow -->
-                    <div id="mobile-slideshow-personenbetreuung" class="relative h-72 rounded-lg overflow-hidden shadow-xl mb-4">
-                        <!-- Mobile slideshow will be populated by JavaScript -->
-                    </div>
-                    
-                    <!-- Mobile Recipe Buttons -->
-                    <div id="mobile-recipe-thumbnails" class="grid grid-cols-2 gap-2 mb-4"></div>
-                </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section MOVED TO HERE -->
+<section id="testimonials" class="py-16 bg-gray-50">
+    <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-heading">Was Kunden sagen</h2>
+        <!-- Changed from grid to relative container for slideshow -->
+        <div class="css-slideshow-fade relative max-w-2xl mx-auto min-h-[15rem]">
+            
+            <!-- Placeholder Quote 1 -->
+            <div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+                <!-- Circular Image Placeholder -->
+                <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+                <!-- Quote Text -->
+                <p class="text-gray-600 italic mb-4">"Placeholder Zitat: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
+                <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 1</p>
+            </div>
+            
+            <!-- Placeholder Quote 2 -->
+            <div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+                <!-- Circular Image Placeholder -->
+                <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+                <!-- Quote Text -->
+                <p class="text-gray-600 italic mb-4">"Placeholder Zitat: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
+                <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 2</p>
+            </div>
+            
+            <!-- Placeholder Quote 3 -->
+            <div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+                <!-- Circular Image Placeholder -->
+                <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+                <!-- Quote Text -->
+                <p class="text-gray-600 italic mb-4">"Placeholder Zitat: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+                <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 3</p>
+            </div>
+            
         </div>
     </div>
 </section>
@@ -316,8 +349,6 @@ title: Home
     </div>
 </section>
 
-<!-- The proper contact section is kept at the end of the file, and this duplicated section is removed -->
-
 <!-- Contact Section -->
 <section id="contact" class="py-16">
     <div class="container mx-auto px-6">
@@ -373,10 +404,10 @@ title: Home
 
             <!-- Contact Details -->
             <div class="w-full md:w-1/2 md:pl-8">
-                <div class="bg-white p-8 rounded-lg shadow-lg h-full flex flex-col justify-center">
+                <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col justify-center">
                     <h3 class="text-xl font-bold text-gray-800 mb-6 font-heading">Kontaktdaten</h3>
 
-                    <div class="mb-6">
+                    <div class="mb-4">
                         <h4 class="text-gray-700 font-medium mb-2 font-heading">Anschrift</h4>
                         <p class="text-gray-600">
                             24ja - Macht das Leben leichter e.U.<br>
@@ -385,21 +416,14 @@ title: Home
                         </p>
                     </div>
 
-                    <div class="mb-6">
+                    <div class="mb-4">
                         <h4 class="text-gray-700 font-medium mb-2 font-heading">Telefon</h4>
                         <p class="text-gray-600">0677 61385769</p>
                     </div>
 
-                    <div class="mb-6">
+                    <div class="mb-4">
                         <h4 class="text-gray-700 font-medium mb-2 font-heading">E-Mail</h4>
                         <p class="text-gray-600">goodnews@24ja.at</p>
-                    </div>
-
-                    <div class="mt-8">
-                        <a href="https://wa.me/4367761385769" class="inline-flex items-center bg-brand-green hover:bg-brand-green-light text-white font-medium py-2 px-4 rounded-md transition-colors">
-                            <img src="/assets/icons/whatsapp.svg" alt="WhatsApp Icon" class="w-5 h-5 mr-2">
-                            WhatsApp
-                        </a>
                     </div>
                 </div>
             </div>

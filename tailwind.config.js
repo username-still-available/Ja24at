@@ -16,11 +16,11 @@ module.exports = {
         }
       },
       fontFamily: {
-        'heading': ['Calibri', 'Arial', 'sans-serif'],
-        'body': ['Epilogue', 'Arial', 'sans-serif'],
+        'sans': ['Fira Sans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        'heading': ['Fira Sans', 'Arial', 'sans-serif'],
+        'body': ['Fira Sans', 'Arial', 'sans-serif'],
         'merriweather': ['Merriweather', 'Georgia', 'serif'],
         'cormorant': ['Cormorant Garamond', 'Times New Roman', 'serif'],
-        'sans': ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
       },
       transform: {
         'translate-z-0': 'translateZ(0)',

@@ -4,7 +4,7 @@
 
 @layer base {
     h1, h2, h3, h4, h5, h6 {
-        font-family: 'Raleway', sans-serif;
+        font-family: 'Fira Sans', Arial, sans-serif !important;
         /* Example: Apply bold by default to headings if desired */
         /* font-weight: 700; */
     }
@@ -13,7 +13,7 @@
 
 /* Custom Styles */
 .font-heading {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Fira Sans', Arial, sans-serif !important;
 }
 
 /* Slideshow styles - MOVED to @layer components */
@@ -81,4 +81,85 @@
     }
 }
 
-@import 'custom.css'; 
+@import 'custom.css';
+
+/* Custom CSS */
+
+/* CSS-only Fade Slideshow Animation */
+.css-slideshow-fade {
+  position: relative;
+}
+
+.css-slideshow-fade .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fadeEffect 15s infinite;
+}
+
+/* Style for the slide captions */
+.slide-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Or right: 0; */
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0.5rem; /* Tailwind: p-2 */
+  text-align: center;
+  font-size: 0.875rem; /* Tailwind: text-sm */
+  box-sizing: border-box; /* Ensure padding doesn't expand it beyond 100% width */
+  /* The caption will naturally fade with its parent .slide due to opacity inheritance */
+}
+
+/* Stagger animation delays for each slide */
+.css-slideshow-fade .slide:nth-child(1) {
+  animation-delay: 0s;
+}
+.css-slideshow-fade .slide:nth-child(2) {
+  animation-delay: 5s;
+}
+.css-slideshow-fade .slide:nth-child(3) {
+  animation-delay: 10s;
+}
+
+/* Specific animation for testimonials */
+#testimonials .css-slideshow-fade .slide {
+  animation: testimonialFade 18s infinite; /* Longer cycle for testimonials */
+}
+
+/* Stagger animation delays for testimonials */
+#testimonials .css-slideshow-fade .slide:nth-child(1) {
+  animation-delay: 0s;
+}
+#testimonials .css-slideshow-fade .slide:nth-child(2) {
+  animation-delay: 6s;
+}
+#testimonials .css-slideshow-fade .slide:nth-child(3) {
+  animation-delay: 12s;
+}
+
+@keyframes fadeEffect {
+  0% { opacity: 0; }
+  6.67% { opacity: 1; } /* Fade in for 1s (1/15) */
+  26.67% { opacity: 1; } /* Hold visible for 3s (3/15 = 20%) */
+  33.33% { opacity: 0; } /* Fade out for 1s (1/15) */
+  100% { opacity: 0; } /* Remain hidden until next cycle */
+}
+
+/* Testimonial specific fade animation with cleaner transitions */
+@keyframes testimonialFade {
+  0% { opacity: 0; }
+  5.55% { opacity: 1; } /* Fade in for 1s (1/18) */
+  27.77% { opacity: 1; } /* Hold visible for 4s (4/18 ≈ 22.22%) */
+  33.33% { opacity: 0; } /* Fade out for 1s (1/18) */
+  100% { opacity: 0; } /* Remain hidden until next cycle */
+}
+
+/* REMOVED CSS-only Slideshow Animation */
+
+/* Keep commented out old keyframes for reference if needed */
+/* ... (rest of comment block) ... */ 

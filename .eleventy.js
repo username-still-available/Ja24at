@@ -146,6 +146,9 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("robots.txt"); // Copy robots.txt to _site/robots.txt
   eleventyConfig.addPassthroughCopy("sitemap.xml"); // Copy sitemap.xml to _site/sitemap.xml
 
+  // Tell Eleventy to watch the CSS source directory for changes
+  eleventyConfig.addWatchTarget("./src/css/");
+
   // Shortcodes
   eleventyConfig.addShortcode("year", function() {
     return new Date().getFullYear().toString();
