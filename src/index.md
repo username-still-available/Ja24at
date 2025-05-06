@@ -4,7 +4,7 @@ title: Home
 ---
 
 <!-- About Section - Moved here and redesigned -->
-<section id="about" class="py-16 bg-gray-50">
+<section id="about" class="py-16 bg-brand-green text-white">
     <div class="container mx-auto px-6">
         <!-- Image centered and made more prominent -->
         <div class="flex flex-col items-center">
@@ -16,20 +16,20 @@ title: Home
             </div>
 
             <!-- Heading now below image -->
-            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8 font-heading">Meine Geschichte</h2>
+            <h2 class="text-3xl font-bold text-center text-white mb-8 font-heading">Meine Geschichte</h2>
 
             <!-- About Text - Now below heading -->
             <div class="w-full max-w-3xl text-center md:text-left">
-                <p class="text-gray-700 mb-6">
+                <p class="text-white mb-6">
                     Nach meinem abgeschlossenen Magisterstudium der Sozialen Arbeit an der Universität Bratislava in der Slowakei und einem zweijährigen Aufenthalt in den USA, wo ich ein Praktikum absolvierte, begann meine "Reise" in Österreich als Putzfrau in einem Hotel im ersten Bezirk in Wien. Nach dem Erlernen der deutschen Sprache und dem Bestehen der rechtlichen Prüfung zur Anerkennung meiner Ausbildung für Sozialarbeit gemäß § 7 des WKJHG, die ich erfolgreich beim Magistrat 11 der Stadt Wien ablegte, qualifizierte ich mich als Sozialarbeiterin in Österreich.
                 </p>
-                <div class="border-l-4 border-brand-green pl-10 py-4 my-8">
-                    <p class="text-gray-700 italic font-medium text-lg font-heading">
+                <div class="border-l-4 border-white pl-10 py-4 my-8">
+                    <p class="text-white italic font-medium text-lg font-heading">
                         "Glück ist das einzige, was sich verdoppelt, wenn man es teilt."<br>
                         <span class="text-sm mt-2 block">- Albert Schweitzer</span>
                     </p>
                 </div>
-                <p class="text-gray-700 italic">
+                <p class="text-white italic">
                     Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen Lebenssituationen zur Seite zu stehen. Mein Ziel ist es, diesen nicht nur Unterstützung anzubieten, sondern ihnen auch Zuversicht und Freude zu schenken, um ein Lächeln auf ihre Gesichter zu bringen.
                 </p>
             </div>
@@ -45,7 +45,7 @@ title: Home
         <!-- Use Grid for equal columns, increased gap -->
         <div class="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto gap-6">
             <!-- Service 1: Removed md:basis-1/3 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Kinderbetreuung</h3>
@@ -56,7 +56,7 @@ title: Home
                 </div>
             </div>
             <!-- Service 2: Removed md:basis-1/3 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Gesellschaftliche Begleitung</h3>
@@ -67,7 +67,7 @@ title: Home
                 </div>
             </div>
             <!-- Service 3: Removed md:basis-1/3 -->
-            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Personenbetreuung</h3>
@@ -83,8 +83,6 @@ title: Home
         </div>
     </div>
 </section>
-
-<!-- Testimonials Section REMOVED FROM HERE -->
 
 <!-- Detailed Services Sections -->
 
@@ -237,42 +235,7 @@ title: Home
 </section>
 
 <!-- Testimonials Section MOVED TO HERE -->
-<section id="testimonials" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-heading">Was Kunden sagen</h2>
-        <!-- Changed from grid to relative container for slideshow -->
-        <div class="css-slideshow-fade relative max-w-2xl mx-auto min-h-[15rem]">
-            
-            <!-- Placeholder Quote 1 -->
-            <div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
-                <!-- Circular Image Placeholder -->
-                <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
-                <!-- Quote Text -->
-                <p class="text-gray-600 italic mb-4">"Placeholder Zitat: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
-                <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 1</p>
-            </div>
-            
-            <!-- Placeholder Quote 2 -->
-            <div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
-                <!-- Circular Image Placeholder -->
-                <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
-                <!-- Quote Text -->
-                <p class="text-gray-600 italic mb-4">"Placeholder Zitat: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."</p>
-                <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 2</p>
-            </div>
-            
-            <!-- Placeholder Quote 3 -->
-            <div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
-                <!-- Circular Image Placeholder -->
-                <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
-                <!-- Quote Text -->
-                <p class="text-gray-600 italic mb-4">"Placeholder Zitat: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
-                <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 3</p>
-            </div>
-            
-        </div>
-    </div>
-</section>
+{% include "testimonials.njk" %}
 
 <!-- Process Section: How We Work - With interactive tabs -->
 <section id="process" class="py-16 bg-brand-green text-white">
@@ -365,6 +328,7 @@ title: Home
             <!-- Contact Form -->
             <div class="w-full md:w-1/2 md:pr-8 mb-10 md:mb-0">
                 <form name="contact-form" id="contact-form" action="#" method="POST" class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-6 font-heading">Jetzt Kontakt aufnehmen</h3>
                     <div class="mb-6">
                         <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
                         <input type="text" id="name" name="name" autocomplete="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required>
@@ -424,6 +388,34 @@ title: Home
                     <div class="mb-4">
                         <h4 class="text-gray-700 font-medium mb-2 font-heading">E-Mail</h4>
                         <p class="text-gray-600">goodnews@24ja.at</p>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="mt-6">
+                        <h4 class="text-gray-700 font-medium mb-2 font-heading">Standort</h4>
+                        <div class="map-container relative overflow-hidden rounded-lg shadow-md bg-gray-100">
+                            <!-- Static map image (privacy-friendly approach) -->
+                            <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                                <img 
+                                    src="/assets/images/maps/map.png" 
+                                    alt="Collection Business Center Wien Goldenes Quartier, Tuchlauben 7/A, 1010 Wien" 
+                                    class="w-full h-full object-cover"
+                                >
+                                <!-- Privacy overlay with information and link -->
+                                <div class="absolute inset-0 bg-brand-green bg-opacity-70 flex flex-col items-center justify-center text-white text-center p-4 transition-opacity duration-300 opacity-0 hover:opacity-100">
+                                    <p class="font-bold mb-2">Collection Business Center Wien</p>
+                                    <p class="mb-4">Tuchlauben 7/A, 1010 Wien</p>
+                                    <a 
+                                        href="https://maps.google.com/?q=Tuchlauben+7,+1010+Wien,+Austria" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        class="bg-white text-brand-green px-4 py-2 rounded-md shadow-sm font-bold transition-colors hover:bg-gray-100"
+                                    >
+                                        In Google Maps öffnen
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

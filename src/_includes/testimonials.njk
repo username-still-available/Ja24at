@@ -1,0 +1,33 @@
+{% macro testimonialSlide(text, author, position) %}
+<div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+  <!-- Circular Image Placeholder -->
+  <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+  <!-- Quote Text -->
+  <p class="text-gray-600 italic mb-4">{{ text }}</p>
+  <p class="text-gray-800 font-semibold">{{ author }}</p>
+</div>
+{% endmacro %}
+
+<!-- Testimonials Slider Component -->
+<section id="testimonials" class="py-16 bg-gray-50">
+<div class="container mx-auto px-6">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-heading">Was Kunden und Kundinnen sagen</h2>
+  <!-- Relative container for slideshow -->
+  <div class="css-slideshow-fade relative max-w-2xl mx-auto min-h-[15rem]">
+    {{ testimonialSlide(
+      '"Placeholder Zitat: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."',
+      '- Name Kunde/Kundin 1'
+    ) }}
+    
+    {{ testimonialSlide(
+      '"Placeholder Zitat: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."',
+      '- Name Kunde/Kundin 2'
+    ) }}
+    
+    {{ testimonialSlide(
+      '"Placeholder Zitat: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."',
+      '- Name Kunde/Kundin 3'
+    ) }}
+  </div>
+</div>
+</section> 

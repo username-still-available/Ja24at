@@ -10,9 +10,9 @@ module.exports = {
     extend: {
       colors: {
         'brand-green': {
-          DEFAULT: '#0A4835', // Dark green from the logo
-          light: '#136b4f',   // Lighter variant for hover states
-          dark: '#083a2a'     // Darker variant
+          DEFAULT: '#184435', // Dark green from the logo
+          light: '#245c49',   // Lighter variant for hover states
+          dark: '#123629'     // Darker variant
         }
       },
       fontFamily: {
@@ -25,6 +25,10 @@ module.exports = {
       transform: {
         'translate-z-0': 'translateZ(0)',
       },
+      animation: {
+        'pulse-slow': 'pulse 11s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'pulse-slower': 'pulse 15s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      }
     },
   },
   safelist: [
@@ -44,6 +48,17 @@ module.exports = {
     'opacity-100',
     'z-0',
     'z-10',
+    // Aspect ratio classes
+    'aspect-w-16',
+    'aspect-h-9',
+    // Hover transform classes
+    'transition-transform',
+    'duration-300',
+    'hover:-translate-y-2',
+    // Animation classes
+    'animate-pulse-slow',
+    'animate-pulse-slower',
+    'rounded-full',
     // Classes below are now defined directly in custom.css using @apply
     // 'transition-opacity',
     // 'duration-1000',
@@ -59,5 +74,7 @@ module.exports = {
     // 'border-yellow-400',
     // 'text-yellow-800'
   ],
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+  ],
 } 

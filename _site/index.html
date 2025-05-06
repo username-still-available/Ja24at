@@ -64,16 +64,16 @@
         @media (min-width: 1280px) { .container { max-width: 1280px; } }
         @media (min-width: 1536px) { .container { max-width: 1536px; } }
         /* Navigation */
-        nav { background-color: #fff; padding-top: 1rem; padding-bottom: 1rem; padding-left: 1.5rem; padding-right: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1); position: sticky; top: 0; z-index: 50; height: 70px; }
+        nav { background-color: #0A4835; padding-top: 1rem; padding-bottom: 1rem; padding-left: 1.5rem; padding-right: 1.5rem; box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -2px rgba(0,0,0,.1); position: sticky; top: 0; z-index: 50; height: 70px; }
         nav .container { display: flex; justify-content: space-between; align-items: center; height: 100%; }
-        nav a.font-heading { font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; color: #0A4835; font-family: 'Fira Sans', Arial, sans-serif !important; }
+        nav a.font-heading { font-size: 1.875rem; line-height: 2.25rem; font-weight: 700; color: #fff; font-family: 'Fira Sans', Arial, sans-serif !important; }
         /* Hero Section */
         header { position: relative; }
-        header > div { background-color: #0A4835; color: #fff; }
+        header > div { background-color: #fff; color: #184435; }
         header .container { padding-top: 4rem; padding-bottom: 4rem; display: flex; flex-direction: column; align-items: center; text-align: center; }
-        header h1 { font-size: 2.25rem; line-height: 2.5rem; font-weight: 700; color: #fff; margin-bottom: 1.5rem; font-family: 'Fira Sans', Arial, sans-serif !important; }
-        header p { font-size: 1.25rem; line-height: 1.75rem; color: #fff; max-width: 42rem; margin-bottom: 2.5rem; }
-        header a { display: inline-block; background-color: #fff; color: #0A4835; font-weight: 700; padding: 0.75rem 2rem; border-radius: 9999px; box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1); }
+        header h1 { font-size: 2.25rem; line-height: 2.5rem; font-weight: 700; color: #184435; margin-bottom: 1.5rem; font-family: 'Fira Sans', Arial, sans-serif !important; }
+        header p { font-size: 1.25rem; line-height: 1.75rem; color: #184435; max-width: 42rem; margin-bottom: 2.5rem; }
+        header a { display: inline-block; background-color: #184435; color: #fff; font-weight: 700; padding: 0.75rem 2rem; border-radius: 9999px; box-shadow: 0 10px 15px -3px rgba(0,0,0,.1), 0 4px 6px -4px rgba(0,0,0,.1); }
         /* Responsive Hero Styles (Basic) */
         @media (min-width: 768px) {
             header .container { padding-top: 6rem; padding-bottom: 6rem; }
@@ -81,6 +81,23 @@
         }
         /* Add any other absolutely critical above-the-fold styles here */
 
+        @keyframes wave {
+            0% {
+                transform: translateX(-1.5%) translateY(1%);
+            }
+            100% {
+                transform: translateX(1.5%) translateY(-1%);
+            }
+        }
+        .wave-animation {
+            will-change: transform;
+        }
+
+        /* Heading text fix to prevent cut-off letters */
+        .heading-container {
+            line-height: 1.3;
+            padding-bottom: 0.15em; /* Prevent cutting off descenders */
+        }
     </style>
 
     <!-- Preload critical Fira Sans font -->
@@ -88,7 +105,7 @@
 
     <!-- Load CSS synchronously -->
     <!-- Note: Path updated to reflect assets being served from root -->
-    <link rel="stylesheet" href="/css/style.css?v=1746527818885">
+    <link rel="stylesheet" href="/css/style.css?v=1746538408608">
     <!-- Async loading removed for style.css -->
     <!-- <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
     <!-- <noscript><link rel="stylesheet" href="/css/style.css"></noscript> -->
@@ -153,19 +170,19 @@
 <body class="bg-white font-body m-0">
     
     <!-- Navigation Bar with white background - moved outside header to be sticky throughout the page -->
-    <nav class="bg-white py-4 px-6 shadow-md sticky top-0 z-50 h-[70px]">
+    <nav class="bg-brand-green py-4 px-6 shadow-md sticky top-0 z-50 h-[70px]">
         <div class="container mx-auto flex justify-between items-center h-full">
             <!-- Update link to point to root, replace text with logo -->
             <a href="/" class="flex items-center"> <!-- Use flex to align image if needed -->
-                <img src="/assets/logo/Logo_24JA.png" alt="24ja Logo" class="h-14 w-auto"> <!-- Increased height to h-14 (56px) -->
+                <img src="/assets/logo/Logo_24JA.png" alt="24ja Logo" class="h-16 w-auto"> <!-- Adjusted from h-[17.5] to h-16 (64px) -->
             </a>
             <div class="hidden md:flex space-x-6">
-                <a href="/#about" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Meine Geschichte</a>
-                <a href="/#services" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Leistungen</a>
-                <a href="/#contact" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Kontakt</a>
+                <a href="/#about" class="text-white hover:bg-white hover:text-brand-green px-3 py-2 rounded-md transition-colors duration-500">Meine Geschichte</a>
+                <a href="/#services" class="text-white hover:bg-white hover:text-brand-green px-3 py-2 rounded-md transition-colors duration-500">Leistungen</a>
+                <a href="/#contact" class="text-white hover:bg-white hover:text-brand-green px-3 py-2 rounded-md transition-colors duration-500">Kontakt</a>
             </div>
             <!-- Mobile Menu Button -->
-            <button class="md:hidden text-gray-700" id="mobile-menu-button">
+            <button class="md:hidden text-white" id="mobile-menu-button">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -174,26 +191,46 @@
     </nav>
 
     <!-- Mobile Menu (Hidden by default) -->
-    <div class="md:hidden hidden bg-white w-full fixed top-[4.375rem] z-40 shadow-md translate-z-0" id="mobile-menu">
+    <div class="md:hidden hidden bg-brand-green-light w-full fixed top-[4.375rem] z-40 shadow-md translate-z-0" id="mobile-menu">
         <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
-            <a href="/#about" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Meine Geschichte</a>
-            <a href="/#services" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Leistungen</a>
-            <a href="/#contact" class="text-gray-700 hover:text-white hover:bg-brand-green px-3 py-2 rounded-md transition-colors duration-500">Kontakt</a>
+            <a href="/#about" class="text-white hover:bg-white hover:text-brand-green px-3 py-2 rounded-md transition-colors duration-500">Meine Geschichte</a>
+            <a href="/#services" class="text-white hover:bg-white hover:text-brand-green px-3 py-2 rounded-md transition-colors duration-500">Leistungen</a>
+            <a href="/#contact" class="text-white hover:bg-white hover:text-brand-green px-3 py-2 rounded-md transition-colors duration-500">Kontakt</a>
         </div>
     </div>
 
     <!-- Hero Section with brand-green background -->
     <header class="relative">
-        <!-- Hero Content with brand-green background -->
-        <div class="bg-brand-green text-white">
-            <div class="container mx-auto px-6 py-16 md:py-24 flex flex-col items-center text-center">
-                <h1 class="text-4xl md:text-5xl font-bold text-white mb-6 font-heading">Alltagsunterstützung für Ihre höhere Lebensqualität und mehr Flexibilität</h1>
-                <p class="text-xl text-white max-w-2xl mb-10">
+        <!-- Hero Content with white background and diagonal accent -->
+        <div class="bg-white text-brand-green relative overflow-hidden">
+            <!-- Circle accent elements with pulsating animation -->
+            <div class="absolute -right-16 -top-16 w-64 h-64 bg-brand-green opacity-[0.07] rounded-full animate-pulse-slow"></div>
+            <div class="absolute -left-16 -bottom-16 w-64 h-64 bg-brand-green opacity-[0.07] rounded-full animate-pulse-slower"></div>
+            
+            <div class="container mx-auto px-6 py-16 md:py-24 flex flex-col items-center text-center relative z-10">
+                <div class="heading-container">
+                    <h1 class="text-4xl md:text-5xl font-bold text-brand-green mb-6 font-heading">Alltagsunterstützung für Ihre höhere Lebensqualität</h1>
+                </div>
+                <p class="text-xl text-brand-green max-w-2xl mb-10">
                     Der Ort, an dem sich im Leben Exzellenz und Leidenschaft treffen.
                 </p>
-                <a href="/#contact" class="bg-white hover:bg-gray-100 text-brand-green font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
+                <a href="/#contact" class="bg-brand-green hover:bg-brand-green-light text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
                     Kontakt aufnehmen
                 </a>
+            </div>
+            
+            <!-- Wave divider for smooth transition to next section -->
+            <div class="wave-divider relative h-24 -mb-1 overflow-hidden">
+                <div class="wave-animation absolute inset-0 w-[104%] -left-[2%]" style="animation: wave 15s ease-in-out infinite alternate;">
+                    <svg class="absolute bottom-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                        <path fill="#184435" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,218.7C672,203,768,149,864,128C960,107,1056,117,1152,138.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    </svg>
+                </div>
+                <div class="wave-animation absolute inset-0 w-[104%] -left-[2%]" style="animation: wave 10s ease-in-out infinite alternate-reverse; opacity: 0.5;">
+                    <svg class="absolute bottom-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+                        <path fill="#184435" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,202.7C384,192,480,160,576,165.3C672,171,768,213,864,213.3C960,213,1056,171,1152,149.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                    </svg>
+                </div>
             </div>
         </div>
     </header>
@@ -204,7 +241,7 @@
     <!-- Main content area -->
     <main>
         <!-- About Section - Moved here and redesigned -->
-<section id="about" class="py-16 bg-gray-50">
+<section id="about" class="py-16 bg-brand-green text-white">
     <div class="container mx-auto px-6">
         <!-- Image centered and made more prominent -->
         <div class="flex flex-col items-center">
@@ -216,19 +253,19 @@
                 </div>
             </div>
 <p><!-- Heading now below image -->
-<h2 class="text-3xl font-bold text-center text-gray-800 mb-8 font-heading">Meine Geschichte</h2></p>
+<h2 class="text-3xl font-bold text-center text-white mb-8 font-heading">Meine Geschichte</h2></p>
 <p><!-- About Text - Now below heading -->
 <div class="w-full max-w-3xl text-center md:text-left">
-<p class="text-gray-700 mb-6">
+<p class="text-white mb-6">
 Nach meinem abgeschlossenen Magisterstudium der Sozialen Arbeit an der Universität Bratislava in der Slowakei und einem zweijährigen Aufenthalt in den USA, wo ich ein Praktikum absolvierte, begann meine &quot;Reise&quot; in Österreich als Putzfrau in einem Hotel im ersten Bezirk in Wien. Nach dem Erlernen der deutschen Sprache und dem Bestehen der rechtlichen Prüfung zur Anerkennung meiner Ausbildung für Sozialarbeit gemäß § 7 des WKJHG, die ich erfolgreich beim Magistrat 11 der Stadt Wien ablegte, qualifizierte ich mich als Sozialarbeiterin in Österreich.
 </p>
-<div class="border-l-4 border-brand-green pl-10 py-4 my-8">
-<p class="text-gray-700 italic font-medium text-lg font-heading">
+<div class="border-l-4 border-white pl-10 py-4 my-8">
+<p class="text-white italic font-medium text-lg font-heading">
 &quot;Glück ist das einzige, was sich verdoppelt, wenn man es teilt.&quot;<br>
 <span class="text-sm mt-2 block">- Albert Schweitzer</span>
 </p>
 </div>
-<p class="text-gray-700 italic">
+<p class="text-white italic">
 Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen Lebenssituationen zur Seite zu stehen. Mein Ziel ist es, diesen nicht nur Unterstützung anzubieten, sondern ihnen auch Zuversicht und Freude zu schenken, um ein Lächeln auf ihre Gesichter zu bringen.
 </p>
 </div>
@@ -242,7 +279,7 @@ Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen
 <p><!-- Use Grid for equal columns, increased gap -->
 <div class="grid grid-cols-1 md:grid-cols-3 max-w-5xl mx-auto gap-6">
 <!-- Service 1: Removed md:basis-1/3 -->
-<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
 <div class="bg-brand-green-light h-2"></div>
 <div class="p-6 flex flex-col flex-grow">
 <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Kinderbetreuung</h3>
@@ -253,7 +290,7 @@ Mehr erfahren →
 </div>
 </div>
 <!-- Service 2: Removed md:basis-1/3 -->
-<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
 <div class="bg-brand-green-light h-2"></div>
 <div class="p-6 flex flex-col flex-grow">
 <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Gesellschaftliche Begleitung</h3>
@@ -264,7 +301,7 @@ Mehr erfahren →
 </div>
 </div>
 <!-- Service 3: Removed md:basis-1/3 -->
-<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
 <div class="bg-brand-green-light h-2"></div>
 <div class="p-6 flex flex-col flex-grow">
 <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Personenbetreuung</h3>
@@ -280,7 +317,6 @@ Mehr erfahren →
 </div>
 </div></p>
 </section>
-<!-- Testimonials Section REMOVED FROM HERE -->
 <!-- Detailed Services Sections -->
 <!-- Kinderbetreuung Detailed Section -->
 <section id="service-kinderbetreuung" class="py-16 bg-gray-50">
@@ -415,38 +451,36 @@ Anfrage stellen
 </div></p>
 </section>
 <!-- Testimonials Section MOVED TO HERE -->
+<!-- Testimonials Slider Component -->
 <section id="testimonials" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-heading">Was Kunden sagen</h2>
-        <!-- Changed from grid to relative container for slideshow -->
-        <div class="css-slideshow-fade relative max-w-2xl mx-auto min-h-[15rem]">
-<p><!-- Placeholder Quote 1 -->
+<div class="container mx-auto px-6">
+  <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-heading">Was Kunden und Kundinnen sagen</h2>
+  <!-- Relative container for slideshow -->
+  <div class="css-slideshow-fade relative max-w-2xl mx-auto min-h-[15rem]">
 <div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
-<!-- Circular Image Placeholder -->
-<div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
-<!-- Quote Text -->
-<p class="text-gray-600 italic mb-4">&quot;Placeholder Zitat: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&quot;</p>
-<p class="text-gray-800 font-semibold">- Name Kunde/Kundin 1</p>
-</div></p>
-<p><!-- Placeholder Quote 2 -->
+  <!-- Circular Image Placeholder -->
+  <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+  <!-- Quote Text -->
+  <p class="text-gray-600 italic mb-4">&quot;Placeholder Zitat: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&quot;</p>
+  <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 1</p>
+</div>
 <div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
-<!-- Circular Image Placeholder -->
-<div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
-<!-- Quote Text -->
-<p class="text-gray-600 italic mb-4">&quot;Placeholder Zitat: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&quot;</p>
-<p class="text-gray-800 font-semibold">- Name Kunde/Kundin 2</p>
-</div></p>
-<p><!-- Placeholder Quote 3 -->
+  <!-- Circular Image Placeholder -->
+  <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+  <!-- Quote Text -->
+  <p class="text-gray-600 italic mb-4">&quot;Placeholder Zitat: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&quot;</p>
+  <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 2</p>
+</div>
 <div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
-<!-- Circular Image Placeholder -->
-<div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
-<!-- Quote Text -->
-<p class="text-gray-600 italic mb-4">&quot;Placeholder Zitat: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&quot;</p>
-<p class="text-gray-800 font-semibold">- Name Kunde/Kundin 3</p>
-</div></p>
-<p></div>
-</div></p>
-</section>
+  <!-- Circular Image Placeholder -->
+  <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+  <!-- Quote Text -->
+  <p class="text-gray-600 italic mb-4">&quot;Placeholder Zitat: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&quot;</p>
+  <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 3</p>
+</div>
+  </div>
+</div>
+</section> 
 <!-- Process Section: How We Work - With interactive tabs -->
 <section id="process" class="py-16 bg-brand-green text-white">
     <div class="container mx-auto px-6">
@@ -527,6 +561,7 @@ Nach Ihrer Zustimmung zum Angebot beginnen wir mit der konkreten Umsetzung unser
 <!-- Contact Form -->
 <div class="w-full md:w-1/2 md:pr-8 mb-10 md:mb-0">
 <form name="contact-form" id="contact-form" action="#" method="POST" class="bg-white p-8 rounded-lg shadow-lg">
+<h3 class="text-xl font-bold text-gray-800 mb-6 font-heading">Jetzt Kontakt aufnehmen</h3>
 <div class="mb-6">
 <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
 <input type="text" id="name" name="name" autocomplete="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required>
@@ -580,6 +615,33 @@ Tuchlauben 7/A, AT - 1010 Wien
 <p><div class="mb-4">
 <h4 class="text-gray-700 font-medium mb-2 font-heading">E-Mail</h4>
 <p class="text-gray-600">goodnews@24ja.at</p>
+</div></p>
+<p><!-- Map Placeholder -->
+<div class="mt-6">
+<h4 class="text-gray-700 font-medium mb-2 font-heading">Standort</h4>
+<div class="map-container relative overflow-hidden rounded-lg shadow-md bg-gray-100">
+<!-- Static map image (privacy-friendly approach) -->
+<div class="aspect-w-16 aspect-h-9 bg-gray-200">
+<img 
+                                    src="/assets/images/maps/map.png" 
+                                    alt="Collection Business Center Wien Goldenes Quartier, Tuchlauben 7/A, 1010 Wien" 
+                                    class="w-full h-full object-cover"
+                                >
+<!-- Privacy overlay with information and link -->
+<div class="absolute inset-0 bg-brand-green bg-opacity-70 flex flex-col items-center justify-center text-white text-center p-4 transition-opacity duration-300 opacity-0 hover:opacity-100">
+<p class="font-bold mb-2">Collection Business Center Wien</p>
+<p class="mb-4">Tuchlauben 7/A, 1010 Wien</p>
+<a 
+                                        href="https://maps.google.com/?q=Tuchlauben+7,+1010+Wien,+Austria" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        class="bg-white text-brand-green px-4 py-2 rounded-md shadow-sm font-bold transition-colors hover:bg-gray-100"
+                                    >
+In Google Maps öffnen
+</a>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -591,7 +653,7 @@ Tuchlauben 7/A, AT - 1010 Wien
     
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-10">
+    <footer class="bg-brand-green text-white py-10">
         <div class="container mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="text-center md:text-left mb-6 md:mb-0">
