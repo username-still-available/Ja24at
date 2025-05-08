@@ -100,6 +100,14 @@ pageType: legal
                     <li>Zuzana Jancova</li>
                 </ul>
             </div>
+
+            <div class="mt-8">
+                <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">Kartendaten & Bildnachweis</h3>
+                <p class="text-gray-700 mb-4">
+                    Die Kartengrafik auf dieser Website basiert auf Daten von [OpenStreetMap](https://www.openstreetmap.org/).
+                    © OpenStreetMap-Mitwirkende, ODbL 1.0
+                </p>
+            </div>
         </div>
     </div>
 </section> 

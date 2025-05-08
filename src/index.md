@@ -11,7 +11,7 @@ title: Home
             <!-- Image Container - Fixed aspect ratio and improved size -->
             <div class="w-full max-w-xs mb-12 mx-auto">
                 <div class="rounded-lg shadow-xl overflow-hidden flex items-center justify-center aspect-[3/4]">
-                    {% picture "/assets/images/original/Zuzanna/Zuzanna Foto.jpg", "Zuzana Jancova - Professionelle Betreuung", "100vw", "w-full h-full object-cover" %}
+                    {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna Foto.jpg', "Zuzana Jancova - Professionelle Betreuung", "100vw", "w-full h-full object-cover" %}
                 </div>
             </div>
 
@@ -95,7 +95,7 @@ title: Home
                 <div id="slideshow-kinderbetreuung" class="w-full relative h-96 md:h-[30rem] rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
                     <!-- Using the picture shortcode for the slideshow images -->
                     <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
-                        {% picture "/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg", "Kinderbetreuung: Suzana mit Kind", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
+                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Kinderbetreuung: Suzana mit Kind", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
                     </div>
                 </div>
             </div>
@@ -138,7 +138,7 @@ title: Home
                 <div id="slideshow-begleitung" class="w-full relative h-96 md:h-[30rem] rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
                     <!-- Using the picture shortcode for the slideshow, adding multiple images -->
                     <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100 z-10">
-                        {% picture "/assets/images/original/gesellschaftliche-begleitung/Seniorin.jpg", "Gesellschaftliche Begleitung: Seniorin", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
+                        {% picture site.imagePrefix + '/assets/images/original/gesellschaftliche-begleitung/Seniorin.jpg', "Gesellschaftliche Begleitung: Seniorin", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
                     </div>
                 </div>
             </div>
@@ -153,7 +153,6 @@ title: Home
                     <ul class="list-disc list-inside text-gray-700 space-y-2">
                         <li>Begleitung zum Geschäftsessen, Kulturveranstaltungen usw.</li>
                         <li>Begleitung bei Familienfeiern oder wichtigen sozialen Anlässen</li>
-                        <li>Betreuung bei Arztbesuchen und Behördengängen</li>
                     </ul>
                 </div>
 
@@ -181,22 +180,22 @@ title: Home
                 <div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
                     <!-- Image 1 -->
                     <div class="slide">
-                        <img src="/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg" alt="Erfrischender Ananas-Banana Cocktail" class="w-full h-full object-contain">
+                        <img src="{{ site.imagePrefix }}/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg" alt="Erfrischender Ananas-Banana Cocktail" class="w-full h-full object-contain">
                         <div class="slide-caption">Erfrischender Ananas-Banana Cocktail</div>
                     </div>
                     <!-- Image 2 -->
                     <div class="slide">
-                        <img src="/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg" alt="Delikate Lammrippen mit Knoblauch und Oregano" class="w-full h-full object-contain">
+                        <img src="{{ site.imagePrefix }}/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg" alt="Delikate Lammrippen mit Knoblauch und Oregano" class="w-full h-full object-contain">
                         <div class="slide-caption">Delikate Lammrippen mit Knoblauch und Oregano</div>
                     </div>
                     <!-- Image 3 -->
                     <div class="slide">
-                        <img src="/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg" alt="Käsecracker Demeter" class="w-full h-full object-contain">
+                        <img src="{{ site.imagePrefix }}/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg" alt="Käsecracker Demeter" class="w-full h-full object-contain">
                         <div class="slide-caption">Käsecracker Demeter</div>
                     </div>
                     <!-- Image 4 -->
                     <div class="slide">
-                        <img src="/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg" alt="Marinierte pikante Lammrippchen mit Honig" class="w-full h-full object-contain">
+                        <img src="{{ site.imagePrefix }}/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg" alt="Marinierte pikante Lammrippchen mit Honig" class="w-full h-full object-contain">
                         <div class="slide-caption">Marinierte pikante Lammrippchen mit Honig</div>
                     </div>
                 </div>
@@ -276,7 +275,6 @@ title: Home
                         <ul class="list-disc list-inside mb-4 space-y-3 pl-4">
                             <li>Über das Kontaktformular auf dieser Website</li>
                             <li>Per Telefon unter 0677 61385769</li>
-                            <li>Per WhatsApp-Nachricht</li>
                             <li>Per E-Mail an goodnews@24ja.at</li>
                         </ul>
                         <p class="text-white mb-4 leading-relaxed">
@@ -395,11 +393,11 @@ title: Home
                         <h4 class="text-gray-700 font-medium mb-2 font-heading">Standort</h4>
                         <div class="map-container relative overflow-hidden rounded-lg shadow-md bg-gray-100">
                             <!-- Static map image (privacy-friendly approach) -->
-                            <div class="aspect-w-16 aspect-h-9 bg-gray-200">
+                            <div class="aspect-w-16 aspect-h-9 bg-gray-200 min-h-[220px] sm:min-h-[300px] md:min-h-0">
                                 <img 
-                                    src="/assets/images/maps/map.png" 
+                                    src="{{ site.imagePrefix }}/assets/images/maps/map.png" 
                                     alt="Collection Business Center Wien Goldenes Quartier, Tuchlauben 7/A, 1010 Wien" 
-                                    class="w-full h-full object-cover"
+                                    class="w-full h-full object-cover object-center scale-125 md:scale-100 transition-transform rounded-lg shadow-md"
                                 >
                                 <!-- Privacy overlay with information and link -->
                                 <div class="absolute inset-0 bg-brand-green bg-opacity-70 flex flex-col items-center justify-center text-white text-center p-4 transition-opacity duration-300 opacity-0 hover:opacity-100">

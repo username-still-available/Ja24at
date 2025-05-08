@@ -13,7 +13,7 @@
     <meta http-equiv="Expires" content="0">
     <meta property="og:title" content="{{ title or metadata.title }}">
     <meta property="og:description" content="{{ description or metadata.description }}">
-    <meta property="og:image" content="{{ metadata.baseUrl }}/assets/images/og-image.jpg">
+    <meta property="og:image" content="{{ site.imagePrefix }}/assets/images/og-image.jpg">
     <meta property="og:url" content="{{ metadata.baseUrl }}{{ page.url | url }}">
     <meta property="og:type" content="website">
     <link rel="canonical" href="{{ metadata.baseUrl }}{{ page.url | url }}">
@@ -174,7 +174,7 @@
         <div class="container mx-auto flex justify-between items-center h-full">
             <!-- Update link to point to root, replace text with logo -->
             <a href="/" class="flex items-center"> <!-- Use flex to align image if needed -->
-                <img src="/assets/logo/Logo_24JA.png" alt="24ja Logo" class="h-16 w-auto"> <!-- Adjusted from h-[17.5] to h-16 (64px) -->
+                <img src="{{ site.imagePrefix }}/assets/logo/Logo_24JA.png" alt="24ja Logo" class="h-16 w-auto"> <!-- Adjusted from h-[17.5] to h-16 (64px) -->
             </a>
             <div class="hidden md:flex space-x-6">
                 <a href="/#about" class="text-white hover:bg-white hover:text-brand-green px-3 py-2 rounded-md transition-colors duration-500">Meine Geschichte</a>
@@ -209,7 +209,7 @@
             
             <div class="container mx-auto px-6 py-16 md:py-24 flex flex-col items-center text-center relative z-10">
                 <div class="heading-container">
-                    <h1 class="text-4xl md:text-5xl font-bold text-brand-green mb-6 font-heading">Alltagsunterstützung für Ihre höhere Lebensqualität</h1>
+                    <h1 class="text-2xl sm:text-3xl md:text-5xl font-bold text-brand-green mb-6 font-heading">Alltagsunterstützung für Ihre höhere Lebensqualität</h1>
                 </div>
                 <p class="text-xl text-brand-green max-w-2xl mb-10">
                     Der Ort, an dem sich im Leben Exzellenz und Leidenschaft treffen.
@@ -259,7 +259,7 @@
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="text-center md:text-left mb-6 md:mb-0">
                     <!-- Replace H3 text with logo -->
-                    <img src="/assets/logo/Logo_24JA.png" alt="24ja Logo" class="h-14 w-auto mx-auto md:mx-0"> <!-- Added mx-auto md:mx-0 for centering on mobile -->
+                    <img src="{{ site.imagePrefix }}/assets/logo/Logo_24JA.png" alt="24ja Logo" class="h-14 w-auto mx-auto md:mx-0"> <!-- Added mx-auto md:mx-0 for centering on mobile -->
                 </div>
 
                 <div class="text-center md:text-right">
