@@ -174,28 +174,26 @@ title: Home
         <div class="flex flex-col md:flex-row items-center">
             <!-- Service Image - Hidden on mobile -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10 block">
-                <!-- <h3 class="text-2xl font-bold mb-4 text-center">Hausgemachte Spezialitäten</h3> -->
-                
                 <!-- Slideshow container -->
                 <div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
                     <!-- Image 1 -->
                     <div class="slide">
-                        <img src="{{ site.imagePrefix }}/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg" alt="Erfrischender Ananas-Banana Cocktail" class="w-full h-full object-contain">
+                        {% picture "/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg", "Erfrischender Ananas-Banana Cocktail", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Erfrischender Ananas-Banana Cocktail</div>
                     </div>
                     <!-- Image 2 -->
                     <div class="slide">
-                        <img src="{{ site.imagePrefix }}/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg" alt="Delikate Lammrippen mit Knoblauch und Oregano" class="w-full h-full object-contain">
+                        {% picture "/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg", "Delikate Lammrippen mit Knoblauch und Oregano", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Delikate Lammrippen mit Knoblauch und Oregano</div>
                     </div>
                     <!-- Image 3 -->
                     <div class="slide">
-                        <img src="{{ site.imagePrefix }}/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg" alt="Käsecracker Demeter" class="w-full h-full object-contain">
+                        {% picture "/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg", "Käsecracker Demeter", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Käsecracker Demeter</div>
                     </div>
                     <!-- Image 4 -->
                     <div class="slide">
-                        <img src="{{ site.imagePrefix }}/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg" alt="Marinierte pikante Lammrippchen mit Honig" class="w-full h-full object-contain">
+                        {% picture "/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg", "Marinierte pikante Lammrippchen mit Honig", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Marinierte pikante Lammrippchen mit Honig</div>
                     </div>
                 </div>
@@ -394,11 +392,7 @@ title: Home
                         <div class="map-container relative overflow-hidden rounded-lg shadow-md bg-gray-100">
                             <!-- Static map image (privacy-friendly approach) -->
                             <div class="aspect-w-16 aspect-h-9 bg-gray-200 min-h-[220px] sm:min-h-[300px] md:min-h-0">
-                                <img 
-                                    src="{{ site.imagePrefix }}/assets/images/maps/map.png" 
-                                    alt="Collection Business Center Wien Goldenes Quartier, Tuchlauben 7/A, 1010 Wien" 
-                                    class="w-full h-full object-cover object-center scale-125 md:scale-100 transition-transform rounded-lg shadow-md"
-                                >
+                                {% picture "/assets/images/maps/map.png", "Collection Business Center Wien Goldenes Quartier, Tuchlauben 7/A, 1010 Wien", "100vw", "w-full h-full object-cover object-center scale-125 md:scale-100 transition-transform rounded-lg shadow-md" %}
                                 <!-- Privacy overlay with information and link -->
                                 <div class="absolute inset-0 bg-brand-green bg-opacity-70 flex flex-col items-center justify-center text-white text-center p-4 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                     <p class="font-bold mb-2">Collection Business Center Wien</p>
