@@ -38,7 +38,7 @@ title: Home
 </section>
 
 <!-- Services Section -->
-<section id="services" class="py-16 bg-brand-green">
+<section id="services" class="pt-8 pb-16 md:pt-16 bg-brand-green">
     <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center text-white mb-12 font-heading">Meine Leistungen</h2>
 
