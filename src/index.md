@@ -8,9 +8,9 @@ title: Home
     <div class="container mx-auto px-6">
         <!-- Image centered and made more prominent -->
         <div class="flex flex-col items-center">
-            <!-- Image Container - Fixed aspect ratio and improved size -->
+            <!-- Image Container - Modified to be round and 25% smaller -->
             <div class="w-full max-w-xs mb-12 mx-auto">
-                <div class="rounded-lg shadow-xl overflow-hidden flex items-center justify-center aspect-[3/4]">
+                <div class="rounded-full shadow-xl overflow-hidden flex items-center justify-center aspect-square w-3/4 mx-auto">
                     {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna Foto.jpg', "Zuzana Jancova - Professionelle Betreuung", "100vw", "w-full h-full object-cover" %}
                 </div>
             </div>

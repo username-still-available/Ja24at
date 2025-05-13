@@ -105,7 +105,7 @@
 
     <!-- Load CSS synchronously -->
     <!-- Note: Path updated to reflect assets being served from root -->
-    <link rel="stylesheet" href="/css/style.css?v=1746692959004">
+    <link rel="stylesheet" href="/css/style.css?v=1747123004336">
     <!-- Async loading removed for style.css -->
     <!-- <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
     <!-- <noscript><link rel="stylesheet" href="/css/style.css"></noscript> -->
@@ -245,9 +245,9 @@
     <div class="container mx-auto px-6">
         <!-- Image centered and made more prominent -->
         <div class="flex flex-col items-center">
-            <!-- Image Container - Fixed aspect ratio and improved size -->
+            <!-- Image Container - Modified to be round and 25% smaller -->
             <div class="w-full max-w-xs mb-12 mx-auto">
-                <div class="rounded-lg shadow-xl overflow-hidden flex items-center justify-center aspect-[3/4]">
+                <div class="rounded-full shadow-xl overflow-hidden flex items-center justify-center aspect-square w-3/4 mx-auto">
                     <picture class="w-full h-full object-cover"><source type="image/webp" srcset="/img/oT0YfgBzj5-320.webp 320w" sizes="100vw"><img src="/img/oT0YfgBzj5-320.jpeg" srcset="/img/oT0YfgBzj5-320.jpeg 320w" 
                       sizes="100vw" alt="Zuzana Jancova - Professionelle Betreuung" class="w-full h-full object-cover" loading="lazy" decoding="async"></picture>
                 </div>
@@ -273,7 +273,7 @@ Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen
 </div></p>
 </section>
 <!-- Services Section -->
-<section id="services" class="py-16 bg-brand-green">
+<section id="services" class="pt-8 pb-16 md:pt-16 bg-brand-green">
     <div class="container mx-auto px-6">
         <h2 class="text-3xl font-bold text-center text-white mb-12 font-heading">Meine Leistungen</h2>
 <p><!-- Use Grid for equal columns, increased gap -->
@@ -397,31 +397,34 @@ Anfrage stellen
         <div class="flex flex-col md:flex-row items-center">
             <!-- Service Image - Hidden on mobile -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10 block">
-                <!-- <h3 class="text-2xl font-bold mb-4 text-center">Hausgemachte Spezialitäten</h3> -->
-<p><!-- Slideshow container -->
-<div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
-<!-- Image 1 -->
-<div class="slide">
-<img src="/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg" alt="Erfrischender Ananas-Banana Cocktail" class="w-full h-full object-contain">
-<div class="slide-caption">Erfrischender Ananas-Banana Cocktail</div>
-</div>
-<!-- Image 2 -->
-<div class="slide">
-<img src="/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg" alt="Delikate Lammrippen mit Knoblauch und Oregano" class="w-full h-full object-contain">
-<div class="slide-caption">Delikate Lammrippen mit Knoblauch und Oregano</div>
-</div>
-<!-- Image 3 -->
-<div class="slide">
-<img src="/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg" alt="Käsecracker Demeter" class="w-full h-full object-contain">
-<div class="slide-caption">Käsecracker Demeter</div>
-</div>
-<!-- Image 4 -->
-<div class="slide">
-<img src="/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg" alt="Marinierte pikante Lammrippchen mit Honig" class="w-full h-full object-contain">
-<div class="slide-caption">Marinierte pikante Lammrippchen mit Honig</div>
-</div>
-</div>
-</div></p>
+                <!-- Slideshow container -->
+                <div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
+                    <!-- Image 1 -->
+                    <div class="slide">
+                        <picture class="w-full h-full object-contain"><source type="image/webp" srcset="/img/QeUHdFwFQ1-320.webp 320w, /img/QeUHdFwFQ1-640.webp 640w, /img/QeUHdFwFQ1-960.webp 960w, /img/QeUHdFwFQ1-1280.webp 1280w" sizes="100vw"><img src="/img/QeUHdFwFQ1-320.jpeg" srcset="/img/QeUHdFwFQ1-320.jpeg 320w, /img/QeUHdFwFQ1-640.jpeg 640w, /img/QeUHdFwFQ1-960.jpeg 960w, /img/QeUHdFwFQ1-1280.jpeg 1280w" 
+                      sizes="100vw" alt="Erfrischender Ananas-Banana Cocktail" class="w-full h-full object-contain" loading="lazy" decoding="async"></picture>
+                        <div class="slide-caption">Erfrischender Ananas-Banana Cocktail</div>
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="slide">
+                        <picture class="w-full h-full object-contain"><source type="image/webp" srcset="/img/czurrEIfma-320.webp 320w, /img/czurrEIfma-640.webp 640w, /img/czurrEIfma-960.webp 960w, /img/czurrEIfma-1280.webp 1280w" sizes="100vw"><img src="/img/czurrEIfma-320.jpeg" srcset="/img/czurrEIfma-320.jpeg 320w, /img/czurrEIfma-640.jpeg 640w, /img/czurrEIfma-960.jpeg 960w, /img/czurrEIfma-1280.jpeg 1280w" 
+                      sizes="100vw" alt="Delikate Lammrippen mit Knoblauch und Oregano" class="w-full h-full object-contain" loading="lazy" decoding="async"></picture>
+                        <div class="slide-caption">Delikate Lammrippen mit Knoblauch und Oregano</div>
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="slide">
+                        <picture class="w-full h-full object-contain"><source type="image/webp" srcset="/img/NIhKJWfovu-320.webp 320w, /img/NIhKJWfovu-640.webp 640w, /img/NIhKJWfovu-960.webp 960w, /img/NIhKJWfovu-1280.webp 1280w" sizes="100vw"><img src="/img/NIhKJWfovu-320.jpeg" srcset="/img/NIhKJWfovu-320.jpeg 320w, /img/NIhKJWfovu-640.jpeg 640w, /img/NIhKJWfovu-960.jpeg 960w, /img/NIhKJWfovu-1280.jpeg 1280w" 
+                      sizes="100vw" alt="Käsecracker Demeter" class="w-full h-full object-contain" loading="lazy" decoding="async"></picture>
+                        <div class="slide-caption">Käsecracker Demeter</div>
+                    </div>
+                    <!-- Image 4 -->
+                    <div class="slide">
+                        <picture class="w-full h-full object-contain"><source type="image/webp" srcset="/img/UOSYIFZy3w-320.webp 320w, /img/UOSYIFZy3w-640.webp 640w, /img/UOSYIFZy3w-960.webp 960w, /img/UOSYIFZy3w-1280.webp 1280w" sizes="100vw"><img src="/img/UOSYIFZy3w-320.jpeg" srcset="/img/UOSYIFZy3w-320.jpeg 320w, /img/UOSYIFZy3w-640.jpeg 640w, /img/UOSYIFZy3w-960.jpeg 960w, /img/UOSYIFZy3w-1280.jpeg 1280w" 
+                      sizes="100vw" alt="Marinierte pikante Lammrippchen mit Honig" class="w-full h-full object-contain" loading="lazy" decoding="async"></picture>
+                        <div class="slide-caption">Marinierte pikante Lammrippchen mit Honig</div>
+                    </div>
+                </div>
+            </div>
 <p><!-- Service Content -->
 <div class="w-full md:w-1/2">
 <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Individuelle Personenbetreuung</h2></p>
@@ -456,25 +459,25 @@ Anfrage stellen
   <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-heading">Was Kunden und Kundinnen sagen</h2>
   <!-- Relative container for slideshow -->
   <div class="css-slideshow-fade relative max-w-2xl mx-auto min-h-[15rem]">
-<div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+<div class="slide bg-white p-4 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center w-full">
   <!-- Circular Image Placeholder -->
   <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
   <!-- Quote Text -->
-  <p class="text-gray-600 italic mb-4 break-words max-w-xs sm:max-w-sm md:max-w-md">&quot;Placeholder Zitat: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&quot;</p>
+  <p class="text-gray-600 italic mb-4 break-words max-w-full sm:max-w-sm md:max-w-md">&quot;Placeholder Zitat: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&quot;</p>
   <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 1</p>
 </div>
-<div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+<div class="slide bg-white p-4 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center w-full">
   <!-- Circular Image Placeholder -->
   <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
   <!-- Quote Text -->
-  <p class="text-gray-600 italic mb-4 break-words max-w-xs sm:max-w-sm md:max-w-md">&quot;Placeholder Zitat: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&quot;</p>
+  <p class="text-gray-600 italic mb-4 break-words max-w-full sm:max-w-sm md:max-w-md">&quot;Placeholder Zitat: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.&quot;</p>
   <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 2</p>
 </div>
-<div class="slide bg-white p-8 rounded-lg shadow-md flex flex-col items-center text-center">
+<div class="slide bg-white p-4 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center w-full">
   <!-- Circular Image Placeholder -->
   <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
   <!-- Quote Text -->
-  <p class="text-gray-600 italic mb-4 break-words max-w-xs sm:max-w-sm md:max-w-md">&quot;Placeholder Zitat: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&quot;</p>
+  <p class="text-gray-600 italic mb-4 break-words max-w-full sm:max-w-sm md:max-w-md">&quot;Placeholder Zitat: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&quot;</p>
   <p class="text-gray-800 font-semibold">- Name Kunde/Kundin 3</p>
 </div>
   </div>
@@ -620,11 +623,8 @@ Tuchlauben 7/A, AT - 1010 Wien
 <div class="map-container relative overflow-hidden rounded-lg shadow-md bg-gray-100">
 <!-- Static map image (privacy-friendly approach) -->
 <div class="aspect-w-16 aspect-h-9 bg-gray-200 min-h-[220px] sm:min-h-[300px] md:min-h-0">
-<img 
-                                    src="/assets/images/maps/map.png" 
-                                    alt="Collection Business Center Wien Goldenes Quartier, Tuchlauben 7/A, 1010 Wien" 
-                                    class="w-full h-full object-cover object-center scale-125 md:scale-100 transition-transform rounded-lg shadow-md"
-                                >
+<picture class="w-full h-full object-cover object-center scale-125 md:scale-100 transition-transform rounded-lg shadow-md"><source type="image/webp" srcset="/img/pQVKv5nzc5-320.webp 320w, /img/pQVKv5nzc5-640.webp 640w" sizes="100vw"><img src="/img/pQVKv5nzc5-320.jpeg" srcset="/img/pQVKv5nzc5-320.jpeg 320w, /img/pQVKv5nzc5-640.jpeg 640w" 
+                      sizes="100vw" alt="Collection Business Center Wien Goldenes Quartier, Tuchlauben 7/A, 1010 Wien" class="w-full h-full object-cover object-center scale-125 md:scale-100 transition-transform rounded-lg shadow-md" loading="lazy" decoding="async"></picture>
 <!-- Privacy overlay with information and link -->
 <div class="absolute inset-0 bg-brand-green bg-opacity-70 flex flex-col items-center justify-center text-white text-center p-4 transition-opacity duration-300 opacity-0 hover:opacity-100">
 <p class="font-bold mb-2">Collection Business Center Wien</p>
