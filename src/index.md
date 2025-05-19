@@ -172,27 +172,27 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 <div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
                     <!-- Image 1 - New image -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Cremige-Ananas-Choco-Torte.jpg', "Cremige Ananas-Schokoladen-Torte", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Cremige-Ananas-Choco-Torte.jpg', "Cremige Ananas-Schokoladen-Torte", "100vw", "w-full h-full object-cover" %}
                         <div class="slide-caption">Cremige Ananas-Schokoladen-Torte</div>
                     </div>
                     <!-- Image 2 (originally Image 1) -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg', "Erfrischender Ananas-Banana Cocktail", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg', "Erfrischender Ananas-Banana Cocktail", "100vw", "w-full h-full object-cover" %}
                         <div class="slide-caption">Erfrischender Ananas-Banana Cocktail</div>
                     </div>
                     <!-- Image 3 (originally Image 2) -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg', "Delikate Lammrippen mit Knoblauch und Oregano", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg', "Delikate Lammrippen mit Knoblauch und Oregano", "100vw", "w-full h-full object-cover" %}
                         <div class="slide-caption">Delikate Lammrippen mit Knoblauch und Oregano</div>
                     </div>
                     <!-- Image 4 (originally Image 3) -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg', "Käsecracker Demeter", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg', "Käsecracker Demeter", "100vw", "w-full h-full object-cover" %}
                         <div class="slide-caption">Käsecracker Demeter</div>
                     </div>
                     <!-- Image 5 (originally Image 4) -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg', "Marinierte pikante Lammrippchen mit Honig", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg', "Marinierte pikante Lammrippchen mit Honig", "100vw", "w-full h-full object-cover" %}
                         <div class="slide-caption">Marinierte pikante Lammrippchen mit Honig</div>
                     </div>
                 </div>
