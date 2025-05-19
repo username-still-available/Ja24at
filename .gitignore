@@ -55,3 +55,5 @@ build/
 
 # Project-specific ignores
 assets/rezepte-assets/
+temp/
+ja24at

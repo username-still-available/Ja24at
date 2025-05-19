@@ -1,10 +1,24 @@
-{% macro testimonialSlide(text, author, position) %}
-<div class="slide bg-white p-4 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center w-full">
+{% macro testimonialSlide(text, author, position, logo = null, index = 0) %}
+<div class="slide bg-white p-6 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center w-full">
+  {% if logo %}
+  <!-- Logo -->
+  <div class="mb-6 flex-shrink-0 h-16 flex items-center">
+    <img src="{{ logo }}" alt="" class="h-full w-auto object-contain">
+  </div>
+  {% else %}
   <!-- Circular Image Placeholder -->
   <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+  {% endif %}
   <!-- Quote Text -->
-  <p class="text-gray-600 italic mb-4 break-words max-w-full sm:max-w-sm md:max-w-md">{{ text }}</p>
-  <p class="text-gray-800 font-semibold">{{ author }}</p>
+  <div class="flex-grow">
+    <p class="text-gray-600 italic mb-6 break-words max-w-full sm:max-w-md md:max-w-lg leading-relaxed">{{ text | safe }}</p>
+  </div>
+  <div class="pt-4 w-full">
+    <p class="text-gray-800 font-semibold">{{ author }}</p>
+    {% if position %}
+    <p class="text-gray-600 text-sm">{{ position | safe }}</p>
+    {% endif %}
+  </div>
 </div>
 {% endmacro %}
 
@@ -12,22 +26,34 @@
 <section id="testimonials" class="py-16 bg-gray-50">
 <div class="container mx-auto px-6">
   <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-heading">Was Kunden und Kundinnen sagen</h2>
-  <!-- Relative container for slideshow -->
-  <div class="css-slideshow-fade relative max-w-2xl mx-auto min-h-[15rem]">
+  <!-- Relative container for slideshow with a min-height to prevent layout shift -->
+  <div id="testimonial-container" class="css-slideshow-fade relative max-w-3xl mx-auto overflow-hidden">
     {{ testimonialSlide(
-      '"Placeholder Zitat: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."',
-      '- Name Kunde/Kundin 1'
+      'Zuzana zeigt stets großes Engagement und Empathie im Umgang mit den Kindern. Sie versteht es, individuelle Bedürfnisse zu erkennen und entsprechend zu handeln.<br><br>Ihre Fähigkeit, komplexe Situationen zu analysieren und passende Lösungen zu entwickeln, sind beeindruckend. Sie arbeitet stets zielorientiert und effektiv.<br><br>Zuzana ist eine wertvolle Teamkollegin. Sie kommuniziert offen und konstruktiv und trägt wesentlich zum Erfolg unserer gemeinsamen Projekte bei.<br><br><strong>Fazit:</strong> Ich kann Zuzana uneingeschränkt empfehlen. Sie ist eine engagierte und kompetente Fachkraft, die sich mit großem Erfolg um die Belange von Kindern mit Behinderungen kümmert.',
+      'Petra Papai',
+      'Teamleitung<br>FaBI – Mobile Familienbegleitung<br>Diakoniewerk Wien',
+      '/assets/review/diakonie-logo.png',
+      0
     ) }}
     
     {{ testimonialSlide(
-      '"Placeholder Zitat: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."',
-      '- Name Kunde/Kundin 2'
+      'Die Betreuung durch Zuzana hat uns sehr geholfen. Ihre Zuverlässigkeit und ihr Einfühlungsvermögen schätzen wir besonders. Unsere Kinder freuen sich immer auf die Zeit mit ihr und wir können uns voll auf sie verlassen.',
+      'Familie Müller',
+      'Kinderbetreuung seit 2021',
+      null,
+      1
     ) }}
     
     {{ testimonialSlide(
-      '"Placeholder Zitat: Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."',
-      '- Name Kunde/Kundin 3'
+      'Als berufstätige Eltern war es für uns eine große Herausforderung, Arbeit und Familie zu vereinbaren. Mit Zuzanas Unterstützung haben wir eine perfekte Balance gefunden. Ihre professionelle und herzliche Art macht sie zu einer wertvollen Unterstützung für unsere Familie.',
+      'Markus und Eva Berger',
+      'Personenbetreuung seit 2022',
+      null,
+      2
     ) }}
   </div>
 </div>
+
+<!-- Load the external testimonials.js file instead of inline script -->
+<script src="/js/testimonials.js"></script>
 </section> 

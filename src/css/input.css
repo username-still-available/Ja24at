@@ -88,6 +88,9 @@
 /* CSS-only Fade Slideshow Animation */
 .css-slideshow-fade {
   position: relative;
+  height: auto;
+  overflow: hidden;
+  transition: height 0.8s ease-in-out;
 }
 
 .css-slideshow-fade .slide {
@@ -95,9 +98,16 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   opacity: 0;
-  animation: fadeEffect 15s infinite;
+  display: flex;
+  flex-direction: column;
+  transition: opacity 0.8s ease-in-out;
+}
+
+/* First slide starts visible and establishes height */
+.css-slideshow-fade .slide:first-child {
+  position: relative; /* First slide defines container height */
 }
 
 /* Style for the slide captions */
@@ -105,58 +115,76 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%; /* Or right: 0; */
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 0.5rem; /* Tailwind: p-2 */
+  padding: 0.5rem;
   text-align: center;
-  font-size: 0.875rem; /* Tailwind: text-sm */
-  box-sizing: border-box; /* Ensure padding doesn't expand it beyond 100% width */
-  /* The caption will naturally fade with its parent .slide due to opacity inheritance */
+  font-size: 0.875rem;
+  box-sizing: border-box;
 }
 
-/* Stagger animation delays for each slide */
-.css-slideshow-fade .slide:nth-child(1) {
-  animation-delay: 0s;
-}
-.css-slideshow-fade .slide:nth-child(2) {
-  animation-delay: 5s;
-}
-.css-slideshow-fade .slide:nth-child(3) {
-  animation-delay: 10s;
+/* Default slideshow animation - now controlled by JS */
+.css-slideshow-fade .slide {
+  z-index: 0;
 }
 
-/* Specific animation for testimonials */
+/* Testimonials specific settings */
 #testimonials .css-slideshow-fade .slide {
-  animation: testimonialFade 18s infinite; /* Longer cycle for testimonials */
-}
-
-/* Stagger animation delays for testimonials */
-#testimonials .css-slideshow-fade .slide:nth-child(1) {
-  animation-delay: 0s;
-}
-#testimonials .css-slideshow-fade .slide:nth-child(2) {
-  animation-delay: 6s;
-}
-#testimonials .css-slideshow-fade .slide:nth-child(3) {
-  animation-delay: 12s;
+  padding-bottom: 2rem; /* Space for author info */
 }
 
 @keyframes fadeEffect {
   0% { opacity: 0; }
-  6.67% { opacity: 1; } /* Fade in for 1s (1/15) */
-  26.67% { opacity: 1; } /* Hold visible for 3s (3/15 = 20%) */
-  33.33% { opacity: 0; } /* Fade out for 1s (1/15) */
-  100% { opacity: 0; } /* Remain hidden until next cycle */
+  2% { opacity: 1; } /* Fade in quickly */
+  18% { opacity: 1; } /* Stay visible */
+  20% { opacity: 0; } /* Fade out quickly */
+  100% { opacity: 0; } /* Stay hidden */
 }
 
-/* Testimonial specific fade animation with cleaner transitions */
-@keyframes testimonialFade {
-  0% { opacity: 0; }
-  5.55% { opacity: 1; } /* Fade in for 1s (1/18) */
-  27.77% { opacity: 1; } /* Hold visible for 4s (4/18 ≈ 22.22%) */
-  33.33% { opacity: 0; } /* Fade out for 1s (1/18) */
-  100% { opacity: 0; } /* Remain hidden until next cycle */
+/* Regular slideshow animations (for non-testimonial sections) */
+#slideshow-personenbetreuung .slide,
+#slideshow-kinderbetreuung .slideshow-image,
+#slideshow-begleitung .slideshow-image {
+  animation: fadeEffect 40s infinite;
+}
+
+/* Stagger animation delays for regular slideshows */
+#slideshow-personenbetreuung .slide:nth-child(1),
+#slideshow-kinderbetreuung .slideshow-image:nth-child(1),
+#slideshow-begleitung .slideshow-image:nth-child(1) {
+  animation-delay: 0s;
+  position: relative; /* First slide defines the container height */
+  opacity: 1; /* Ensure first slide is visible */
+}
+
+#slideshow-personenbetreuung .slide:nth-child(2),
+#slideshow-kinderbetreuung .slideshow-image:nth-child(2),
+#slideshow-begleitung .slideshow-image:nth-child(2) {
+  animation-delay: 8s;
+}
+
+#slideshow-personenbetreuung .slide:nth-child(3),
+#slideshow-kinderbetreuung .slideshow-image:nth-child(3),
+#slideshow-begleitung .slideshow-image:nth-child(3) {
+  animation-delay: 16s;
+}
+
+#slideshow-personenbetreuung .slide:nth-child(4),
+#slideshow-kinderbetreuung .slideshow-image:nth-child(4),
+#slideshow-begleitung .slideshow-image:nth-child(4) {
+  animation-delay: 24s;
+}
+
+#slideshow-personenbetreuung .slide:nth-child(5),
+#slideshow-kinderbetreuung .slideshow-image:nth-child(5),
+#slideshow-begleitung .slideshow-image:nth-child(5) {
+  animation-delay: 32s;
+}
+
+/* Testimonials specific settings */
+#testimonials .css-slideshow-fade .slide {
+  padding-bottom: 2rem; /* Space for author info */
 }
 
 /* REMOVED CSS-only Slideshow Animation */

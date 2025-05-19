@@ -13,11 +13,21 @@
     <meta http-equiv="Expires" content="0">
     <meta property="og:title" content="{{ title or metadata.title }}">
     <meta property="og:description" content="{{ description or metadata.description }}">
-    <meta property="og:image" content="{{ site.imagePrefix }}/assets/images/og-image.jpg">
+    <meta property="og:image" content="{{ site.imagePrefix }}/assets/logo/Logo_24JA.png">
     <meta property="og:url" content="{{ metadata.baseUrl }}{{ page.url | url }}">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="24ja.at">
+    <meta property="og:locale" content="de_AT">
     <link rel="canonical" href="{{ metadata.baseUrl }}{{ page.url | url }}">
     <title>{{ title or metadata.title }}</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+    <meta name="theme-color" content="#228877">
 
     <!-- Critical CSS inlined for faster page rendering -->
     <style>
@@ -166,6 +176,18 @@
       "services": {{ metadata.structuredData.services | dump | safe }}
     }
     </script>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title or metadata.title }}">
+    <meta name="twitter:description" content="{{ description or metadata.description }}">
+    <meta name="twitter:image" content="{{ site.imagePrefix }}/assets/logo/Logo_24JA.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="geo.region" content="AT-9">
+    <meta name="geo.placename" content="Wien">
+    <meta name="geo.position" content="{{ metadata.structuredData.geo.latitude }};{{ metadata.structuredData.geo.longitude }}">
+    <meta name="ICBM" content="{{ metadata.structuredData.geo.latitude }}, {{ metadata.structuredData.geo.longitude }}">
 </head>
 <body class="bg-white font-body m-0">
     {% if pageType != 'legal' %}
@@ -221,12 +243,12 @@
             
             <!-- Wave divider for smooth transition to next section -->
             <div class="wave-divider relative h-24 -mb-1 overflow-hidden">
-                <div class="wave-animation absolute inset-0 w-[104%] -left-[2%]" style="animation: wave 10s ease-in-out infinite alternate;">
+                <div class="wave-animation absolute inset-0 w-[104%] -left-[2%]" style="animation: wave 3.3s ease-in-out infinite alternate;">
                     <svg class="absolute bottom-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
                         <path fill="#184435" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,218.7C672,203,768,149,864,128C960,107,1056,117,1152,138.7C1248,160,1344,192,1392,208L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
                     </svg>
                 </div>
-                <div class="wave-animation absolute inset-0 w-[104%] -left-[2%]" style="animation: wave 7s ease-in-out infinite alternate-reverse; opacity: 0.5;">
+                <div class="wave-animation absolute inset-0 w-[104%] -left-[2%]" style="animation: wave 2.3s ease-in-out infinite alternate-reverse; opacity: 0.5;">
                     <svg class="absolute bottom-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
                         <path fill="#184435" fill-opacity="1" d="M0,192L48,197.3C96,203,192,213,288,202.7C384,192,480,160,576,165.3C672,171,768,213,864,213.3C960,213,1056,171,1152,149.3C1248,128,1344,128,1392,128L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
                     </svg>
@@ -263,7 +285,7 @@
                 </div>
 
                 <div class="text-center md:text-right">
-                    <p class="text-gray-400">&copy; 2025 24ja - Macht das Leben leichter e.U.</p>
+                    <p class="text-gray-400">&copy; {% year %} 24ja - Macht das Leben leichter e.U.</p>
                     <div class="mt-2">
                         <!-- Update links to point to root -->
                         <a href="/impressum/" class="text-gray-400 hover:text-white mr-4">Impressum</a>
@@ -278,5 +300,7 @@
     <!-- Scripts -->
     <script src="/js/script.js" defer></script>
     <script src="/js/process-steps.js" defer></script>
+    <script src="/js/testimonials.js" defer></script>
+    <script src="/js/form-handler.js" defer></script>
 </body>
 </html> 

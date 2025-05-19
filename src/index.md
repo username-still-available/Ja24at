@@ -1,6 +1,6 @@
 ---
 layout: base.njk
-title: Home
+title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
 ---
 
 <!-- About Section - Moved here and redesigned -->
@@ -8,8 +8,8 @@ title: Home
     <div class="container mx-auto px-6">
         <!-- Image centered and made more prominent -->
         <div class="flex flex-col items-center">
-            <!-- Image Container - Fixed aspect ratio and improved size -->
-            <div class="w-full max-w-xs mb-12 mx-auto">
+            <!-- Image Container - Reduced by 30% from original size -->
+            <div class="w-full max-w-xs mb-12 mx-auto scale-70 transform" style="transform: scale(0.7);">
                 <div class="rounded-lg shadow-xl overflow-hidden flex items-center justify-center aspect-[3/4]">
                     {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna Foto.jpg', "Zuzana Jancova - Professionelle Betreuung", "100vw", "w-full h-full object-cover" %}
                 </div>
@@ -30,7 +30,7 @@ title: Home
                     </p>
                 </div>
                 <p class="text-white italic">
-                    Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen Lebenssituationen zur Seite zu stehen. Mein Ziel ist es, diesen nicht nur Unterstützung anzubieten, sondern ihnen auch Zuversicht und Freude zu schenken, um ein Lächeln auf ihre Gesichter zu bringen.
+                        Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen Lebenssituationen zur Seite zu stehen. Mein Interesse gilt dem gesamten Menschen in seiner Authentizität, Wahrheit und inneren Kohärenz. Mein Ziel ist es, ihnen nicht nur Unterstützung anzubieten, sondern ihnen auch Zuversicht und Freude zu schenken, um in ihre eigene Kraft zurückzukommen. 
                 </p>
             </div>
         </div>
@@ -48,7 +48,7 @@ title: Home
             <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Kinderbetreuung</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Professionelle Kinderbetreuung</h3>
                     <p class="text-gray-600 mb-6 flex-grow">Ich unterstütze Sie in Ihrem Alltag, sodass Sie sich auf Ihre wichtigen geschäftlichen Termine konzentrieren können, ohne sich Sorgen um Ihre Kinder machen zu müssen.</p>
                     <a href="/#service-kinderbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
                         Mehr erfahren →
@@ -70,7 +70,7 @@ title: Home
             <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Personenbetreuung</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Fachlich kompetente und individuelle Personenbetreuung</h3>
                     <p class="text-gray-600 mb-6 flex-grow">Nach einem anstrengenden Tag würden Sie gerne nach Hause kommen, wo bereits ein frisch gekochtes Essen auf dem Tisch auf Sie wartet?</p>
                     <a href="/#service-personenbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
                         Mehr erfahren →
@@ -176,22 +176,27 @@ title: Home
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10 block">
                 <!-- Slideshow container -->
                 <div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
-                    <!-- Image 1 -->
+                    <!-- Image 1 - New image -->
+                    <div class="slide">
+                        {% picture "/assets/images/original/erwachsenenbetreuung/Cremige-Ananas-Choco-Torte.jpg", "Cremige Ananas-Schokoladen-Torte", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Cremige Ananas-Schokoladen-Torte</div>
+                    </div>
+                    <!-- Image 2 (originally Image 1) -->
                     <div class="slide">
                         {% picture "/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg", "Erfrischender Ananas-Banana Cocktail", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Erfrischender Ananas-Banana Cocktail</div>
                     </div>
-                    <!-- Image 2 -->
+                    <!-- Image 3 (originally Image 2) -->
                     <div class="slide">
                         {% picture "/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg", "Delikate Lammrippen mit Knoblauch und Oregano", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Delikate Lammrippen mit Knoblauch und Oregano</div>
                     </div>
-                    <!-- Image 3 -->
+                    <!-- Image 4 (originally Image 3) -->
                     <div class="slide">
                         {% picture "/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg", "Käsecracker Demeter", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Käsecracker Demeter</div>
                     </div>
-                    <!-- Image 4 -->
+                    <!-- Image 5 (originally Image 4) -->
                     <div class="slide">
                         {% picture "/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg", "Marinierte pikante Lammrippchen mit Honig", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Marinierte pikante Lammrippchen mit Honig</div>
@@ -201,7 +206,7 @@ title: Home
 
             <!-- Service Content -->
             <div class="w-full md:w-1/2">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Individuelle Personenbetreuung</h2>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Fachlich kompetente und individuelle Personenbetreuung</h2>
 
                 <!-- Feature Box -->
                 <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
@@ -210,8 +215,8 @@ title: Home
                        <li><strong>Erledigung von Besorgungen:</strong> Unterstützung bei Einkäufen und anderen notwendigen Erledigungen.</li>
                        <li><strong>Durchführung von verschiedenen Hausarbeiten:</strong> Reinigung, Wäschewaschen und weitere Aufgaben im Haushalt.</li>
                        <li><strong>Hilfestellung bei alltäglichen Verrichtungen:</strong> Unterstützung bei persönlichen Aktivitäten wie Körperpflege und Mobilität.</li>
-                       <li><strong>Begleitung bei diversen Aktivitäten:</strong> Hilfe und Begleitung bei Freizeitaktivitäten oder Arztterminen.</li>
-                       <li><strong>Zubereitung von Mahlzeiten:</strong> Planung, Einkauf der Zutaten und das Kochen gesunder und schmackhafter Gerichte, die auf Ihre individuellen Vorlieben abgestimmt sind.</li>
+                       <li><strong>Zubereitung von Mahlzeiten:</strong> Planung, Einkauf der Zutaten und das Kochen gesunder und schmackhafter Gerichte, die auf Ihre individuellen Vorlieben abgestimmt sind. </li>
+                       <li><strong>Fachkundige Unterstützung in sozialen Angelegenheiten:</strong> Hilfe und Begleitung bei Freizeitaktivitäten oder Arztterminen.</li>
                     </ul>
                 </div>
 
@@ -323,8 +328,14 @@ title: Home
         <div class="flex flex-col md:flex-row">
             <!-- Contact Form -->
             <div class="w-full md:w-1/2 md:pr-8 mb-10 md:mb-0">
-                <form name="contact-form" id="contact-form" action="#" method="POST" class="bg-white p-8 rounded-lg shadow-lg">
-                    <h3 class="text-xl font-bold text-gray-800 mb-6 font-heading">Jetzt Kontakt aufnehmen</h3>
+                <form name="contact" id="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" class="bg-white p-8 rounded-lg shadow-lg">
+                    <!-- Netlify Form Hidden Fields -->
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don't fill this out if you're human: <input name="bot-field" /></label>
+                    </p>
+                    
+                    <h3 class="text-xl font-bold text-gray-800 mb-6 font-heading">Kontaktformular</h3>
                     <div class="mb-6">
                         <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
                         <input type="text" id="name" name="name" autocomplete="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required>
@@ -356,6 +367,31 @@ title: Home
                         <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required></textarea>
                     </div>
 
+                    <!-- Datenschutzerklärung Checkbox -->
+                    <div class="mb-6">
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                                <input id="privacy" name="privacy" type="checkbox" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300 rounded" required>
+                            </div>
+                            <div class="ml-3 text-sm">
+                                <label for="privacy" class="text-gray-700">Ich habe die <a href="/datenschutz/" class="text-brand-green hover:underline">Datenschutzerklärung</a> gelesen und stimme zu.</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter Checkbox -->
+                    <div class="mb-6">
+                        <div class="flex items-start">
+                            <div class="flex items-center h-5">
+                                <input id="newsletter" name="newsletter" type="checkbox" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300 rounded">
+                            </div>
+                            <div class="ml-3 text-sm">
+                                <label for="newsletter" class="text-gray-700">Möchten Sie jeden Monat die besten Rezepte erhalten?</label>
+                                <p class="text-gray-500 mt-1">Bitte beachten Sie, dass der Newsletter erst nach Ihrer Bestätigung in Ihrem Posteingang aktiviert wird.</p>
+                            </div>
+                        </div>
+                    </div>
+
                     <button type="submit" class="w-full bg-brand-green hover:bg-brand-green-light text-white font-bold py-3 px-4 rounded-md transition-colors">
                         Nachricht senden
                     </button>
@@ -372,7 +408,7 @@ title: Home
                         <p class="text-gray-600">
                             24ja - Macht das Leben leichter e.U.<br>
                             Collection Business Center Wien Goldenes Quartier<br>
-                            Tuchlauben 7/A, AT - 1010 Wien
+                            Tuchlauben 7a, AT - 1010 Wien
                         </p>
                     </div>
 
@@ -392,11 +428,11 @@ title: Home
                         <div class="map-container relative overflow-hidden rounded-lg shadow-md bg-gray-100">
                             <!-- Static map image (privacy-friendly approach) -->
                             <div class="aspect-w-16 aspect-h-9 bg-gray-200 min-h-[220px] sm:min-h-[300px] md:min-h-0">
-                                {% picture "/assets/images/maps/map.png", "Collection Business Center Wien Goldenes Quartier, Tuchlauben 7/A, 1010 Wien", "100vw", "w-full h-full object-cover object-center scale-125 md:scale-100 transition-transform rounded-lg shadow-md" %}
+                                {% picture "/assets/images/maps/map.png", "Collection Business Center Wien Goldenes Quartier, Tuchlauben 7a, 1010 Wien", "100vw", "w-full h-full object-cover object-center scale-125 md:scale-100 transition-transform rounded-lg shadow-md" %}
                                 <!-- Privacy overlay with information and link -->
                                 <div class="absolute inset-0 bg-brand-green bg-opacity-70 flex flex-col items-center justify-center text-white text-center p-4 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                     <p class="font-bold mb-2">Collection Business Center Wien</p>
-                                    <p class="mb-4">Tuchlauben 7/A, 1010 Wien</p>
+                                    <p class="mb-4">Tuchlauben 7a, 1010 Wien</p>
                                     <a 
                                         href="https://maps.google.com/?q=Tuchlauben+7,+1010+Wien,+Austria" 
                                         target="_blank" 

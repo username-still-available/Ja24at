@@ -13,41 +13,70 @@ pageType: legal
             <h2 class="text-xl font-bold text-gray-800 mb-4 font-heading">Informationspflicht laut §5 E-Commerce Gesetz, §14 Unternehmensgesetzbuch, §63 Gewerbeordnung und Offenlegungspflicht laut §25 Mediengesetz</h2>
             
             <div class="mb-8">
-                <p class="text-gray-700 mb-2">24ja - Macht das Leben leichter e.U.</p>
+                <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">Firmawortlaut</h3>
+                <p class="text-gray-700 mb-2">24JA - Macht das Leben leichter e.U.</p>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">Inhaber</h3>
+                <p class="text-gray-700 mb-2">Mag. Zuzana Jancova (Sozialarbeiterin)</p>
+            </div>
+            
+            <div class="mb-8">
+                <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">Unternehmensgegenstand</h3>
+                <ul class="list-disc list-inside text-gray-700 mb-2 pl-4">
+                    <li>Personenbetreuung: Unterstützung und Betreuung von Personen in verschiedenen Lebenssituationen.</li>
+                    <li>Kinderbetreuung: Beaufsichtigung von Kindern in einem geschützten Umfeld, ohne spezifische erzieherische Ziele zu verfolgen.</li>
+                    <li>Begleitagentur: Vermittlung von Begleitdiensten für verschiedene Anlässe und Bedürfnisse</li>
+                </ul>
+            </div>
+            
+            <div class="mb-8">
                 <p class="text-gray-700 mb-2">Collection Business Center Wien Goldenes Quartier</p>
-                <p class="text-gray-700 mb-2">Tuchlauben 7/A</p>
+                <p class="text-gray-700 mb-2">Tuchlauben 7a Business Center</p>
                 <p class="text-gray-700 mb-2">1010 Wien</p>
                 <p class="text-gray-700 mb-2">Österreich</p>
             </div>
             
             <div class="mb-8">
-                <p class="text-gray-700 mb-2"><strong>Unternehmensgegenstand:</strong> Personenbetreuung, Kinderbetreuung, Gesellschaftliche Begleitung</p>
-                <p class="text-gray-700 mb-2"><strong>UID-Nummer:</strong> ATU12345678</p>
-                <p class="text-gray-700 mb-2"><strong>Firmenbuchnummer:</strong> FN 123456a</p>
+                <p class="text-gray-700 mb-2"><strong>UID-Nr:</strong> ATU</p>
+                <p class="text-gray-700 mb-2"><strong>Firmenbuchnummer:</strong> 123456a</p>
                 <p class="text-gray-700 mb-2"><strong>Firmenbuchgericht:</strong> Wien</p>
+                <p class="text-gray-700 mb-2"><strong>Firmensitz:</strong> 1010 Wien</p>
+                <p class="text-gray-700 mb-2"><strong>Volle geografische Anschrift:</strong> Tuchlauben 7a Business Center, Wien, Österreich</p>
             </div>
             
             <div class="mb-8">
-                <p class="text-gray-700 mb-2"><strong>Tel.:</strong> 0677 61385769</p>
+                <p class="text-gray-700 mb-2"><strong>Tel.:</strong> +43 XXX XXXX</p>
                 <p class="text-gray-700 mb-2"><strong>E-Mail:</strong> goodnews@24ja.at</p>
             </div>
             
             <div class="mb-8">
-                <p class="text-gray-700 mb-2">
-                    <strong>Mitglied bei:</strong> WKO, Wien; Der Österreichische Gesellschaft für Soziale Arbeit (OGSA); Der Anthroposophischen Gesellschaft
-                </p>
+                <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">Mitglied der</h3>
+                <ul class="list-disc list-inside text-gray-700 mb-2 pl-4">
+                    <li>Wirtschaftskammer Österreich (WKÖ)</li>
+                    <li>Österreichischen Gesellschaft für Soziale Arbeit (OGSA)</li>
+                    <li>Anthroposophischen Gesellschaft (AG)</li>
+                </ul>
+            </div>
+            
+            <div class="mb-8">
                 <p class="text-gray-700 mb-2"><strong>Berufsrecht:</strong> Gewerbeordnung: www.ris.bka.gv.at</p>
+                <p class="text-gray-700 mb-2"><strong>Bezirkshauptmannschaft:</strong> Magistratisches Bezirksamt des I. Bezirks</p>
             </div>
             
             <div class="mb-8">
-                <p class="text-gray-700 mb-2"><strong>Aufsichtsbehörde/Gewerbebehörde:</strong> Magistratisches Bezirksamt des I. Bezirks</p>
-                <p class="text-gray-700 mb-2"><strong>Berufsbezeichnung:</strong> Personenbetreuung, Kinderbetreuung, Begleitagenturen, Soziale Arbeit</p>
+                <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">Berufsbezeichnung</h3>
+                <ul class="list-disc list-inside text-gray-700 mb-2 pl-4">
+                    <li>Sozialarbeit: Fachkundige Unterstützung in sozialen Angelegenheiten.</li>
+                    <li>Personenbetreuung: Individuelle und professionelle Betreuung sowie Begleitung von Personen in verschiedenen Lebenssituationen.</li>
+                    <li>Kinderbetreuung: Beaufsichtigung von Kindern in einem geschützten Umfeld, ohne spezifische erzieherische Ziele zu verfolgen.</li>
+                    <li>Begleitagentur: Professionelle Vermittlung von Begleitdiensten für unterschiedliche Anlässe und Bedürfnisse.</li>
+                </ul>
+            </div>
+            
+            <div class="mb-8">
                 <p class="text-gray-700 mb-2"><strong>Verleihungsstaat:</strong> Österreich</p>
-            </div>
-            
-            <div class="mb-8">
-                <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">Inhaberin</h3>
-                <p class="text-gray-700 mb-2">Zuzana Jancova</p>
             </div>
             
             <div class="mb-8">
@@ -104,7 +133,7 @@ pageType: legal
             <div class="mt-8">
                 <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">Kartendaten & Bildnachweis</h3>
                 <p class="text-gray-700 mb-4">
-                    Die Kartengrafik auf dieser Website basiert auf Daten von [OpenStreetMap](https://www.openstreetmap.org/).
+                    Die Kartengrafik auf dieser Website basiert auf Daten von <a href="https://www.openstreetmap.org/" class="text-brand-green hover:underline">OpenStreetMap</a>.
                     © OpenStreetMap-Mitwirkende, ODbL 1.0
                 </p>
             </div>

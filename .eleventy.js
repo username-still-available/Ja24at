@@ -120,6 +120,7 @@ module.exports = function(eleventyConfig) {
   // Explicitly copy subdirectories within assets to preserve structure
   eleventyConfig.addPassthroughCopy({"src/assets/icons": "assets/icons"});
   eleventyConfig.addPassthroughCopy({"src/assets/logo": "assets/logo"});
+  eleventyConfig.addPassthroughCopy({"src/assets/review": "assets/review"});
   
 
   eleventyConfig.addPassthroughCopy("src/fonts");  // Copy content of src/fonts to _site/fonts
@@ -129,6 +130,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/js");     // Copy content of src/js to _site/js
   eleventyConfig.addPassthroughCopy("robots.txt"); // Copy robots.txt to _site/robots.txt
   eleventyConfig.addPassthroughCopy("sitemap.xml"); // Copy sitemap.xml to _site/sitemap.xml
+
+  // Explicitly copy subdirectories within assets to preserve structure
+  eleventyConfig.addPassthroughCopy({"src/assets/icons": "assets/icons"});
+  eleventyConfig.addPassthroughCopy({"src/assets/logo": "assets/logo"});
+  eleventyConfig.addPassthroughCopy({"src/assets/review": "assets/review"});
+  eleventyConfig.addPassthroughCopy({"src/assets/favicon": "assets/favicon"});
+  
 
   // Tell Eleventy to watch the CSS source directory for changes
   eleventyConfig.addWatchTarget("./src/css/");
