@@ -178,27 +178,27 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 <div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
                     <!-- Image 1 - New image -->
                     <div class="slide">
-                        {% picture "/assets/images/original/erwachsenenbetreuung/Cremige-Ananas-Choco-Torte.jpg", "Cremige Ananas-Schokoladen-Torte", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Cremige-Ananas-Choco-Torte.jpg', "Cremige Ananas-Schokoladen-Torte", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Cremige Ananas-Schokoladen-Torte</div>
                     </div>
                     <!-- Image 2 (originally Image 1) -->
                     <div class="slide">
-                        {% picture "/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg", "Erfrischender Ananas-Banana Cocktail", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg', "Erfrischender Ananas-Banana Cocktail", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Erfrischender Ananas-Banana Cocktail</div>
                     </div>
                     <!-- Image 3 (originally Image 2) -->
                     <div class="slide">
-                        {% picture "/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg", "Delikate Lammrippen mit Knoblauch und Oregano", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg', "Delikate Lammrippen mit Knoblauch und Oregano", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Delikate Lammrippen mit Knoblauch und Oregano</div>
                     </div>
                     <!-- Image 4 (originally Image 3) -->
                     <div class="slide">
-                        {% picture "/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg", "Käsecracker Demeter", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg', "Käsecracker Demeter", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Käsecracker Demeter</div>
                     </div>
                     <!-- Image 5 (originally Image 4) -->
                     <div class="slide">
-                        {% picture "/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg", "Marinierte pikante Lammrippchen mit Honig", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg', "Marinierte pikante Lammrippchen mit Honig", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Marinierte pikante Lammrippchen mit Honig</div>
                     </div>
                 </div>
@@ -428,7 +428,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         <div class="map-container relative overflow-hidden rounded-lg shadow-md bg-gray-100">
                             <!-- Static map image (privacy-friendly approach) -->
                             <div class="aspect-w-16 aspect-h-9 bg-gray-200 min-h-[220px] sm:min-h-[300px] md:min-h-0">
-                                {% picture "/assets/images/maps/map.png", "Collection Business Center Wien Goldenes Quartier, Tuchlauben 7a, 1010 Wien", "100vw", "w-full h-full object-cover object-center scale-125 md:scale-100 transition-transform rounded-lg shadow-md" %}
+                                {% picture site.imagePrefix + '/assets/images/maps/map.png', "Collection Business Center Wien Goldenes Quartier, Tuchlauben 7a, 1010 Wien", "100vw", "w-full h-full object-cover object-center scale-125 md:scale-100 transition-transform rounded-lg shadow-md" %}
                                 <!-- Privacy overlay with information and link -->
                                 <div class="absolute inset-0 bg-brand-green bg-opacity-70 flex flex-col items-center justify-center text-white text-center p-4 transition-opacity duration-300 opacity-0 hover:opacity-100">
                                     <p class="font-bold mb-2">Collection Business Center Wien</p>
