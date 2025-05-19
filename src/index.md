@@ -92,11 +92,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
         <div class="flex flex-col md:flex-row items-center">
             <!-- Service Image -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                <div id="slideshow-kinderbetreuung" class="w-full relative h-96 md:h-[30rem] rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
-                    <!-- Using the picture shortcode for the slideshow images -->
-                    <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100">
-                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Kinderbetreuung: Suzana mit Kind", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
-                    </div>
+                <div class="w-full relative h-96 md:h-[30rem] rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
+                    {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Kinderbetreuung: Suzana mit Kind", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
                 </div>
             </div>
 
@@ -135,11 +132,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
         <div class="flex flex-col md:flex-row-reverse items-center">
             <!-- Service Image -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pl-10">
-                <div id="slideshow-begleitung" class="w-full relative h-96 md:h-[30rem] rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
-                    <!-- Using the picture shortcode for the slideshow, adding multiple images -->
-                    <div class="slideshow-image absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ease-in-out opacity-100 z-10">
-                        {% picture site.imagePrefix + '/assets/images/original/gesellschaftliche-begleitung/Seniorin.jpg', "Gesellschaftliche Begleitung: Seniorin", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
-                    </div>
+                <div class="w-full relative h-96 md:h-[30rem] rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
+                    {% picture site.imagePrefix + '/assets/images/original/gesellschaftliche-begleitung/Seniorin.jpg', "Gesellschaftliche Begleitung: Seniorin", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
                 </div>
             </div>
 

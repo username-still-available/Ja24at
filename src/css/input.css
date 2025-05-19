@@ -143,42 +143,30 @@
 }
 
 /* Regular slideshow animations (for non-testimonial sections) */
-#slideshow-personenbetreuung .slide,
-#slideshow-kinderbetreuung .slideshow-image,
-#slideshow-begleitung .slideshow-image {
+#slideshow-personenbetreuung .slide {
   animation: fadeEffect 40s infinite;
 }
 
 /* Stagger animation delays for regular slideshows */
-#slideshow-personenbetreuung .slide:nth-child(1),
-#slideshow-kinderbetreuung .slideshow-image:nth-child(1),
-#slideshow-begleitung .slideshow-image:nth-child(1) {
+#slideshow-personenbetreuung .slide:nth-child(1) {
   animation-delay: 0s;
   position: relative; /* First slide defines the container height */
   opacity: 1; /* Ensure first slide is visible */
 }
 
-#slideshow-personenbetreuung .slide:nth-child(2),
-#slideshow-kinderbetreuung .slideshow-image:nth-child(2),
-#slideshow-begleitung .slideshow-image:nth-child(2) {
+#slideshow-personenbetreuung .slide:nth-child(2) {
   animation-delay: 8s;
 }
 
-#slideshow-personenbetreuung .slide:nth-child(3),
-#slideshow-kinderbetreuung .slideshow-image:nth-child(3),
-#slideshow-begleitung .slideshow-image:nth-child(3) {
+#slideshow-personenbetreuung .slide:nth-child(3) {
   animation-delay: 16s;
 }
 
-#slideshow-personenbetreuung .slide:nth-child(4),
-#slideshow-kinderbetreuung .slideshow-image:nth-child(4),
-#slideshow-begleitung .slideshow-image:nth-child(4) {
+#slideshow-personenbetreuung .slide:nth-child(4) {
   animation-delay: 24s;
 }
 
-#slideshow-personenbetreuung .slide:nth-child(5),
-#slideshow-kinderbetreuung .slideshow-image:nth-child(5),
-#slideshow-begleitung .slideshow-image:nth-child(5) {
+#slideshow-personenbetreuung .slide:nth-child(5) {
   animation-delay: 32s;
 }
 
