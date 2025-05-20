@@ -302,5 +302,48 @@
     <script src="/js/process-steps.js" defer></script>
     <script src="/js/testimonials.js" defer></script>
     <script src="/js/form-handler.js" defer></script>
+    
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-md py-4 px-6 z-50 transition-transform duration-300 transform translate-y-0">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col sm:flex-row items-center justify-between">
+                <div class="flex-1 mb-4 sm:mb-0 sm:mr-4">
+                    <p class="text-gray-700 text-sm sm:text-base">
+                        <span class="font-bold">Kein Cookie-Hinweis?</span> Diese Webseite verwendet keine Cookies - aber Zuzana liebt es, welche zu backen! 🍪
+                    </p>
+                </div>
+                <div class="flex-shrink-0">
+                    <button id="cookie-accept" class="bg-brand-green hover:bg-brand-green-light text-white font-medium py-2 px-4 rounded-md text-sm transition-colors duration-300">
+                        Verstanden
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cookie banner functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptButton = document.getElementById('cookie-accept');
+            const cookieAccepted = localStorage.getItem('cookie-notice-dismissed');
+            
+            if (!cookieAccepted && cookieBanner) {
+                cookieBanner.style.display = 'block';
+                
+                if (acceptButton) {
+                    acceptButton.addEventListener('click', function() {
+                        cookieBanner.classList.add('transform', 'translate-y-full');
+                        setTimeout(function() {
+                            cookieBanner.style.display = 'none';
+                        }, 300); // Match transition duration
+                        localStorage.setItem('cookie-notice-dismissed', 'true');
+                    });
+                }
+            } else if (cookieBanner) {
+                cookieBanner.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html> 
