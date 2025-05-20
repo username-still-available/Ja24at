@@ -35,7 +35,6 @@ pageType: legal
                 <p class="text-gray-700 mb-2">Collection Business Center Wien Goldenes Quartier</p>
                 <p class="text-gray-700 mb-2">Tuchlauben 7a Business Center</p>
                 <p class="text-gray-700 mb-2">1010 Wien</p>
-                <p class="text-gray-700 mb-2">Österreich</p>
             </div>
             
             <div class="mb-8">
@@ -82,38 +81,38 @@ pageType: legal
             <div class="mb-8">
                 <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">EU-Streitschlichtung</h3>
                 <p class="text-gray-700 mb-4">
-                    Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten (ODR-Verordnung) möchten wir Sie über die Online-Streitbeilegungsplattform (OS-Plattform) informieren.<br>
-                    Verbraucher haben die Möglichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europäischen Kommission unter <a href="https://ec.europa.eu/odr" class="text-brand-green hover:underline">https://ec.europa.eu/odr</a> zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in unserem Impressum.
+                    Gemäß Verordnung über Online-Streitbeilegung in Verbraucherangelegenheiten (ODR-Verordnung) möchte ich Sie über die Online-Streitbeilegungsplattform (OS-Plattform) informieren.<br>
+                    Verbraucher haben die Möglichkeit, Beschwerden an die Online Streitbeilegungsplattform der Europäischen Kommission unter <a href="https://ec.europa.eu/odr" class="text-brand-green hover:underline">https://ec.europa.eu/odr</a> zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in meinem Impressum.
                 </p>
                 <p class="text-gray-700">
-                    Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder verpflichtet sind, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+                    Ich möchte Sie jedoch darauf hinweisen, dass ich nicht bereit oder verpflichtet bin, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
                 </p>
             </div>
             
             <div class="mb-8">
                 <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">Haftung für Inhalte dieser Webseite</h3>
                 <p class="text-gray-700 mb-4">
-                    Wir entwickeln die Inhalte dieser Webseite ständig weiter und bemühen uns korrekte und aktuelle Informationen bereitzustellen. Leider können wir keine Haftung für die Korrektheit aller Inhalte auf dieser Webseite übernehmen, speziell für jene die seitens Dritter bereitgestellt wurden.
+                    Ich entwickle die Inhalte dieser Webseite ständig weiter und bemühe mich korrekte und aktuelle Informationen bereitzustellen. Leider kann ich keine Haftung für die Korrektheit aller Inhalte auf dieser Webseite übernehmen, speziell für jene die seitens Dritter bereitgestellt wurden.
                 </p>
                 <p class="text-gray-700">
-                    Sollten Ihnen problematische oder rechtswidrige Inhalte auffallen, bitte wir Sie uns umgehend zu kontaktieren, Sie finden die Kontaktdaten im Impressum.
+                    Sollten Ihnen problematische oder rechtswidrige Inhalte auffallen, bitte ich Sie mich umgehend zu kontaktieren, Sie finden die Kontaktdaten im Impressum.
                 </p>
             </div>
             
             <div class="mb-8">
                 <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">Haftung für Links auf dieser Webseite</h3>
                 <p class="text-gray-700 mb-4">
-                    Unsere Webseite enthält Links zu anderen Webseiten für deren Inhalt wir nicht verantwortlich sind. Haftung für verlinkte Websites besteht laut § 17 ECG für uns nicht, da wir keine Kenntnis rechtswidriger Tätigkeiten hatten und haben, uns solche Rechtswidrigkeiten auch bisher nicht aufgefallen sind und wir Links sofort entfernen würden, wenn uns Rechtswidrigkeiten bekannt werden.
+                    Meine Webseite enthält Links zu anderen Webseiten für deren Inhalt ich nicht verantwortlich bin. Haftung für verlinkte Websites besteht laut § 17 ECG für mich nicht, da ich keine Kenntnis rechtswidriger Tätigkeiten hatte und habe, mir solche Rechtswidrigkeiten auch bisher nicht aufgefallen sind und ich Links sofort entfernen würde, wenn mir Rechtswidrigkeiten bekannt werden.
                 </p>
                 <p class="text-gray-700">
-                    Wenn Ihnen rechtswidrige Links auf unserer Website auffallen, bitte wir Sie uns zu kontaktieren, Sie finden die Kontaktdaten im Impressum.
+                    Wenn Ihnen rechtswidrige Links auf meiner Website auffallen, bitte ich Sie mich zu kontaktieren, Sie finden die Kontaktdaten im Impressum.
                 </p>
             </div>
             
             <div class="mb-8">
                 <h3 class="text-lg font-bold text-gray-800 mb-3 font-heading">Urheberrechtshinweis</h3>
                 <p class="text-gray-700 mb-4">
-                    Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht. Falls notwendig, werden wir die unerlaubte Nutzung von Teilen der Inhalte unserer Seite rechtlich verfolgen.
+                    Alle Inhalte dieser Webseite (Bilder, Fotos, Texte, Videos) unterliegen dem Urheberrecht. Falls notwendig, werde ich die unerlaubte Nutzung von Teilen der Inhalte meiner Seite rechtlich verfolgen.
                 </p>
             </div>
             
