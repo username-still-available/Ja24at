@@ -13,11 +13,21 @@
     <meta http-equiv="Expires" content="0">
     <meta property="og:title" content="Datenschutz">
     <meta property="og:description" content="Professionelle Sozialarbeit von Zuzana Jancova in Wien. Kinderbetreuung, gesellschaftliche Begleitung und individuelle Personenbetreuung - 24ja.at macht Ihr Leben leichter.">
-    <meta property="og:image" content="/assets/images/og-image.jpg">
+    <meta property="og:image" content="/assets/logo/Logo_24JA.png">
     <meta property="og:url" content="https://24ja.at/datenschutz/">
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="24ja.at">
+    <meta property="og:locale" content="de_AT">
     <link rel="canonical" href="https://24ja.at/datenschutz/">
     <title>Datenschutz</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+    <meta name="theme-color" content="#228877">
 
     <!-- Critical CSS inlined for faster page rendering -->
     <style>
@@ -105,7 +115,7 @@
 
     <!-- Load CSS synchronously -->
     <!-- Note: Path updated to reflect assets being served from root -->
-    <link rel="stylesheet" href="/css/style.css?v=1747123004336">
+    <link rel="stylesheet" href="/css/style.css?v=1747735060008">
     <!-- Async loading removed for style.css -->
     <!-- <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
     <!-- <noscript><link rel="stylesheet" href="/css/style.css"></noscript> -->
@@ -166,6 +176,18 @@
       "services": [{"name":"Kinderbetreuung","description":"Pädagogisch wertvolle Betreuung für Kinder aller Altersgruppen"},{"name":"Gesellschaftliche Begleitung","description":"Professionelles Auftreten bei geschäftlichen und sozialen Anlässen"},{"name":"Personenbetreuung","description":"Hilfe im Alltag und bei der Haushaltsführung"}]
     }
     </script>
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Datenschutz">
+    <meta name="twitter:description" content="Professionelle Sozialarbeit von Zuzana Jancova in Wien. Kinderbetreuung, gesellschaftliche Begleitung und individuelle Personenbetreuung - 24ja.at macht Ihr Leben leichter.">
+    <meta name="twitter:image" content="/assets/logo/Logo_24JA.png">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="geo.region" content="AT-9">
+    <meta name="geo.placename" content="Wien">
+    <meta name="geo.position" content="48.2102;16.3695">
+    <meta name="ICBM" content="48.2102, 16.3695">
 </head>
 <body class="bg-white font-body m-0">
     
@@ -255,5 +277,50 @@ Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Ei
     <!-- Scripts -->
     <script src="/js/script.js" defer></script>
     <script src="/js/process-steps.js" defer></script>
+    <script src="/js/testimonials.js" defer></script>
+    <script src="/js/form-handler.js" defer></script>
+    
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-md py-4 px-6 z-50 transition-transform duration-300 transform translate-y-0">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col sm:flex-row items-center justify-between">
+                <div class="flex-1 mb-4 sm:mb-0 sm:mr-4">
+                    <p class="text-gray-700 text-sm sm:text-base">
+                        <span class="font-bold">Kein Cookie-Hinweis?</span> Diese Webseite verwendet keine Cookies - aber Zuzana liebt es, welche zu backen! 🍪
+                    </p>
+                </div>
+                <div class="flex-shrink-0">
+                    <button id="cookie-accept" class="bg-brand-green hover:bg-brand-green-light text-white font-medium py-2 px-4 rounded-md text-sm transition-colors duration-300">
+                        Verstanden
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Cookie banner functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieBanner = document.getElementById('cookie-banner');
+            const acceptButton = document.getElementById('cookie-accept');
+            const cookieAccepted = localStorage.getItem('cookie-notice-dismissed');
+            
+            if (!cookieAccepted && cookieBanner) {
+                cookieBanner.style.display = 'block';
+                
+                if (acceptButton) {
+                    acceptButton.addEventListener('click', function() {
+                        cookieBanner.classList.add('transform', 'translate-y-full');
+                        setTimeout(function() {
+                            cookieBanner.style.display = 'none';
+                        }, 300); // Match transition duration
+                        localStorage.setItem('cookie-notice-dismissed', 'true');
+                    });
+                }
+            } else if (cookieBanner) {
+                cookieBanner.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html> 

@@ -210,7 +210,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                        <li><strong>Durchführung von verschiedenen Hausarbeiten:</strong> Reinigung, Wäschewaschen und weitere Aufgaben im Haushalt.</li>
                        <li><strong>Hilfestellung bei alltäglichen Verrichtungen:</strong> Unterstützung bei persönlichen Aktivitäten wie Körperpflege und Mobilität.</li>
                        <li><strong>Zubereitung von Mahlzeiten:</strong> Planung, Einkauf der Zutaten und das Kochen gesunder und schmackhafter Gerichte, die auf Ihre individuellen Vorlieben abgestimmt sind. </li>
-                       <li><strong>Fachkundige Unterstützung in sozialen Angelegenheiten:</strong> Hilfe und Begleitung bei Freizeitaktivitäten oder Arztterminen.</li>
+                       <li><strong>Fachkundige Unterstützung in sozialen Angelegenheiten.</strong></li>
                     </ul>
                 </div>
 
@@ -380,7 +380,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                                 <input id="newsletter" name="newsletter" type="checkbox" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300 rounded">
                             </div>
                             <div class="ml-3 text-sm">
-                                <label for="newsletter" class="text-gray-700">Möchten Sie jeden Monat die besten Rezepte erhalten?</label>
+                                <label for="newsletter" class="text-gray-700">Newsletter-Anmeldung: Möchten Sie jeden Monat die besten Rezepte erhalten?</label>
                                 <p class="text-gray-500 mt-1">Bitte beachten Sie, dass der Newsletter erst nach Ihrer Bestätigung in Ihrem Posteingang aktiviert wird.</p>
                             </div>
                         </div>
@@ -401,8 +401,9 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         <h4 class="text-gray-700 font-medium mb-2 font-heading">Anschrift</h4>
                         <p class="text-gray-600">
                             24ja - Macht das Leben leichter e.U.<br>
-                            Collection Business Center Wien Goldenes Quartier<br>
-                            Tuchlauben 7a, AT - 1010 Wien
+                            Mag. Zuzana Jancova<br>
+                            Tuchlauben 7a Business Center<br>
+                            AT - 1010 Wien
                         </p>
                     </div>
 
