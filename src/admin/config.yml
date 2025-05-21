@@ -1,0 +1,98 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+# Publish mode (editorial workflow)
+publish_mode: editorial_workflow
+
+# Media folder where uploaded files will be stored in the repo
+media_folder: "src/assets/images/uploads"
+# Public folder where the uploaded files can be accessed on the built site
+public_folder: "/assets/images/uploads"
+
+# URL to your Netlify site
+site_url: https://24ja.at
+# Use relative URLs for links in the admin interface
+display_url: https://24ja.at
+logo_url: https://24ja.at/assets/logo/Logo_24JA.png
+
+# Localization
+locale: 'de'
+
+# Collections - defines the content structure
+collections:
+  - name: "pages"
+    label: "Seiten"
+    files:
+      - name: "home"
+        label: "Startseite"
+        file: "src/index.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/home.njk"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "SEO Beschreibung", name: "description", widget: "string"}
+          - {label: "Hero Titel", name: "heroTitle", widget: "string"}
+          - {label: "Hero Beschreibung", name: "heroDescription", widget: "text"}
+          - {label: "Hero Button Text", name: "heroButtonText", widget: "string"}
+          - {label: "Hero Button Link", name: "heroButtonLink", widget: "string"}
+          - label: "Dienstleistungen"
+            name: "services"
+            widget: "list"
+            fields:
+              - {label: "Titel", name: "title", widget: "string"}
+              - {label: "Beschreibung", name: "description", widget: "text"}
+              - {label: "Icon", name: "icon", widget: "string", hint: "Wählen Sie ein Icon aus der Liste"}
+              - {label: "Link", name: "link", widget: "string"}
+          - label: "Über mich Sektion"
+            name: "about"
+            widget: "object"
+            fields:
+              - {label: "Titel", name: "title", widget: "string"}
+              - {label: "Bild", name: "image", widget: "image"}
+              - {label: "Inhalt", name: "content", widget: "markdown"}
+          - label: "Erfahrung Sektion"
+            name: "experience"
+            widget: "object"
+            fields:
+              - {label: "Titel", name: "title", widget: "string"}
+              - {label: "Inhalt", name: "content", widget: "markdown"}
+              - label: "Erfahrungspunkte"
+                name: "points"
+                widget: "list"
+                fields:
+                  - {label: "Titel", name: "title", widget: "string"}
+                  - {label: "Wert", name: "value", widget: "string"}
+                  - {label: "Einheit", name: "unit", widget: "string", required: false}
+                  - {label: "Beschreibung", name: "description", widget: "string"}
+
+      - name: "impressum"
+        label: "Impressum"
+        file: "src/impressum.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "SEO Beschreibung", name: "description", widget: "string"}
+          - {label: "Inhalt", name: "body", widget: "markdown"}
+
+      - name: "datenschutz"
+        label: "Datenschutz"
+        file: "src/datenschutz.md"
+        fields:
+          - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/page.njk"}
+          - {label: "Titel", name: "title", widget: "string"}
+          - {label: "SEO Beschreibung", name: "description", widget: "string"}
+          - {label: "Inhalt", name: "body", widget: "markdown"}
+
+  - name: "testimonials"
+    label: "Kundenstimmen"
+    folder: "src/_data/testimonials"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Name", name: "name", widget: "string"}
+      - {label: "Position", name: "position", widget: "string"}
+      - {label: "Unternehmen", name: "company", widget: "string", required: false}
+      - {label: "Bewertung (1-5)", name: "rating", widget: "number", min: 1, max: 5}
+      - {label: "Text", name: "text", widget: "text"}
+      - {label: "Bild", name: "image", widget: "image", required: false}
+      - {label: "Datum", name: "date", widget: "datetime", required: false}

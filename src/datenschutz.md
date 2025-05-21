@@ -14,7 +14,7 @@ pageType: legal
                 Der Schutz Ihrer persönlichen Daten ist mir ein besonderes Anliegen. Ich verarbeite Ihre Daten daher ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2003). In diesen Datenschutzinformationen informiere ich Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen meiner Website.
             </p>
 
-            <h2 class="text-xl font-bold text-gray-800 mb-4 font-heading">Kontakt mit uns</h2>
+            <h2 class="text-xl font-bold text-gray-800 mb-4 font-heading">Kontakt mit mir</h2>
             <p class="text-gray-700 mb-6">
                 Wenn Sie per Formular auf der Website oder per E-Mail Kontakt mit mir aufnehmen, werden Ihre angegebenen Daten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen sechs Monate bei mir gespeichert. Diese Daten gebe ich nicht ohne Ihre Einwilligung weiter.
             </p>

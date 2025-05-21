@@ -188,6 +188,9 @@
     <meta name="geo.placename" content="Wien">
     <meta name="geo.position" content="{{ metadata.structuredData.geo.latitude }};{{ metadata.structuredData.geo.longitude }}">
     <meta name="ICBM" content="{{ metadata.structuredData.geo.latitude }}, {{ metadata.structuredData.geo.longitude }}">
+    
+    <!-- Netlify Identity Widget for CMS -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="bg-white font-body m-0">
     {% if pageType != 'legal' %}
@@ -297,19 +300,34 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="/js/script.js" defer></script>
-    <script src="/js/process-steps.js" defer></script>
-    <script src="/js/testimonials.js" defer></script>
-    <script src="/js/form-handler.js" defer></script>
+    <!-- Scripts for pages -->
+    {% if pageType != 'legal' %}
+    <script src="/js/script.js?v={{ buildtime.timestamp }}" defer></script>
+    <script src="/js/process-steps.js?v={{ buildtime.timestamp }}" defer></script>
+    <script src="/js/form-handler.js?v={{ buildtime.timestamp }}" defer></script>
+    <script src="/js/testimonials.js?v={{ buildtime.timestamp }}" defer></script>
+    {% endif %}
     
+    <!-- Netlify Identity Redirect Script -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+
     <!-- Cookie Banner -->
     <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-md py-4 px-6 z-50 transition-transform duration-300 transform translate-y-0">
         <div class="container mx-auto px-4">
             <div class="flex flex-col sm:flex-row items-center justify-between">
                 <div class="flex-1 mb-4 sm:mb-0 sm:mr-4">
                     <p class="text-gray-700 text-sm sm:text-base">
-                        <span class="font-bold">Kein Cookie-Hinweis?</span> Diese Webseite verwendet keine Cookies - aber Zuzana liebt es, welche zu backen! 🍪
+                        <span class="font-bold">Kein Cookie-Hinweis?</span> Diese Webseite verwendet keine Cookies - aber ich liebe es, welche zu backen! 🍪
                     </p>
                 </div>
                 <div class="flex-shrink-0">

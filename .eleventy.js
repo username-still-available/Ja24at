@@ -184,6 +184,14 @@ module.exports = function(eleventyConfig) {
     ]
   });
 
+  // Copy the files not handled by templates to the output directory
+  // Update all asset folder paths to use forward slashes for consistency
+  eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/js");
+  eleventyConfig.addPassthroughCopy("src/fonts");
+  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/admin/config.yml");
+
   // Return the configuration object
   return {
     dir: {

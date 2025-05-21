@@ -8,34 +8,168 @@ document.addEventListener('DOMContentLoaded', function() {
     const confirmationMessage = document.createElement('div');
     confirmationMessage.id = 'form-confirmation';
     confirmationMessage.className = 'bg-white p-8 rounded-lg shadow-lg hidden';
-    confirmationMessage.innerHTML = `
-      <div class="text-center">
-        <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-6">
-          <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-          </svg>
-        </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Vielen Dank für Ihre Nachricht!</h3>
-        <p class="text-gray-600 mb-6">Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.</p>
-        <button id="send-another" class="inline-block bg-brand-green hover:bg-brand-green-light text-white font-medium py-2 px-6 rounded-lg transition-colors">
-          Neue Anfrage senden
-        </button>
-      </div>
-    `;
+    
+    // Use createElement approach instead of innerHTML for better security
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'text-center';
+    
+    const iconDiv = document.createElement('div');
+    iconDiv.className = 'inline-flex items-center justify-center w-16 h-16 rounded-full bg-green-100 mb-6';
+    
+    const iconSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    iconSvg.setAttribute('class', 'w-8 h-8 text-green-600');
+    iconSvg.setAttribute('fill', 'none');
+    iconSvg.setAttribute('stroke', 'currentColor');
+    iconSvg.setAttribute('viewBox', '0 0 24 24');
+    
+    const iconPath = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+    iconPath.setAttribute('stroke-linecap', 'round');
+    iconPath.setAttribute('stroke-linejoin', 'round');
+    iconPath.setAttribute('stroke-width', '2');
+    iconPath.setAttribute('d', 'M5 13l4 4L19 7');
+    
+    iconSvg.appendChild(iconPath);
+    iconDiv.appendChild(iconSvg);
+    
+    const heading = document.createElement('h3');
+    heading.className = 'text-xl font-bold text-gray-800 mb-4 font-heading';
+    heading.textContent = 'Vielen Dank für Ihre Nachricht!';
+    
+    const paragraph = document.createElement('p');
+    paragraph.className = 'text-gray-600 mb-6';
+    paragraph.textContent = 'Wir haben Ihre Anfrage erhalten und werden uns in Kürze bei Ihnen melden.';
+    
+    const button = document.createElement('button');
+    button.id = 'send-another';
+    button.className = 'inline-block bg-brand-green hover:bg-brand-green-light text-white font-medium py-2 px-6 rounded-lg transition-colors';
+    button.textContent = 'Neue Anfrage senden';
+    
+    messageDiv.appendChild(iconDiv);
+    messageDiv.appendChild(heading);
+    messageDiv.appendChild(paragraph);
+    messageDiv.appendChild(button);
+    confirmationMessage.appendChild(messageDiv);
     
     formContainer.appendChild(confirmationMessage);
+    
+    // Input validation patterns
+    const validationPatterns = {
+      email: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+      name: /^[a-zA-ZäöüÄÖÜß\s]{2,50}$/
+    };
+    
+    // Validate form inputs
+    function validateForm() {
+      let isValid = true;
+      
+      // Validate name field
+      const nameInput = document.getElementById('name');
+      if (!validationPatterns.name.test(nameInput.value)) {
+        markInvalid(nameInput, 'Bitte geben Sie einen gültigen Namen ein (2-50 Zeichen, nur Buchstaben)');
+        isValid = false;
+      } else {
+        markValid(nameInput);
+      }
+      
+      // Validate email field
+      const emailInput = document.getElementById('email');
+      if (!validationPatterns.email.test(emailInput.value)) {
+        markInvalid(emailInput, 'Bitte geben Sie eine gültige E-Mail-Adresse ein');
+        isValid = false;
+      } else {
+        markValid(emailInput);
+      }
+      
+      // Check if service is selected
+      const serviceInputs = document.querySelectorAll('input[name="service"]');
+      let serviceSelected = false;
+      serviceInputs.forEach(input => {
+        if (input.checked) {
+          serviceSelected = true;
+        }
+      });
+      
+      if (!serviceSelected) {
+        const serviceContainer = document.querySelector('input[name="service"]').parentNode.parentNode.parentNode;
+        serviceContainer.classList.add('border', 'border-red-500', 'rounded', 'p-2');
+        isValid = false;
+      } else {
+        const serviceContainer = document.querySelector('input[name="service"]').parentNode.parentNode.parentNode;
+        serviceContainer.classList.remove('border', 'border-red-500', 'rounded', 'p-2');
+      }
+      
+      // Validate message field
+      const messageInput = document.getElementById('message');
+      if (messageInput.value.trim().length < 10) {
+        markInvalid(messageInput, 'Bitte geben Sie eine Nachricht mit mindestens 10 Zeichen ein');
+        isValid = false;
+      } else {
+        markValid(messageInput);
+      }
+      
+      return isValid;
+    }
+    
+    // Mark an input as invalid with a custom message
+    function markInvalid(input, message) {
+      input.classList.add('border-red-500');
+      input.classList.remove('border-gray-300');
+      
+      // Check if error message already exists
+      let errorElement = input.parentNode.querySelector('.error-message');
+      if (!errorElement) {
+        errorElement = document.createElement('p');
+        errorElement.className = 'error-message text-red-500 text-sm mt-1';
+        input.parentNode.appendChild(errorElement);
+      }
+      errorElement.textContent = message;
+    }
+    
+    // Mark an input as valid
+    function markValid(input) {
+      input.classList.remove('border-red-500');
+      input.classList.add('border-gray-300');
+      
+      // Remove error message if it exists
+      const errorElement = input.parentNode.querySelector('.error-message');
+      if (errorElement) {
+        errorElement.remove();
+      }
+    }
+    
+    // Sanitize user input to prevent XSS attacks
+    function sanitizeInput(input) {
+      const tempDiv = document.createElement('div');
+      tempDiv.textContent = input;
+      return tempDiv.textContent;
+    }
     
     // Handle form submission
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
       
+      // Validate form before submission
+      if (!validateForm()) {
+        return; // Stop submission if validation fails
+      }
+      
       // Submit the form data using fetch API
       const formData = new FormData(contactForm);
+      
+      // Sanitize user inputs
+      const sanitizedFormData = new FormData();
+      for (const [key, value] of formData.entries()) {
+        if (typeof value === 'string') {
+          sanitizedFormData.append(key, sanitizeInput(value));
+        } else {
+          sanitizedFormData.append(key, value);
+        }
+      }
       
       fetch('/', {
         method: 'POST',
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString()
+        body: new URLSearchParams(sanitizedFormData).toString()
       })
       .then(response => {
         if (response.ok) {
