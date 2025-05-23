@@ -1,4 +1,4 @@
-// Testimonials slider functionality
+// Testimonials slider functionality with manual navigation
 document.addEventListener('DOMContentLoaded', function() {
   // Get testimonial container
   const testimonialContainer = document.getElementById('testimonial-container');
@@ -7,17 +7,17 @@ document.addEventListener('DOMContentLoaded', function() {
   const slides = testimonialContainer.querySelectorAll('.slide');
   if (slides.length === 0) return;
   
+  // Get navigation elements
+  const prevBtn = document.getElementById('testimonial-prev');
+  const nextBtn = document.getElementById('testimonial-next');
+  const dotsContainer = document.getElementById('testimonial-dots');
+  
   // Pre-calculate heights once at the beginning and store them
   const slideHeights = Array.from(slides).map(slide => slide.offsetHeight + 30); // Adding buffer
   
-  // Animation timing values from CSS
-  const totalSlides = slides.length;
-  const totalCycleTime = 18; // seconds - matches the CSS animation
-  const slideTime = totalCycleTime / totalSlides;
-  
-  // Keep track of current slide and upcoming slide
+  // Keep track of current slide
   let currentSlideIndex = 0;
-  let nextSlideIndex = 0;
+  const totalSlides = slides.length;
   
   // Initial setup
   slides[0].style.opacity = 1;
@@ -28,15 +28,42 @@ document.addEventListener('DOMContentLoaded', function() {
   slides.forEach((slide, index) => {
     // Override CSS animations
     slide.style.animation = 'none';
+    slide.style.transition = 'opacity 0.5s ease-in-out';
     if (index !== 0) {
       slide.style.opacity = 0;
       slide.style.zIndex = 0;
     }
   });
   
-  // Function to transition to the next slide
-  function transitionToSlide(nextIndex) {
-    if (nextIndex === currentSlideIndex) return;
+  // Create navigation dots
+  function createDots() {
+    dotsContainer.innerHTML = '';
+    for (let i = 0; i < totalSlides; i++) {
+      const dot = document.createElement('button');
+      dot.className = `w-3 h-3 rounded-full transition-all duration-200 ${
+        i === 0 ? 'bg-blue-600' : 'bg-gray-300 hover:bg-gray-400'
+      }`;
+      dot.setAttribute('data-slide', i);
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+  
+  // Update dots active state
+  function updateDots() {
+    const dots = dotsContainer.querySelectorAll('button');
+    dots.forEach((dot, index) => {
+      if (index === currentSlideIndex) {
+        dot.className = 'w-3 h-3 rounded-full transition-all duration-200 bg-blue-600';
+      } else {
+        dot.className = 'w-3 h-3 rounded-full transition-all duration-200 bg-gray-300 hover:bg-gray-400';
+      }
+    });
+  }
+  
+  // Function to transition to a specific slide
+  function goToSlide(nextIndex) {
+    if (nextIndex === currentSlideIndex || nextIndex < 0 || nextIndex >= totalSlides) return;
     
     // Get current and next slides
     const currentSlide = slides[currentSlideIndex];
@@ -46,7 +73,8 @@ document.addEventListener('DOMContentLoaded', function() {
     nextSlide.style.zIndex = 10;
     currentSlide.style.zIndex = 5;
     
-    // Change height at the same time as starting the fade
+    // Change height with smooth transition
+    testimonialContainer.style.transition = 'height 0.5s ease-in-out';
     testimonialContainer.style.height = `${slideHeights[nextIndex]}px`;
     
     // Start fade out of current slide
@@ -57,17 +85,42 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Update current index
     currentSlideIndex = nextIndex;
+    
+    // Update dots
+    updateDots();
   }
   
-  // Function to cycle through slides
-  function cycleSlides() {
-    nextSlideIndex = (currentSlideIndex + 1) % totalSlides;
-    transitionToSlide(nextSlideIndex);
+  // Navigation functions
+  function goToPrevSlide() {
+    const prevIndex = currentSlideIndex === 0 ? totalSlides - 1 : currentSlideIndex - 1;
+    goToSlide(prevIndex);
   }
   
-  // Set interval to cycle slides at slide time interval
-  const slideDuration = slideTime * 1000; // Convert to milliseconds
-  setInterval(cycleSlides, slideDuration);
+  function goToNextSlide() {
+    const nextIndex = (currentSlideIndex + 1) % totalSlides;
+    goToSlide(nextIndex);
+  }
+  
+  // Add event listeners for navigation
+  if (prevBtn) {
+    prevBtn.addEventListener('click', goToPrevSlide);
+  }
+  
+  if (nextBtn) {
+    nextBtn.addEventListener('click', goToNextSlide);
+  }
+  
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') {
+      goToPrevSlide();
+    } else if (e.key === 'ArrowRight') {
+      goToNextSlide();
+    }
+  });
+  
+  // Initialize dots
+  createDots();
   
   // Handle window resize events - recalculate all heights
   window.addEventListener('resize', function() {

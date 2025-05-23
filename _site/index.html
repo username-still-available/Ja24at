@@ -115,7 +115,7 @@
 
     <!-- Load CSS synchronously -->
     <!-- Note: Path updated to reflect assets being served from root -->
-    <link rel="stylesheet" href="/css/style.css?v=1747813559947">
+    <link rel="stylesheet" href="/css/style.css?v=1747981461405">
     <!-- Async loading removed for style.css -->
     <!-- <link rel="preload" href="/css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
     <!-- <noscript><link rel="stylesheet" href="/css/style.css"></noscript> -->
@@ -482,8 +482,9 @@ Anfrage stellen
 <section id="testimonials" class="py-16 bg-gray-50">
 <div class="container mx-auto px-6">
   <h2 class="text-3xl font-bold text-center text-gray-800 mb-12 font-heading">Was Kunden und Kundinnen sagen</h2>
-  <!-- Relative container for slideshow with a min-height to prevent layout shift -->
-  <div id="testimonial-container" class="css-slideshow-fade relative max-w-3xl mx-auto overflow-hidden">
+  <!-- Relative container for slideshow with navigation -->
+  <div class="relative max-w-3xl mx-auto">
+    <div id="testimonial-container" class="css-slideshow-fade relative overflow-hidden">
 <div class="slide bg-white p-6 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center w-full">
   <!-- Logo -->
   <div class="mb-6 flex-shrink-0 h-16 flex items-center">
@@ -499,20 +500,24 @@ Anfrage stellen
   </div>
 </div>
 <div class="slide bg-white p-6 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center w-full">
-  <!-- Circular Image Placeholder -->
-  <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+  <!-- Circular Initial Placeholder -->
+  <div class="w-16 h-16 rounded-full bg-blue-500 mb-6 flex-shrink-0 flex items-center justify-center">
+    <span class="text-white text-xl font-bold">K</span>
+  </div>
   <!-- Quote Text -->
   <div class="flex-grow">
-    <p class="text-gray-600 italic mb-6 break-words max-w-full sm:max-w-md md:max-w-lg leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.</p>
+    <p class="text-gray-600 italic mb-6 break-words max-w-full sm:max-w-md md:max-w-lg leading-relaxed">Wir lernten Zuzana kennen im Zuge einer Betreuungssituation für unsere 13-jährige Tochter mit Beeinträchtigung.<br><br>Schon nach der ersten Einheit waren wir extrem positiv überrascht über die Empathie, die Zuzana unserer Tochter entgegenbrachte sowie ihr Engagement mit dem sie versuchte alle Situationen zu verstehen und mit uns gemeinsam zu reflektieren.<br><br>Zuzana begegnete unserer Tochter mit einer innerlichen Ruhe welche sich auch auf sie übertrug und die beiden harmonierten von Beginn an.<br><br>Wir haben bisher selten wirklich so positive Betreuungseinheiten gehabt. Unsere Tochter genießt bis jetzt die Betreuungssituationen und wir fühlen uns als gesamte Familie in den Prozeß miteinbezogen, können Vertrauen fassen und Zuzana nur weiterempfehlen.<br><br>Wir freuen uns sehr auf Zuzana gestoßen zu sein und empfinden ihre Person als Bereicherung für unser Familiensystem.</p>
   </div>
   <div class="pt-4 w-full">
-    <p class="text-gray-800 font-semibold">Testimonial Name</p>
-<p><p class="text-gray-600 text-sm">Lorem Ipsum Position</p></p>
+    <p class="text-gray-800 font-semibold">Karin mit Flora</p>
+<p><p class="text-gray-600 text-sm">Familie mit Tochter mit Beeinträchtigung</p></p>
   </div>
 </div>
 <div class="slide bg-white p-6 sm:p-8 rounded-lg shadow-md flex flex-col items-center text-center w-full">
-  <!-- Circular Image Placeholder -->
-  <div class="w-16 h-16 rounded-full bg-gray-300 mb-6 flex-shrink-0"></div>
+  <!-- Circular Initial Placeholder -->
+  <div class="w-16 h-16 rounded-full bg-blue-500 mb-6 flex-shrink-0 flex items-center justify-center">
+    <span class="text-white text-xl font-bold">L</span>
+  </div>
   <!-- Quote Text -->
   <div class="flex-grow">
     <p class="text-gray-600 italic mb-6 break-words max-w-full sm:max-w-md md:max-w-lg leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue.</p>
@@ -522,6 +527,22 @@ Anfrage stellen
 <p><p class="text-gray-600 text-sm">Dolor Sit Amet</p></p>
   </div>
 </div>
+<p></div></p>
+<p><!-- Navigation Arrows -->
+<button id="testimonial-prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 shadow-lg transition-all duration-200 z-20 group">
+<svg class="w-6 h-6 text-gray-600 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+</svg>
+</button></p>
+<p><button id="testimonial-next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-80 hover:bg-opacity-100 rounded-full p-3 shadow-lg transition-all duration-200 z-20 group">
+<svg class="w-6 h-6 text-gray-600 group-hover:text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+</svg>
+</button></p>
+<p><!-- Dots Navigation -->
+<div id="testimonial-dots" class="flex justify-center mt-6 space-x-2">
+<!-- Dots will be generated by JavaScript -->
+</div></p>
   </div>
 </div>
 <!-- Load the external testimonials.js file instead of inline script -->
@@ -747,10 +768,10 @@ In Google Maps öffnen
 
     <!-- Scripts for pages -->
     
-    <script src="/js/script.js?v=1747813559947" defer></script>
-    <script src="/js/process-steps.js?v=1747813559947" defer></script>
-    <script src="/js/form-handler.js?v=1747813559947" defer></script>
-    <script src="/js/testimonials.js?v=1747813559947" defer></script>
+    <script src="/js/script.js?v=1747981461405" defer></script>
+    <script src="/js/process-steps.js?v=1747981461405" defer></script>
+    <script src="/js/form-handler.js?v=1747981461405" defer></script>
+    <script src="/js/testimonials.js?v=1747981461405" defer></script>
     
     
     <!-- Netlify Identity Redirect Script -->
