@@ -144,7 +144,7 @@
 
 /* Regular slideshow animations (for non-testimonial sections) */
 #slideshow-personenbetreuung .slide {
-  animation: fadeEffect 40s infinite;
+  animation: fadeEffect 64s infinite; /* Updated duration for 8 slides */
 }
 
 /* Stagger animation delays for regular slideshows */
@@ -168,6 +168,18 @@
 
 #slideshow-personenbetreuung .slide:nth-child(5) {
   animation-delay: 32s;
+}
+
+#slideshow-personenbetreuung .slide:nth-child(6) {
+  animation-delay: 40s;
+}
+
+#slideshow-personenbetreuung .slide:nth-child(7) {
+  animation-delay: 48s;
+}
+
+#slideshow-personenbetreuung .slide:nth-child(8) {
+  animation-delay: 56s;
 }
 
 /* Testimonials specific settings */

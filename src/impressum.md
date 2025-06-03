@@ -32,8 +32,7 @@ pageType: legal
             </div>
             
             <div class="mb-8">
-                <p class="text-gray-700 mb-2"><strong>UID-Nr:</strong> ATU</p>
-                <p class="text-gray-700 mb-2"><strong>Firmenbuchnummer:</strong> 123456a</p>
+                <p class="text-gray-700 mb-2"><strong>Firmenbuchnummer:</strong> 653363d</p>
                 <p class="text-gray-700 mb-2"><strong>Firmenbuchgericht:</strong> Wien</p>
                 <p class="text-gray-700 mb-2"><strong>Firmensitz:</strong> 1010 Wien</p>
                 <p class="text-gray-700 mb-2"><strong>Volle geografische Anschrift:</strong> Tuchlauben 7a Business Center, Wien, Österreich</p>

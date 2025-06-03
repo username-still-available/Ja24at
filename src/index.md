@@ -195,6 +195,21 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg', "Marinierte pikante Lammrippchen mit Honig", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Marinierte pikante Lammrippchen mit Honig</div>
                     </div>
+                    <!-- Image 6 (New) -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/1000001306.jpg', "Lammrippen nach Großmutters Rezept.", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Lammrippen nach Großmutters Rezept.</div>
+                    </div>
+                    <!-- Image 7 (New) -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/1000001322.jpg', "Kalb in cremiger Meerrettich-Käse-Haube.", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Kalb in cremiger Meerrettich-Käse-Haube.</div>
+                    </div>
+                    <!-- Image 8 (New) -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/1000000152.jpg', "Kalbstelze - mit Champions und Knoblauch.", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Kalbstelze - mit Champions und Knoblauch.</div>
+                    </div>
                 </div>
             </div>
 
@@ -426,7 +441,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                                 {% picture site.imagePrefix + '/assets/images/maps/map.png', "Collection Business Center Wien Goldenes Quartier, Tuchlauben 7a, 1010 Wien", "100vw", "w-full h-full object-cover object-center scale-125 md:scale-100 transition-transform rounded-lg shadow-md" %}
                                 <!-- Privacy overlay with information and link -->
                                 <div class="absolute inset-0 bg-brand-green bg-opacity-70 flex flex-col items-center justify-center text-white text-center p-4 transition-opacity duration-300 opacity-0 hover:opacity-100">
-                                    <p class="font-bold mb-2">Collection Business Center Wien</p>
+                                    <p class="font-bold mb-2">24ja - Macht das Leben leichter e.U.</p>
                                     <p class="mb-4">Tuchlauben 7a, 1010 Wien</p>
                                     <a 
                                         href="https://maps.google.com/?q=Tuchlauben+7,+1010+Wien,+Austria" 
