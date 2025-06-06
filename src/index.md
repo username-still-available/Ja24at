@@ -342,7 +342,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
         <div class="flex flex-col md:flex-row">
             <!-- Contact Form -->
             <div class="w-full md:w-1/2 md:pr-8 mb-10 md:mb-0">
-                <form name="contact" id="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" data-netlify-recaptcha="true" class="bg-white p-8 rounded-lg shadow-lg">
+                <form name="contact" id="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="bg-white p-8 rounded-lg shadow-lg">
                     <!-- This hidden field is REQUIRED for AJAX submissions -->
                     <input type="hidden" name="form-name" value="contact">
                     <p class="hidden">
