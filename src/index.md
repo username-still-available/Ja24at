@@ -170,50 +170,55 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10 block">
                 <!-- Slideshow container -->
                 <div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
-                    <!-- Image 1 - New image -->
+                    <!-- Image 1 -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Brot aus Demetermehl.jpeg', "Frisch gebackenes Brot aus Demeter-Mehl", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Frisch gebackenes Brot aus Demeter-Mehl</div>
+                    </div>
+                    <!-- Image 2 -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Kalb in cremiger Meerrettich Käsehaube.jpg', "Kalb in cremiger Meerrettich-Käsehaube", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Kalb in cremiger Meerrettich-Käsehaube</div>
+                    </div>
+                    <!-- Image 3 -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Käsecrecker Demeter.jpg', "Hausgemachte Käsecracker aus Demeter-Zutaten", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Hausgemachte Käsecracker aus Demeter-Zutaten</div>
+                    </div>
+                    <!-- Image 4 -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg', "Lammrippen mit Knoblauch und Oregano", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Lammrippen mit Knoblauch und Oregano</div>
+                    </div>
+                    <!-- Image 5 -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Vorspeisenteller.jpg', "Kreativer Vorspeisenteller", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Kreativer Vorspeisenteller</div>
+                    </div>
+                    <!-- Image 6 -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg', "Erfrischende Cocktails aus Banane und Ananas", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Erfrischende Cocktails aus Banane und Ananas</div>
+                    </div>
+                    <!-- Image 7 -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg', "Verführerische Lammrippen in pikanter Honigmarinade", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Verführerische Lammrippen in pikanter Honigmarinade</div>
+                    </div>
+                    <!-- Image 8 -->
                     <div class="slide">
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Cremige-Ananas-Choco-Torte.jpg', "Cremige Ananas-Schokoladen-Torte", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Cremige Ananas-Schokoladen-Torte</div>
                     </div>
-                    <!-- Image 2 (originally Image 1) -->
+                    <!-- Image 9 -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg', "Erfrischender Ananas-Banana Cocktail", "100vw", "w-full h-full object-contain" %}
-                        <div class="slide-caption">Erfrischender Ananas-Banana Cocktail</div>
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Lammrippchen nach Großmutters Rezept.jpg', "Lammrippchen nach Großmutters Rezept", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Lammrippchen nach Großmutters Rezept</div>
                     </div>
-                    <!-- Image 3 (originally Image 2) -->
+                    <!-- Image 10 -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg', "Delikate Lammrippen mit Knoblauch und Oregano", "100vw", "w-full h-full object-contain" %}
-                        <div class="slide-caption">Delikate Lammrippen mit Knoblauch und Oregano</div>
-                    </div>
-                    <!-- Image 4 (originally Image 3) -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/kaesecracker-demeter.jpg', "Käsecracker Demeter", "100vw", "w-full h-full object-contain" %}
-                        <div class="slide-caption">Käsecracker Demeter</div>
-                    </div>
-                    <!-- Image 5 (originally Image 4) -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Verführerische Lammrippen in einer pikanten Honigmarinade.jpg', "Marinierte pikante Lammrippchen mit Honig", "100vw", "w-full h-full object-contain" %}
-                        <div class="slide-caption">Marinierte pikante Lammrippchen mit Honig</div>
-                    </div>
-                    <!-- Image 6 (New) -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/1000001306.jpg', "Lammrippen nach Großmutters Rezept.", "100vw", "w-full h-full object-contain" %}
-                        <div class="slide-caption">Lammrippen nach Großmutters Rezept.</div>
-                    </div>
-                    <!-- Image 7 (New) -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/1000001322.jpg', "Kalb in cremiger Meerrettich-Käse-Haube.", "100vw", "w-full h-full object-contain" %}
-                        <div class="slide-caption">Kalb in cremiger Meerrettich-Käse-Haube.</div>
-                    </div>
-                    <!-- Image 8 (New) -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/1000000152.jpg', "Kalbstelze - mit Champions und Knoblauch.", "100vw", "w-full h-full object-contain" %}
-                        <div class="slide-caption">Kalbstelze - mit Champions und Knoblauch.</div>
-                    </div>
-                    <!-- Image 9 (New) -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/20250601_205700.jpg', "Kulinarische Kreation", "100vw", "w-full h-full object-contain" %}
-                        <div class="slide-caption">Kulinarische Kreation</div>
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Kalbsstelze mit Champions und Knoblauch.jpg', "Kalbsstelze mit Champignons und Knoblauch", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Kalbsstelze mit Champignons und Knoblauch</div>
                     </div>
                 </div>
             </div>
