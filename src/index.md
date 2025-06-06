@@ -182,7 +182,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     </div>
                     <!-- Image 3 -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Käsecrecker Demeter.jpg', "Hausgemachte Käsecracker aus Demeter-Zutaten", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Käsecrecker Demeter.jpg', "Hausgemachte Käsecracker aus Demeterkäse", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Hausgemachte Käsecracker aus Demeter-Zutaten</div>
                     </div>
                     <!-- Image 4 -->
