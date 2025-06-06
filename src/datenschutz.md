@@ -24,7 +24,7 @@ pageType: legal
                 <p class="text-gray-700 mb-2">Mag. Zuzana Jancova</p>
                 <p class="text-gray-700 mb-2">Tuchlauben 7a Business Center</p>
                 <p class="text-gray-700 mb-2">1010 Wien</p>
-                <p class="text-gray-700 mb-2">Telefon: +43 664 127 27 64</p>
+                <p class="text-gray-700 mb-2">Telefon: 0664 127 2764</p>
                 <p class="text-gray-700 mb-2">E-Mail: goodnews@24ja.at</p>
                 <p class="text-gray-700 mb-4">FN 653363d - Firmenbuchgericht: Handelsgericht Wien</p>
             </div>

@@ -21,7 +21,7 @@ Anschrift:
 Collection Business Center Wien Goldenes Quartier; Tuchlauben 7/A, AT - 1010 Wien
 
 Tel.:
- 0677 61385769
+ 0664 127 2764
 
 Email: 
 goodnews@24ja.at

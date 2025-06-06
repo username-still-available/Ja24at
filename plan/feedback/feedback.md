@@ -70,7 +70,7 @@ Dienstleistungen sind darauf ausgelegt, Ihnen den Alltag zu erleichtern und Ihre
 
 * Über das Kontaktformular auf dieser Website
 
-* Per Telefon unter 0677 61385769
+* Per Telefon unter 0664 127 2764
 
 * Per WhatsApp-Nachricht
 
@@ -104,7 +104,7 @@ Tuchlauben 7/A, AT \- 1010 Wien
 
 Telefon
 
-0677 61385769
+0664 127 2764
 
 E-Mail
 

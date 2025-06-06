@@ -291,7 +291,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         </p>
                         <ul class="list-disc list-inside mb-4 space-y-3 pl-4">
                             <li>Über das Kontaktformular auf dieser Website</li>
-                            <li>Per Telefon unter 0677 61385769</li>
+                            <li>Per Telefon unter 0664 127 2764</li>
                             <li>Per E-Mail an goodnews@24ja.at</li>
                         </ul>
                         <p class="text-white mb-4 leading-relaxed">
@@ -433,7 +433,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
 
                     <div class="mb-4">
                         <h4 class="text-gray-700 font-medium mb-2 font-heading">Telefon</h4>
-                        <p class="text-gray-600">0677 61385769</p>
+                        <p class="text-gray-600">0664 127 2764</p>
                     </div>
 
                     <div class="mb-4">

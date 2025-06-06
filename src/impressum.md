@@ -39,7 +39,7 @@ pageType: legal
             </div>
             
             <div class="mb-8">
-                <p class="text-gray-700 mb-2"><strong>Tel.:</strong> 0677 61385769</p>
+                <p class="text-gray-700 mb-2"><strong>Tel.:</strong> 0664 127 2764</p>
                 <p class="text-gray-700 mb-2"><strong>E-Mail:</strong> goodnews@24ja.at</p>
             </div>
             
