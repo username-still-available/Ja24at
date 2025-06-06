@@ -190,11 +190,6 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg', "Lammrippen mit Knoblauch und Oregano", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Lammrippen mit Knoblauch und Oregano</div>
                     </div>
-                    <!-- Image 5 -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Vorspeisenteller.jpg', "Kreativer Vorspeisenteller", "100vw", "w-full h-full object-contain" %}
-                        <div class="slide-caption">Kreativer Vorspeisenteller</div>
-                    </div>
                     <!-- Image 6 -->
                     <div class="slide">
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Erfrischende Cocktails aus Banane und Ananas.jpg', "Erfrischende Cocktails aus Banane und Ananas", "100vw", "w-full h-full object-contain" %}
