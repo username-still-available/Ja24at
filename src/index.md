@@ -210,6 +210,11 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/1000000152.jpg', "Kalbstelze - mit Champions und Knoblauch.", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Kalbstelze - mit Champions und Knoblauch.</div>
                     </div>
+                    <!-- Image 9 (New) -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/20250601_205700.jpg', "Kulinarische Kreation", "100vw", "w-full h-full object-contain" %}
+                        <div class="slide-caption">Kulinarische Kreation</div>
+                    </div>
                 </div>
             </div>
 
@@ -354,19 +359,23 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         <input type="email" id="email" name="email" autocomplete="email" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required>
                     </div>
                     <div class="mb-6">
+                        <label for="phone" class="block text-gray-700 font-medium mb-2">Telefonnummer <span class="text-gray-500 text-sm">(optional)</span></label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="z.B. 0664 1234567 oder +43 664 1234567" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light">
+                    </div>
+                    <div class="mb-6">
                         <h3 class="block text-gray-700 font-medium mb-3">Ich interessiere mich für:</h3>
                         <div class="space-y-2">
                             <div class="flex items-center">
-                                <input type="radio" id="radio-kinderbetreuung" name="service" value="Kinderbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-                                <label for="radio-kinderbetreuung" class="ml-2 block text-gray-700">Kinderbetreuung</label>
+                                <input type="radio" id="radio-kinderbetreuung" name="service" value="Professionelle Kinderbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                <label for="radio-kinderbetreuung" class="ml-2 block text-gray-700">Professionelle Kinderbetreuung</label>
                             </div>
                             <div class="flex items-center">
                                 <input type="radio" id="radio-begleitung" name="service" value="Gesellschaftliche Begleitung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
                                 <label for="radio-begleitung" class="ml-2 block text-gray-700">Gesellschaftliche Begleitung</label>
                             </div>
                             <div class="flex items-center">
-                                <input type="radio" id="radio-personenbetreuung" name="service" value="Personenbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-                                <label for="radio-personenbetreuung" class="ml-2 block text-gray-700">Personenbetreuung</label>
+                                <input type="radio" id="radio-personenbetreuung" name="service" value="Fachlich kompetente und individuelle Personenbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                <label for="radio-personenbetreuung" class="ml-2 block text-gray-700">Fachlich kompetente und individuelle Personenbetreuung</label>
                             </div>
                         </div>
                     </div>

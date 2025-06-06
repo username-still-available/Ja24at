@@ -55,7 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
     // Input validation patterns
     const validationPatterns = {
       email: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-      name: /^[a-zA-ZäöüÄÖÜß\s]{2,50}$/
+      name: /^[a-zA-ZäöüÄÖÜß\s]{2,50}$/,
+      // Austrian phone number pattern: supports +43, 0043, or leading 0 formats
+      phone: /^(\+43|0043|0)[1-9]\d{1,13}$|^(\+43|0043)\s?[1-9](\d[\s\-]?){1,13}\d$|^0[1-9](\d[\s\-]?){1,13}\d$/
     };
     
     // Validate form inputs
@@ -78,6 +80,21 @@ document.addEventListener('DOMContentLoaded', function() {
         isValid = false;
       } else {
         markValid(emailInput);
+      }
+      
+      // Validate phone field (optional)
+      const phoneInput = document.getElementById('phone');
+      if (phoneInput && phoneInput.value.trim() !== '') {
+        // Clean phone number for validation (remove spaces and hyphens)
+        const cleanPhone = phoneInput.value.replace(/[\s\-]/g, '');
+        if (!validationPatterns.phone.test(cleanPhone)) {
+          markInvalid(phoneInput, 'Bitte geben Sie eine gültige österreichische Telefonnummer ein (z.B. 0664 1234567 oder +43 664 1234567)');
+          isValid = false;
+        } else {
+          markValid(phoneInput);
+        }
+      } else if (phoneInput) {
+        markValid(phoneInput);
       }
       
       // Check if service is selected
