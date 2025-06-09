@@ -208,7 +208,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <!-- Image 8 -->
                     <div class="slide">
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Lammrippchen nach Großmutters Rezept.jpg', "Lammrippchen nach Großmutters Rezept", "100vw", "w-full h-full object-contain" %}
-                        <div class="slide-caption">Lammrippchen nach Großmutters Rezept</div>
+                        <div class="slide-caption">Lammrippchen nach Grossmutters Rezept</div>
                     </div>
                     <!-- Image 9 -->
                     <div class="slide">
