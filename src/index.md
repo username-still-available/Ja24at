@@ -212,7 +212,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     </div>
                     <!-- Image 9 -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Kalbsstelze mit Champions und Knoblauch.jpg', "Kalbsstelze mit Champignons und Knoblauch", "100vw", "w-full h-full object-contain" %}
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/Kalbsstelze mit Champignons und Knoblauch.jpg', "Kalbsstelze mit Champignons und Knoblauch", "100vw", "w-full h-full object-contain" %}
                         <div class="slide-caption">Kalbsstelze mit Champignons und Knoblauch</div>
                     </div>
                 </div>
