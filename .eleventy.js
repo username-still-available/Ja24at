@@ -146,6 +146,21 @@ module.exports = function(eleventyConfig) {
     return new Date().getFullYear().toString();
   });
 
+  // Add date filter for recipes
+  eleventyConfig.addFilter("date", function(dateObj, format) {
+    if (!dateObj) return "";
+    const date = new Date(dateObj);
+    
+    switch(format) {
+      case 'c': // ISO format for structured data
+        return date.toISOString();
+      case 'YYYY-MM-DD':
+        return date.toISOString().split('T')[0];
+      default:
+        return date.toLocaleDateString('de-DE');
+    }
+  });
+
   // Server Options (for BrowserSync)
   eleventyConfig.setServerOptions({
     // Default Browsersync options shown:
@@ -191,6 +206,13 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/fonts");
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/admin/config.yml");
+
+  // Recipe collection configuration
+  eleventyConfig.addCollection("recipes", function(collectionApi) {
+    return collectionApi.getFilteredByGlob("src/rezepte/*.md").sort(function(a, b) {
+      return new Date(b.date) - new Date(a.date); // Sort by date, newest first
+    });
+  });
 
   // Return the configuration object
   return {
