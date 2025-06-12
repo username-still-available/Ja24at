@@ -48,7 +48,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Professionelle Kinderbetreuung</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Professionelle Kinderbetreuung durch qualifizierte Fachkraft</h3>
                     <p class="text-gray-600 mb-6 flex-grow">Ich unterstütze Sie in Ihrem Alltag, sodass Sie sich auf Ihre wichtigen geschäftlichen Termine konzentrieren können, ohne sich Sorgen um Ihre Kinder machen zu müssen.</p>
                     <a href="/#service-kinderbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
                         Mehr erfahren →
@@ -70,7 +70,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Fachlich kompetente und individuelle Personenbetreuung</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Fachlich kompetente und individuelle Personenbetreuung durch qualifizierte Fachkraft</h3>
                     <p class="text-gray-600 mb-6 flex-grow">Nach einem anstrengenden Tag würden Sie gerne nach Hause kommen, wo bereits ein frisch gekochtes Essen auf dem Tisch auf Sie wartet?</p>
                     <a href="/#service-personenbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
                         Mehr erfahren →
@@ -99,7 +99,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
 
             <!-- Service Content -->
             <div class="w-full md:w-1/2">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Professionelle Kinderbetreuung</h2>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Professionelle Kinderbetreuung durch qualifizierte Fachkraft</h2>
 
                 <!-- Feature Box -->
                 <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
@@ -220,7 +220,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
 
             <!-- Service Content -->
             <div class="w-full md:w-1/2">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Fachlich kompetente und individuelle Personenbetreuung</h2>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Fachlich kompetente und individuelle Personenbetreuung durch qualifizierte Fachkraft</h2>
 
                 <!-- Feature Box -->
                 <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
@@ -350,6 +350,11 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     </p>
                     
                     <h3 class="text-xl font-bold text-gray-800 mb-6 font-heading">Kontaktformular</h3>
+                    
+                    <p class="text-gray-700 mb-6 text-sm bg-blue-50 border border-blue-200 rounded-lg p-4">
+                        Um Ihnen den besten Service zu bieten, bitte ich Sie um vorherige Terminvereinbarung.
+                    </p>
+                    
                     <div class="mb-6">
                         <label for="name" class="block text-gray-700 font-medium mb-2">Name</label>
                         <input type="text" id="name" name="name" autocomplete="name" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-brand-green-light" required>
@@ -366,16 +371,16 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         <h3 class="block text-gray-700 font-medium mb-3">Ich interessiere mich für:</h3>
                         <div class="space-y-2">
                             <div class="flex items-center">
-                                <input type="radio" id="radio-kinderbetreuung" name="service" value="Professionelle Kinderbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-                                <label for="radio-kinderbetreuung" class="ml-2 block text-gray-700">Professionelle Kinderbetreuung</label>
+                                <input type="radio" id="radio-kinderbetreuung" name="service" value="Professionelle Kinderbetreuung durch qualifizierte Fachkraft" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                <label for="radio-kinderbetreuung" class="ml-2 block text-gray-700">Professionelle Kinderbetreuung durch qualifizierte Fachkraft</label>
                             </div>
                             <div class="flex items-center">
                                 <input type="radio" id="radio-begleitung" name="service" value="Gesellschaftliche Begleitung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
                                 <label for="radio-begleitung" class="ml-2 block text-gray-700">Gesellschaftliche Begleitung</label>
                             </div>
                             <div class="flex items-center">
-                                <input type="radio" id="radio-personenbetreuung" name="service" value="Fachlich kompetente und individuelle Personenbetreuung" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-                                <label for="radio-personenbetreuung" class="ml-2 block text-gray-700">Fachlich kompetente und individuelle Personenbetreuung</label>
+                                <input type="radio" id="radio-personenbetreuung" name="service" value="Fachlich kompetente und individuelle Personenbetreuung durch qualifizierte Fachkraft" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                <label for="radio-personenbetreuung" class="ml-2 block text-gray-700">Fachlich kompetente und individuelle Personenbetreuung durch qualifizierte Fachkraft</label>
                             </div>
                         </div>
                     </div>
