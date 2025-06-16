@@ -59,12 +59,16 @@ Each recipe markdown file contains YAML frontmatter with the following fields:
 ## Adding New Recipes
 
 ### Method 1: Using the Admin Interface
-1. Navigate to `/rezept-verwaltung/` (not linked from main site)
+1. Navigate to `/rezept-verwaltung/` (not linked from main site, includes no-index meta tag)
 2. Fill out the recipe form with all details
 3. Click "Rezept generieren" to generate the markdown file
-4. Download or copy the generated content
-5. Save as `.md` file in `src/rezepte/` directory
-6. Rebuild the site with `npm run build`
+4. Choose one of three saving options:
+   - **Direkt speichern**: Automatically saves to repository (requires GitHub API setup)
+   - **Datei herunterladen**: Download file for manual placement in `src/rezepte/`
+   - **In Zwischenablage kopieren**: Copy content to clipboard for manual file creation
+5. If using direct save, the site rebuilds automatically. Otherwise, rebuild with `npm run build`
+
+**Direct Save Setup**: See `documentation/ADMIN_SETUP.md` for GitHub API configuration instructions.
 
 ### Method 2: Manual Creation
 1. Create a new `.md` file in `src/rezepte/`

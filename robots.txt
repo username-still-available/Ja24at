@@ -1,3 +1,10 @@
 User-agent: *
 Allow: /
+Allow: /impressum/
+Allow: /datenschutz/
+Disallow: /rezept-verwaltung.html
+Disallow: /rezepte/
+Disallow: /admin/
+Disallow: /.netlify/
+
 Sitemap: https://24ja.at/sitemap.xml 
