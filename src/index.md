@@ -30,7 +30,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     </p>
                 </div>
                 <p class="text-white italic">
-                        Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen Lebenssituationen zur Seite zu stehen. Mein Interesse gilt dem gesamten Menschen in seiner Authentizität, Wahrheit und inneren Kohärenz. Mein Ziel ist es, ihnen nicht nur Unterstützung anzubieten, sondern ihnen auch Zuversicht und Freude zu schenken, um in ihre eigene Kraft zurückzukommen. 
+                        Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen Lebenssituationen zur Seite zu stehen. Mein Interesse gilt dem gesamten Menschen in seiner Authentizität, Wahrheit und inneren Kohärenz. Mein Ziel ist es, ihnen nicht nur Unterstützung anzubieten, sondern ihnen auch Zuversicht und Freude zu schenken, um in ihre eigene Kraft zurückzukommen. Ein Mensch sollte fühlen, anstatt im Leben nur zu funktionieren – nur so kann er die wahre Tiefe und Schönheit des Daseins erleben. Ein Mensch sollte sich selbst gehören, um frei zu sein. Ein Mensch zu sein, ist eine Aufgabe. Werde der, der du bist.
                 </p>
             </div>
         </div>
