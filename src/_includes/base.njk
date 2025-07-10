@@ -193,6 +193,18 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body class="bg-white font-body m-0">
+    <!-- Static form for Netlify detection - REQUIRED for JavaScript forms -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <input type="text" name="name" />
+        <input type="email" name="email" />
+        <input type="tel" name="phone" />
+        <input type="checkbox" name="service[]" value="Kinderbetreuung durch Fachkraft mit Magister-Abschluss" />
+        <input type="checkbox" name="service[]" value="Gesellschaftliche Begleitung durch Mitarbeiter mit Magister-Abschluss" />
+        <input type="checkbox" name="service[]" value="Alltagsassistenz durch Fachkraft mit Magister-Abschluss" />
+        <textarea name="message"></textarea>
+        <input type="checkbox" name="privacy" />
+        <input type="checkbox" name="newsletter" />
+    </form>
     {% if pageType != 'legal' %}
     <!-- Navigation Bar with white background - moved outside header to be sticky throughout the page -->
     <nav class="bg-brand-green py-4 px-6 shadow-md sticky top-0 z-50 h-[70px]">
