@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Input validation patterns
     const validationPatterns = {
       email: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-      name: /^[a-zA-ZäöüÄÖÜß\s]{2,50}$/,
+      name: /^[a-zA-ZäöüÄÖÜßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ\s\-'.]{2,50}$/,
       // Austrian phone number pattern: supports +43, 0043, or leading 0 formats
       phone: /^(\+43|0043|0)[1-9]\d{1,13}$|^(\+43|0043)\s?[1-9](\d[\s\-]?){1,13}\d$|^0[1-9](\d[\s\-]?){1,13}\d$/
     };
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Validate name field
       const nameInput = document.getElementById('name');
       if (!validationPatterns.name.test(nameInput.value)) {
-        markInvalid(nameInput, 'Bitte geben Sie einen gültigen Namen ein (2-50 Zeichen, nur Buchstaben)');
+        markInvalid(nameInput, 'Bitte geben Sie einen gültigen Namen ein (2-50 Zeichen)');
         isValid = false;
       } else {
         markValid(nameInput);
@@ -172,6 +172,14 @@ document.addEventListener('DOMContentLoaded', function() {
       
       // Submit the form data using fetch API
       const formData = new FormData(contactForm);
+      
+      // IMPORTANT: For checkbox arrays, we need to manually handle the service[] field
+      // Remove all service[] entries and add only the checked ones
+      formData.delete('service[]');
+      const checkedServices = document.querySelectorAll('input[name="service[]"]:checked');
+      checkedServices.forEach(checkbox => {
+        formData.append('service[]', checkbox.value);
+      });
       
       // Sanitize user inputs
       const sanitizedFormData = new FormData();
