@@ -379,8 +379,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                                 <label for="radio-begleitung" class="ml-2 block text-gray-700">Gesellschaftliche Begleitung durch Mitarbeiter mit Magister-Abschluss</label>
                             </div>
                             <div class="flex items-center">
-                                          <input type="radio" id="radio-personenbetreuung" name="service" value="Alltagsassistenz durch Fachkraft mit Magister-Abschluss" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-          <label for="radio-personenbetreuung" class="ml-2 block text-gray-700">Alltagsassistenz durch Fachkraft mit Magister-Abschluss</label>
+                                <input type="radio" id="radio-personenbetreuung" name="service" value="Alltagsassistenz durch Fachkraft mit Magister-Abschluss" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                <label for="radio-personenbetreuung" class="ml-2 block text-gray-700">Alltagsassistenz durch Fachkraft mit Magister-Abschluss</label>
                             </div>
                         </div>
                     </div>
