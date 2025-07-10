@@ -205,49 +205,102 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     function showSuccessMessage() {
-      const successDiv = document.createElement('div');
-      successDiv.className = 'fixed top-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300';
-      successDiv.innerHTML = '✓ Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet.';
+      // Create overlay
+      const overlay = document.createElement('div');
+      overlay.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4';
       
-      document.body.appendChild(successDiv);
+      // Create success message container
+      const successDiv = document.createElement('div');
+      successDiv.className = 'bg-white rounded-xl shadow-2xl p-8 max-w-md w-full text-center transform scale-95 transition-transform duration-300';
+      successDiv.innerHTML = `
+        <div class="mb-4">
+          <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-green-100 mb-4">
+            <svg class="h-8 w-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2 font-heading">Nachricht gesendet!</h3>
+          <p class="text-gray-600 mb-6">Vielen Dank für Ihre Anfrage. Ich werde mich innerhalb von 24 Stunden bei Ihnen melden.</p>
+          <button class="bg-brand-green hover:bg-brand-green-light text-white font-bold py-3 px-6 rounded-lg transition-colors" onclick="this.closest('.fixed').remove()">
+            Verstanden
+          </button>
+        </div>
+      `;
+      
+      overlay.appendChild(successDiv);
+      document.body.appendChild(overlay);
       
       // Animate in
       setTimeout(() => {
-        successDiv.classList.remove('translate-x-full');
+        successDiv.classList.remove('scale-95');
+        successDiv.classList.add('scale-100');
       }, 100);
       
-      // Animate out and remove
+      // Auto-close after 10 seconds
       setTimeout(() => {
-        successDiv.classList.add('translate-x-full');
-        setTimeout(() => {
-          if (successDiv.parentNode) {
-            successDiv.parentNode.removeChild(successDiv);
-          }
-        }, 300);
-      }, 5000);
+        if (overlay.parentNode) {
+          overlay.remove();
+        }
+      }, 10000);
+      
+      // Close on overlay click
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          overlay.remove();
+        }
+      });
     }
 
     function showErrorMessage() {
-      const errorDiv = document.createElement('div');
-      errorDiv.className = 'fixed top-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg z-50 transform translate-x-full transition-transform duration-300';
-      errorDiv.innerHTML = '⚠️ Entschuldigung, es gab einen Fehler beim Senden Ihrer Nachricht. Bitte versuchen Sie es erneut.';
+      // Create overlay
+      const overlay = document.createElement('div');
+      overlay.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4';
       
-      document.body.appendChild(errorDiv);
+      // Create error message container
+      const errorDiv = document.createElement('div');
+      errorDiv.className = 'bg-white rounded-xl shadow-2xl p-8 max-w-md w-full text-center transform scale-95 transition-transform duration-300';
+      errorDiv.innerHTML = `
+        <div class="mb-4">
+          <div class="mx-auto flex items-center justify-center h-16 w-16 rounded-full bg-red-100 mb-4">
+            <svg class="h-8 w-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-gray-900 mb-2 font-heading">Fehler beim Senden</h3>
+          <p class="text-gray-600 mb-6">Entschuldigung, es gab einen Fehler beim Senden Ihrer Nachricht. Bitte versuchen Sie es erneut oder kontaktieren Sie mich direkt.</p>
+          <div class="flex flex-col sm:flex-row gap-3 justify-center">
+            <button class="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-lg transition-colors" onclick="this.closest('.fixed').remove()">
+              Verstanden
+            </button>
+            <a href="tel:06641272764" class="bg-brand-green hover:bg-brand-green-light text-white font-bold py-3 px-6 rounded-lg transition-colors">
+              Anrufen: 0664 127 2764
+            </a>
+          </div>
+        </div>
+      `;
+      
+      overlay.appendChild(errorDiv);
+      document.body.appendChild(overlay);
       
       // Animate in
       setTimeout(() => {
-        errorDiv.classList.remove('translate-x-full');
+        errorDiv.classList.remove('scale-95');
+        errorDiv.classList.add('scale-100');
       }, 100);
       
-      // Animate out and remove
+      // Auto-close after 15 seconds (longer for error messages)
       setTimeout(() => {
-        errorDiv.classList.add('translate-x-full');
-        setTimeout(() => {
-          if (errorDiv.parentNode) {
-            errorDiv.parentNode.removeChild(errorDiv);
-          }
-        }, 300);
-      }, 7000);
+        if (overlay.parentNode) {
+          overlay.remove();
+        }
+      }, 15000);
+      
+      // Close on overlay click
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          overlay.remove();
+        }
+      });
     }
   }
 });
