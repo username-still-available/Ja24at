@@ -22,6 +22,8 @@ Desktop.ini
 *.sublime-workspace
 *.swp
 *.swo
+.cursor/
+ja24at.code-workspace
 
 # Logs
 logs
@@ -52,6 +54,22 @@ build/
 
 # Local Netlify folder
 .netlify
+
+# Development and internal files
+documentation/
+plan/
+todo.md
+CHANGELOG.md
+README.md
+*.sh
+
+# Build configuration files (not needed in deployment)
+.eleventy.js
+tailwind.config.js
+.browserslistrc
+.npmrc
+netlify-cache-plugin.js
+.gitignore-netlify
 
 # Project-specific ignores
 assets/rezepte-assets/

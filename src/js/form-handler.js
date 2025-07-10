@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       // Check if service is selected
-      const serviceInputs = document.querySelectorAll('input[name="service"]');
+      const serviceInputs = document.querySelectorAll('input[name="service[]"]');
       let serviceSelected = false;
       serviceInputs.forEach(input => {
         if (input.checked) {
@@ -107,11 +107,11 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       
       if (!serviceSelected) {
-        const serviceContainer = document.querySelector('input[name="service"]').parentNode.parentNode.parentNode;
+        const serviceContainer = document.querySelector('input[name="service[]"]').parentNode.parentNode.parentNode;
         serviceContainer.classList.add('border', 'border-red-500', 'rounded', 'p-2');
         isValid = false;
       } else {
-        const serviceContainer = document.querySelector('input[name="service"]').parentNode.parentNode.parentNode;
+        const serviceContainer = document.querySelector('input[name="service[]"]').parentNode.parentNode.parentNode;
         serviceContainer.classList.remove('border', 'border-red-500', 'rounded', 'p-2');
       }
       

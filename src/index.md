@@ -371,16 +371,16 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         <h3 class="block text-gray-700 font-medium mb-3">Ich interessiere mich für:</h3>
                         <div class="space-y-2">
                             <div class="flex items-center">
-                                <input type="radio" id="radio-kinderbetreuung" name="service" value="Kinderbetreuung durch Fachkraft mit Magister-Abschluss" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-                                <label for="radio-kinderbetreuung" class="ml-2 block text-gray-700">Kinderbetreuung durch Fachkraft mit Magister-Abschluss</label>
+                                <input type="checkbox" id="checkbox-kinderbetreuung" name="service[]" value="Kinderbetreuung durch Fachkraft mit Magister-Abschluss" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                <label for="checkbox-kinderbetreuung" class="ml-2 block text-gray-700">Kinderbetreuung durch Fachkraft mit Magister-Abschluss</label>
                             </div>
                             <div class="flex items-center">
-                                <input type="radio" id="radio-begleitung" name="service" value="Gesellschaftliche Begleitung durch Mitarbeiter mit Magister-Abschluss" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-                                <label for="radio-begleitung" class="ml-2 block text-gray-700">Gesellschaftliche Begleitung durch Mitarbeiter mit Magister-Abschluss</label>
+                                <input type="checkbox" id="checkbox-begleitung" name="service[]" value="Gesellschaftliche Begleitung durch Mitarbeiter mit Magister-Abschluss" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                <label for="checkbox-begleitung" class="ml-2 block text-gray-700">Gesellschaftliche Begleitung durch Mitarbeiter mit Magister-Abschluss</label>
                             </div>
                             <div class="flex items-center">
-                                <input type="radio" id="radio-personenbetreuung" name="service" value="Alltagsassistenz durch Fachkraft mit Magister-Abschluss" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-                                <label for="radio-personenbetreuung" class="ml-2 block text-gray-700">Alltagsassistenz durch Fachkraft mit Magister-Abschluss</label>
+                                <input type="checkbox" id="checkbox-personenbetreuung" name="service[]" value="Alltagsassistenz durch Fachkraft mit Magister-Abschluss" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                <label for="checkbox-personenbetreuung" class="ml-2 block text-gray-700">Alltagsassistenz durch Fachkraft mit Magister-Abschluss</label>
                             </div>
                         </div>
                     </div>
