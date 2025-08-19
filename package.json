@@ -1,6 +1,7 @@
 {
   "name": "ja24.at---zuzana-jancova",
   "version": "1.0.0",
+  "description": "Professionelle Website für Sozialarbeit und Betreuungsdienste in Wien - Mag. Zuzana Jancova",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,10 +15,9 @@
     "start": "npm-run-all --parallel watch:*",
     "netlify": "npm install @11ty/eleventy-img sharp && npm run clean && npx tailwindcss -i ./src/css/input.css -o ./src/css/style-production.css && cp ./src/css/style-production.css ./src/css/style.css && cross-env NODE_OPTIONS=--no-deprecation eleventy"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["website", "sozialarbeit", "kinderbetreuung", "wien", "alltagsassistenz", "betreuung"],
+  "author": "Mag. Zuzana Jancova",
   "license": "ISC",
-  "description": "",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-img": "^3.1.8",

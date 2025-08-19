@@ -1,42 +1,59 @@
-# 24ja.at - Website
+# 24ja.at - Webseite
 
-This repository contains the source code for the 24ja.at website - a professional service website for Zuzana Jancova offering social work services in Vienna, Austria.
+Dieses Repository enthält den Quellcode für die 24ja.at Webseite - eine professionelle Dienstleistungswebsite von Mag. Zuzana Jancova für Sozialarbeit und Betreuungsdienste in Wien, Österreich.
 
-## Project Structure
+## Projektstruktur
 
-- `index.html` - Main website page
-- `impressum.html` - Legal notice/imprint page
-- `datenschutz.html` - Privacy policy page
-- `css/` - CSS stylesheets
-- `js/` - JavaScript files
-- `fonts/` - Font files used on the website
-- `assets/` - Images and other static assets
+- `src/index.md` - Hauptseite der Website
+- `src/impressum.md` - Impressum/Rechtliche Hinweise
+- `src/datenschutz.md` - Datenschutzerklärung
+- `src/css/` - CSS Stylesheets
+- `src/js/` - JavaScript Dateien
+- `src/fonts/` - Schriftarten für die Website
+- `src/assets/` - Bilder und andere statische Inhalte
 
-## Technology Stack
+## Technologie-Stack
 
-This is a static HTML website built with:
+Diese statische Website wurde erstellt mit:
 
-- HTML5
-- CSS3 with Tailwind CSS
-- JavaScript (vanilla)
-- Google Fonts
+- **Eleventy (11ty)** - Static Site Generator
+- **HTML5** - Strukturierung der Inhalte
+- **Tailwind CSS** - Utility-First CSS Framework
+- **JavaScript (Vanilla)** - Client-seitige Interaktivität
+- **Netlify** - Hosting und Formulare
 
-## Development
+## Entwicklung
 
-To work on this project locally:
+Um lokal an diesem Projekt zu arbeiten:
 
-1. Clone the repository
-2. No build process is required - simply open the HTML files in a browser
-3. For CSS changes, the project uses Tailwind CSS
+1. Repository klonen: `git clone [repository-url]`
+2. Abhängigkeiten installieren: `npm install`
+3. Entwicklungsserver starten: `npm start`
+4. Website ist verfügbar unter `http://localhost:8080`
+
+### Verfügbare Skripte
+
+- `npm start` - Startet Entwicklungsserver mit Live-Reload
+- `npm run build` - Erstellt optimierte Produktions-Build
+- `npm run fullbuild` - Vollständiger Clean-Build
 
 ## Deployment
 
-To deploy the website:
+Das Projekt wird automatisch über Netlify deployed:
 
-1. Upload all files to the web server
-2. Ensure the directory structure is maintained
-3. No additional server configuration is needed
+1. Änderungen in den `master` Branch pushen
+2. Netlify erkennt Änderungen automatisch
+3. Build-Prozess wird ausgeführt (`npm run netlify`)
+4. Website wird aktualisiert
 
-## Contact
+## Services
 
-For questions about this project, please contact the repository owner. 
+Die Website präsentiert folgende Dienstleistungen:
+
+- **Kinderbetreuung** durch Fachkraft mit Magister-Abschluss
+- **Gesellschaftliche Begleitung** durch Mitarbeiter mit Magister-Abschluss  
+- **Alltagsassistenz** durch Fachkraft mit Magister-Abschluss
+
+## Kontakt
+
+Für Fragen zu diesem Projekt wenden Sie sich bitte an den Repository-Eigentümer. 
