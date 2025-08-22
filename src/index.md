@@ -181,7 +181,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <!-- Service Image - Hidden on mobile -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10 block">
                 <!-- Slideshow container -->
-                <div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
+                <div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-white">
                     <!-- Bild 1: Brot (beibehalten) -->
                     <div class="slide">
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/brot-aus-demetermehl.jpg', "Frisch gebackenes Brot aus Demeter-Mehl", "100vw", "w-full h-full object-cover" %}
