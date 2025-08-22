@@ -32,6 +32,18 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 <p class="text-white italic">
                         Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen Lebenssituationen zur Seite zu stehen. Mein Interesse gilt dem gesamten Menschen in seiner Authentizität, Wahrheit und inneren Kohärenz. Mein Ziel ist es, ihnen nicht nur Unterstützung anzubieten, sondern ihnen auch Zuversicht und Freude zu schenken, um in ihre eigene Kraft zurückzukommen. Ein Mensch sollte fühlen, anstatt im Leben nur zu funktionieren – nur so kann er die wahre Tiefe und Schönheit des Daseins erleben. Ein Mensch sollte sich selbst gehören, um frei zu sein. Ein Mensch zu sein, ist eine Aufgabe. Werde der, der du bist.
                 </p>
+                <div class="mt-8 flex items-center justify-center md:justify-start space-x-4">
+                    <a href="https://www.youtube.com/channel/UCawM2Ctp5B72dTxB-WCf7Fg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-white hover:text-brand-green-light transition-colors" title="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
+                            <path d="M23.5 6.2c-.2-1.2-1.2-2.2-2.4-2.4C19 3.3 12 3.3 12 3.3s-7 0-9.1.5C1.7 4 0.7 5 0.5 6.2 0 8.3 0 12 0 12s0 3.7.5 5.8c.2 1.2 1.2 2.2 2.4 2.4 2.1.5 9.1.5 9.1.5s7 0 9.1-.5c1.2-.2 2.2-1.2 2.4-2.4.5-2.1.5-5.8.5-5.8s0-3.7-.5-5.8zM9.7 15.6V8.4l6.1 3.6-6.1 3.6z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mag-zuzana-j-9211a6196/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-white hover:text-brand-green-light transition-colors" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.024-3.037-1.85-3.037-1.851 0-2.134 1.445-2.134 2.939v5.667H9.356V9.5h3.414v1.493h.049c.476-.9 1.637-1.85 3.367-1.85 3.6 0 4.267 2.37 4.267 5.456v5.853zM5.337 8.005a2.062 2.062 0 11-.001-4.125 2.062 2.062 0 01.001 4.125zM6.986 20.452H3.69V9.5h3.296v10.952z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -170,50 +182,44 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10 block">
                 <!-- Slideshow container -->
                 <div id="slideshow-personenbetreuung" class="css-slideshow-fade relative w-full aspect-[4/3] rounded-lg overflow-hidden shadow-xl bg-white">
-                    <!-- Image 1 -->
+                    <!-- Bild 1: Brot (beibehalten) -->
                     <div class="slide">
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/brot-aus-demetermehl.jpg', "Frisch gebackenes Brot aus Demeter-Mehl", "100vw", "w-full h-full object-cover" %}
                         <div class="slide-caption">Frisch gebackenes Brot aus Demeter-Mehl</div>
                     </div>
-                    <!-- Image 2 -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/kalb-meerrettich-käsehaube.jpg', "Kalb in cremiger Meerrettich-Käsehaube", "100vw", "w-full h-full object-cover" %}
-                        <div class="slide-caption">Kalb in cremiger Meerrettich-Käsehaube</div>
-                    </div>
-                    <!-- Image 3 -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/käsecracker-demeter.jpg', "Hausgemachte Käsecracker aus Demeter-Zutaten", "100vw", "w-full h-full object-cover" %}
-                        <div class="slide-caption">Hausgemachte Käsecracker aus Demeter-Zutaten</div>
-                    </div>
-                    <!-- Image 4 -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/lammrippen-knoblauch-oregano.jpg', "Lammrippen mit Knoblauch und Oregano", "100vw", "w-full h-full object-cover" %}
-                        <div class="slide-caption">Lammrippen mit Knoblauch und Oregano</div>
-                    </div>
-                    <!-- Image 5 -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/cocktails-banane-ananas.jpg', "Erfrischende Cocktails aus Banane und Ananas", "100vw", "w-full h-full object-cover" %}
-                        <div class="slide-caption">Erfrischende Cocktails aus Banane und Ananas</div>
-                    </div>
-                    <!-- Image 6 -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/lammrippen-honigmarinade.jpg', "Verführerische Lammrippen in pikanter Honigmarinade", "100vw", "w-full h-full object-cover" %}
-                        <div class="slide-caption">Verführerische Lammrippen in pikanter Honigmarinade</div>
-                    </div>
-                    <!-- Image 7 -->
+                    <!-- Bild 2: Torte (beibehalten) -->
                     <div class="slide">
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/ananas-schokoladen-torte.jpg', "Cremige Ananas-Schokoladen-Torte", "100vw", "w-full h-full object-cover" %}
                         <div class="slide-caption">Cremige Ananas-Schokoladen-Torte</div>
                     </div>
-                    <!-- Image 8 -->
+                    <!-- Bild 3: Neue Bilder -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/lammrippchen-grossmutters-rezept.jpg', "Lammrippchen nach Großmutters Rezept", "100vw", "w-full h-full object-cover" %}
-                        <div class="slide-caption">Lammrippchen nach Großmutters Rezept</div>
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/mini-schokotoertchen.jpg', "Kleine Schokoladentörtchen", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">Kleine Schokoladentörtchen</div>
                     </div>
-                    <!-- Image 9 -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/kalbsstelze-champions-knoblauch.jpg', "Kalbsstelze mit Champions und Knoblauch", "100vw", "w-full h-full object-cover" %}
-                        <div class="slide-caption">Kalbsstelze mit Champions und Knoblauch</div>
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/baerchen-dessert.jpg', "Süßes Bärchen-Dessert", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">Süßes Bärchen-Dessert</div>
+                    </div>
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/abendessen-zu-hause.jpg', "Frisch zubereitetes Abendessen zu Hause", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">Frisch zubereitetes Abendessen zu Hause</div>
+                    </div>
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/mandelkekse-demeter.jpg', "Mandelkekse mit Demeter-Honig", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">Mandelkekse mit Demeter-Honig</div>
+                    </div>
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/lammrippchen-gegrillt.jpg', "Gegrillte Lammrippchen", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">Gegrillte Lammrippchen</div>
+                    </div>
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/gericht-1.jpg', "Hausgemachtes Gericht", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">Hausgemachtes Gericht</div>
+                    </div>
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/gericht-2.jpg', "Feines Gericht", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">Feines Gericht</div>
                     </div>
                 </div>
             </div>
@@ -444,6 +450,22 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <div class="mb-4">
                         <h4 class="text-gray-700 font-medium mb-2 font-heading">E-Mail</h4>
                         <p class="text-gray-600">goodnews@24ja.at</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="text-gray-700 font-medium mb-2 font-heading">Soziale Medien</h4>
+                        <div class="flex items-center space-x-4">
+                            <a href="https://www.youtube.com/channel/UCawM2Ctp5B72dTxB-WCf7Fg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-brand-green hover:text-brand-green-light transition-colors" title="YouTube">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
+                                    <path d="M23.5 6.2c-.2-1.2-1.2-2.2-2.4-2.4C19 3.3 12 3.3 12 3.3s-7 0-9.1.5C1.7 4 0.7 5 0.5 6.2 0 8.3 0 12 0 12s0 3.7.5 5.8c.2 1.2 1.2 2.2 2.4 2.4 2.1.5 9.1.5 9.1.5s7 0 9.1-.5c1.2-.2 2.2-1.2 2.4-2.4.5-2.1.5-5.8.5-5.8s0-3.7-.5-5.8zM9.7 15.6V8.4l6.1 3.6-6.1 3.6z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mag-zuzana-j-9211a6196/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-brand-green hover:text-brand-green-light transition-colors" title="LinkedIn">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.24-3.037-2.066-3.037-1.851 0-2.118 1.445-2.118 2.939v5.667H9.409V9.5h3.354v1.493h.048c.468-.9 1.607-1.85 3.303-1.85 3.536 0 4.033 2.37 4.033 5.456v5.853zM5.3 8.005a2.062 2.062 0 11.001-4.125A2.062 2.062 0 015.3 8.005zM6.915 20.452H3.68V9.5h3.235v10.952z"/>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
 
                     <!-- Map Placeholder -->

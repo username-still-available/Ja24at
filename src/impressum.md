@@ -132,3 +132,9 @@ pageType: legal
         </div>
     </div>
 </section> 
+
+<section>
+    <div class="container mx-auto px-6 py-6">
+        <p class="text-gray-600 text-sm">&copy; {% year %} 24ja - Macht das Leben leichter e.U. Alle Rechte vorbehalten.</p>
+    </div>
+</section>

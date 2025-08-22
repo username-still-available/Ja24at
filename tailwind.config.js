@@ -16,9 +16,9 @@ module.exports = {
         }
       },
       fontFamily: {
-        'sans': ['Fira Sans', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
-        'heading': ['Fira Sans', 'Arial', 'sans-serif'],
-        'body': ['Fira Sans', 'Arial', 'sans-serif'],
+        'sans': ['Proxima Nova', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
+        'heading': ['Proxima Nova', 'Arial', 'sans-serif'],
+        'body': ['Proxima Nova', 'Arial', 'sans-serif'],
         'merriweather': ['Merriweather', 'Georgia', 'serif'],
         'cormorant': ['Cormorant Garamond', 'Times New Roman', 'serif'],
       },
