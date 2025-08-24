@@ -214,12 +214,12 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         <div class="slide-caption">Gegrillte Lammrippchen</div>
                     </div>
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/gericht-1.jpg', "Hausgemachtes Gericht", "100vw", "w-full h-full object-cover" %}
-                        <div class="slide-caption">Hausgemachtes Gericht</div>
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/gericht-1.jpg', "Lammspieße", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">Lammspieße</div>
                     </div>
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/gericht-2.jpg', "Feines Gericht", "100vw", "w-full h-full object-cover" %}
-                        <div class="slide-caption">Feines Gericht</div>
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/gericht-2.jpg', "Wunderbare Köstlichkeit", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">Wunderbare Köstlichkeit</div>
                     </div>
                 </div>
             </div>
