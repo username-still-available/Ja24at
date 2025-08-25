@@ -9,14 +9,14 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
         <!-- Image centered and made more prominent -->
         <div class="flex flex-col items-center">
             <!-- Image Container - Reduced by 30% from original size -->
-            <div class="w-full max-w-xs mb-12 mx-auto scale-70 transform" style="transform: scale(0.7);">
+            <div class="w-full max-w-xs mb-4 mx-auto scale-70 transform" style="transform: scale(0.7);">
                 <div class="rounded-lg shadow-xl overflow-hidden flex items-center justify-center aspect-[3/4]">
                     {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna Foto.jpg', "Zuzana Jancova - Professionelle Betreuung", "100vw", "w-full h-full object-cover" %}
                 </div>
             </div>
 
             <!-- Social icons directly under image and centered -->
-            <div class="w-full flex items-center justify-center mb-6">
+            <div class="w-full flex items-center justify-center mb-3">
                 <div class="flex items-center justify-center space-x-4">
                     <a href="https://www.youtube.com/channel/UCawM2Ctp5B72dTxB-WCf7Fg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-white hover:text-brand-green-light transition-colors" title="YouTube">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
@@ -32,7 +32,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             </div>
 
             <!-- Heading now below image -->
-            <h2 class="text-3xl font-bold text-center text-white mb-4 font-heading">Meine Geschichte</h2>
+            <h2 class="text-3xl font-bold text-center text-white mb-2 font-heading">Meine Geschichte</h2>
 
             <!-- About Text - Now below heading -->
             <div class="w-full max-w-3xl text-center md:text-left">
