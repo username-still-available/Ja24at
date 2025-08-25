@@ -15,8 +15,24 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 </div>
             </div>
 
+            <!-- Social icons directly under image and centered -->
+            <div class="w-full flex items-center justify-center mb-6">
+                <div class="flex items-center justify-center space-x-4">
+                    <a href="https://www.youtube.com/channel/UCawM2Ctp5B72dTxB-WCf7Fg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-white hover:text-brand-green-light transition-colors" title="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
+                            <path d="M23.5 6.2c-.2-1.2-1.2-2.2-2.4-2.4C19 3.3 12 3.3 12 3.3s-7 0-9.1.5C1.7 4 0.7 5 0.5 6.2 0 8.3 0 12 0 12s0 3.7.5 5.8c.2 1.2 1.2 2.2 2.4 2.4 2.1.5 9.1.5 9.1.5s7 0 9.1-.5c1.2-.2 2.2-1.2 2.4-2.4.5-2.1.5-5.8.5-5.8s0-3.7-.5-5.8zM9.7 15.6V8.4l6.1 3.6-6.1 3.6z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mag-zuzana-j-9211a6196/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-white hover:text-brand-green-light transition-colors" title="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.024-3.037-1.85-3.037-1.851 0-2.134 1.445-2.134 2.939v5.667H9.356V9.5h3.414v1.493h.049c.476-.9 1.637-1.85 3.367-1.85 3.6 0 4.267 2.37 4.267 5.456v5.853zM5.337 8.005a2.062 2.062 0 11-.001-4.125 2.062 2.062 0 01.001 4.125zM6.986 20.452H3.69V9.5h3.296v10.952z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
             <!-- Heading now below image -->
-            <h2 class="text-3xl font-bold text-center text-white mb-8 font-heading">Meine Geschichte</h2>
+            <h2 class="text-3xl font-bold text-center text-white mb-4 font-heading">Meine Geschichte</h2>
 
             <!-- About Text - Now below heading -->
             <div class="w-full max-w-3xl text-center md:text-left">
@@ -32,18 +48,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 <p class="text-white italic">
                         Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen Lebenssituationen zur Seite zu stehen. Mein Interesse gilt dem gesamten Menschen in seiner Authentizität, Wahrheit und inneren Kohärenz. Mein Ziel ist es, ihnen nicht nur Unterstützung anzubieten, sondern ihnen auch Zuversicht und Freude zu schenken, um in ihre eigene Kraft zurückzukommen. Ein Mensch sollte fühlen, anstatt im Leben nur zu funktionieren – nur so kann er die wahre Tiefe und Schönheit des Daseins erleben. Ein Mensch sollte sich selbst gehören, um frei zu sein. Ein Mensch zu sein, ist eine Aufgabe. Werde der, der du bist.
                 </p>
-                <div class="mt-8 flex items-center justify-center md:justify-start space-x-4">
-                    <a href="https://www.youtube.com/channel/UCawM2Ctp5B72dTxB-WCf7Fg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-white hover:text-brand-green-light transition-colors" title="YouTube">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
-                            <path d="M23.5 6.2c-.2-1.2-1.2-2.2-2.4-2.4C19 3.3 12 3.3 12 3.3s-7 0-9.1.5C1.7 4 0.7 5 0.5 6.2 0 8.3 0 12 0 12s0 3.7.5 5.8c.2 1.2 1.2 2.2 2.4 2.4 2.1.5 9.1.5 9.1.5s7 0 9.1-.5c1.2-.2 2.2-1.2 2.4-2.4.5-2.1.5-5.8.5-5.8s0-3.7-.5-5.8zM9.7 15.6V8.4l6.1 3.6-6.1 3.6z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/mag-zuzana-j-9211a6196/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-white hover:text-brand-green-light transition-colors" title="LinkedIn">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
-                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.024-3.037-1.85-3.037-1.851 0-2.134 1.445-2.134 2.939v5.667H9.356V9.5h3.414v1.493h.049c.476-.9 1.637-1.85 3.367-1.85 3.6 0 4.267 2.37 4.267 5.456v5.853zM5.337 8.005a2.062 2.062 0 11-.001-4.125 2.062 2.062 0 01.001 4.125zM6.986 20.452H3.69V9.5h3.296v10.952z"/>
-                        </svg>
-                    </a>
-                </div>
+
             </div>
         </div>
     </div>
