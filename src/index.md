@@ -8,8 +8,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
     <div class="container mx-auto px-6">
         <!-- Image centered and made more prominent -->
         <div class="flex flex-col items-center">
-            <!-- Image Container - Reduced by 30% from original size -->
-            <div class="w-full max-w-xs mb-4 mx-auto scale-70 transform" style="transform: scale(0.7);">
+            <!-- Image Container - Reduced by 30% from original size and placed in background -->
+            <div class="w-full max-w-xs mb-4 mx-auto scale-70 transform" style="transform: scale(0.7); opacity: 0.85;">
                 <div class="rounded-lg shadow-xl overflow-hidden flex items-center justify-center aspect-[3/4]">
                     {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna Foto.jpg', "Zuzana Jancova - Professionelle Betreuung", "100vw", "w-full h-full object-cover" %}
                 </div>
@@ -359,8 +359,14 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <p class="hidden">
                         <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                     </p>
-                    
-                    <h3 class="text-xl font-bold text-gray-800 mb-6 font-heading">Kontaktformular</h3>
+
+                    <!-- Profile Thumbnail -->
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-full overflow-hidden shadow-md mr-4 flex-shrink-0">
+                            {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna Footer.jpeg', "Zuzana Jancova", "100vw", "w-full h-full object-cover" %}
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 font-heading">Kontaktformular</h3>
+                    </div>
                     
                     <p class="text-gray-700 mb-6 text-sm bg-blue-50 border border-blue-200 rounded-lg p-4">
                         Um Ihnen den besten Service zu bieten, bitte ich Sie um vorherige Terminvereinbarung.
