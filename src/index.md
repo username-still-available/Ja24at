@@ -362,8 +362,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
 
                     <!-- Profile Thumbnail -->
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 rounded-full overflow-hidden shadow-md mr-4 flex-shrink-0">
-                            {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna Footer.jpeg', "Zuzana Jancova", "100vw", "w-full h-full object-cover" %}
+                        <div class="w-16 h-16 rounded-full overflow-hidden shadow-md mr-4 flex-shrink-0 bg-gray-100">
+                            {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna Footer.jpeg', "Zuzana Jancova", "100vw", "w-full h-full object-contain" %}
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 font-heading">Kontaktformular</h3>
                     </div>
