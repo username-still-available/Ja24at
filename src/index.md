@@ -16,7 +16,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             </div>
 
             <!-- Social icons directly under image and centered -->
-            <div class="w-full flex items-center justify-center mb-3">
+            <div class="w-full flex items-center justify-center mb-8">
                 <div class="flex items-center justify-center space-x-4">
                     <a href="https://www.youtube.com/channel/UCawM2Ctp5B72dTxB-WCf7Fg" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="text-white hover:text-brand-green-light transition-colors" title="YouTube">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor" aria-hidden="true">
@@ -42,15 +42,17 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <li>Berufliche Tätigkeit in Österreich zunächst als Reinigungskraft in einem Hotel in Wien</li>
                     <li>Anerkennung der Ausbildung gemäß § 7 WKJHG durch den Magistrat der Stadt Wien - MA 11 und Berechtigung zur Tätigkeit als Sozialarbeiterin in der Kinder- und Jugendhilfe</li>
                 </ul>
-                <div class="border-l-4 border-white pl-10 py-4 my-8">
+                <div class="border-l-4 border-white pl-10 py-4 my-8 text-left">
                     <p class="text-white italic font-medium text-lg font-heading">
                         "Glück ist das einzige, was sich verdoppelt, wenn man es teilt."<br>
                         <span class="text-sm mt-2 block">- Albert Schweitzer</span>
                     </p>
                 </div>
-                <p class="text-white italic">
-                        Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen Lebenssituationen zur Seite zu stehen. Mein Interesse gilt dem gesamten Menschen in seiner Authentizität, Wahrheit und inneren Kohärenz. Mein Ziel ist es, ihnen nicht nur Unterstützung anzubieten, sondern ihnen auch Zuversicht und Freude zu schenken, um in ihre eigene Kraft zurückzukommen. Ein Mensch sollte fühlen, anstatt im Leben nur zu funktionieren – nur so kann er die wahre Tiefe und Schönheit des Daseins erleben. Ein Mensch sollte sich selbst gehören, um frei zu sein. Ein Mensch zu sein, ist eine Aufgabe. Werde der, der du bist.
-                </p>
+                <div class="border-2 border-white rounded-lg p-6 mt-8">
+                    <p class="text-white text-center">
+                        Als Sozialarbeiterin sehe ich es als meine Berufung, Menschen in nicht einfachen Lebenssituationen zur Seite zu stehen. Mein Interesse gilt dem gesamten Menschen in seiner Authentizität, Wahrheit und inneren Kohärenz. Mein Ziel ist es, ihnen nicht nur Unterstützung anzubieten, sondern ihnen auch Zuversicht und Freude zu schenken, um in ihre eigene Kraft zurückzukommen. Ein Mensch sollte fühlen, anstatt im Leben nur zu funktionieren – nur so kann er die wahre Tiefe und Schönheit des Daseins erleben. Ein Mensch sollte sich selbst gehören, um frei zu sein. <strong>Ein Mensch zu sein, ist eine Aufgabe. Werde der, der du bist.</strong>
+                    </p>
+                </div>
 
             </div>
         </div>
