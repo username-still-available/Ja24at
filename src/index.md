@@ -35,12 +35,12 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <h2 class="text-3xl font-bold text-center text-white mb-2 font-heading">Meine Geschichte</h2>
 
             <!-- About Text - Now below heading -->
-            <div class="w-full max-w-3xl text-center md:text-left">
-                <ul class="text-white mb-6 space-y-3 text-left">
-                    <li>• Magisterstudium der Sozialen Arbeit an der Pädagogischen Fakultät, Comenius-Universität in Bratislava, Slowakei</li>
-                    <li>• Zweijähriger Studienaufenthalt in den USA (Chicago und Nashville)</li>
-                    <li>• Berufliche Tätigkeit in Österreich zunächst als Reinigungskraft in einem Hotel in Wien</li>
-                    <li>• Anerkennung der Ausbildung gemäß § 7 WKJHG durch den Magistrat der Stadt Wien - MA 11 und Berechtigung zur Tätigkeit als Sozialarbeiterin in der Kinder- und Jugendhilfe</li>
+            <div class="w-full max-w-3xl text-center">
+                <ul class="text-white mb-6 space-y-3 text-center list-none">
+                    <li>Magisterstudium der Sozialen Arbeit an der Pädagogischen Fakultät, Comenius-Universität in Bratislava, Slowakei</li>
+                    <li>Zweijähriger Studienaufenthalt in den USA (Chicago und Nashville)</li>
+                    <li>Berufliche Tätigkeit in Österreich zunächst als Reinigungskraft in einem Hotel in Wien</li>
+                    <li>Anerkennung der Ausbildung gemäß § 7 WKJHG durch den Magistrat der Stadt Wien - MA 11 und Berechtigung zur Tätigkeit als Sozialarbeiterin in der Kinder- und Jugendhilfe</li>
                 </ul>
                 <div class="border-l-4 border-white pl-10 py-4 my-8">
                     <p class="text-white italic font-medium text-lg font-heading">
