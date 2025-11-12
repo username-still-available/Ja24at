@@ -36,9 +36,12 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
 
             <!-- About Text - Now below heading -->
             <div class="w-full max-w-3xl text-center md:text-left">
-                <p class="text-white mb-6">
-                    Nach meinem abgeschlossenen Magisterstudium der Sozialen Arbeit an der Universität Bratislava in der Slowakei und einem zweijährigen Aufenthalt in den USA, wo ich ein Praktikum absolvierte, begann meine "Reise" in Österreich als Putzfrau in einem Hotel im ersten Bezirk in Wien. Nach dem Erlernen der deutschen Sprache und dem Bestehen der rechtlichen Prüfung zur Anerkennung meiner Ausbildung für Sozialarbeit gemäß § 7 des WKJHG, die ich erfolgreich beim Magistrat 11 der Stadt Wien ablegte, qualifizierte ich mich als Sozialarbeiterin in Österreich.
-                </p>
+                <ul class="text-white mb-6 space-y-3 text-left">
+                    <li>• Magisterstudium der Sozialen Arbeit an der Pädagogischen Fakultät, Comenius-Universität in Bratislava, Slowakei</li>
+                    <li>• Zweijähriger Studienaufenthalt in den USA (Chicago und Nashville)</li>
+                    <li>• Berufliche Tätigkeit in Österreich zunächst als Reinigungskraft in einem Hotel in Wien</li>
+                    <li>• Anerkennung der Ausbildung gemäß § 7 WKJHG durch den Magistrat der Stadt Wien - MA 11 und Berechtigung zur Tätigkeit als Sozialarbeiterin in der Kinder- und Jugendhilfe</li>
+                </ul>
                 <div class="border-l-4 border-white pl-10 py-4 my-8">
                     <p class="text-white italic font-medium text-lg font-heading">
                         "Glück ist das einzige, was sich verdoppelt, wenn man es teilt."<br>
@@ -65,7 +68,10 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Kinderbetreuung durch Fachkraft mit Magister-Abschluss</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">
+                        <span class="text-2xl text-brand-green">Kinderbetreuung</span><br>
+                        <span class="text-base font-normal text-gray-600">durch pädagogische Fachkraft mit Magister-Abschluss</span>
+                    </h3>
                     <p class="text-gray-600 mb-6 flex-grow">Ich unterstütze Sie in Ihrem Alltag, sodass Sie sich auf Ihre wichtigen geschäftlichen Termine konzentrieren können, ohne sich Sorgen um Ihre Kinder machen zu müssen.</p>
                     <a href="/#service-kinderbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
                         Mehr erfahren →
@@ -76,7 +82,9 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Gesellschaftliche Begleitung durch Mitarbeiter mit Magister-Abschluss</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">
+                        <span class="text-2xl text-brand-green">Begleitung zu Kulturveranstaltungen</span>
+                    </h3>
                     <p class="text-gray-600 mb-6 flex-grow">Ich unterstütze Sie gern, falls Sie für Ihren wichtigen Termin eine Begleitperson brauchen.</p>
                     <a href="/#service-begleitung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
                         Mehr erfahren →
@@ -87,7 +95,10 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">Alltagsassistenz durch Fachkraft mit Magister-Abschluss</h3>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">
+                        <span class="text-2xl text-brand-green">Alltagsassistenz</span><br>
+                        <span class="text-base font-normal text-gray-600">durch Fachkraft mit Magister-Abschluss</span>
+                    </h3>
                     <p class="text-gray-600 mb-6 flex-grow">Nach einem anstrengenden Tag würden Sie gerne nach Hause kommen, wo bereits ein frisch gekochtes Essen auf dem Tisch auf Sie wartet?</p>
                     <a href="/#service-personenbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
                         Mehr erfahren →
@@ -363,7 +374,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <!-- Profile Thumbnail -->
                     <div class="flex items-center mb-6">
                         <div class="w-16 h-16 rounded-full overflow-hidden shadow-md mr-4 flex-shrink-0 bg-gray-100">
-                            {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna Footer.jpeg', "Zuzana Jancova", "100vw", "w-full h-full object-contain" %}
+                            {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna High 2.jpeg', "Zuzana Jancova", "100vw", "w-full h-full object-contain" %}
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 font-heading">Kontaktformular</h3>
                     </div>
