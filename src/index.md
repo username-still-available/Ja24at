@@ -42,7 +42,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <li>Berufliche Tätigkeit in Österreich zunächst als Reinigungskraft in einem Hotel in Wien</li>
                     <li>Anerkennung der Ausbildung gemäß § 7 WKJHG durch den Magistrat der Stadt Wien - MA 11 und Berechtigung zur Tätigkeit als Sozialarbeiterin in der Kinder- und Jugendhilfe</li>
                 </ul>
-                <div class="border-l-4 border-white pl-10 py-4 my-8 text-left">
+                <div class="py-4 my-8 text-center">
+                    <div class="border-t-4 border-white w-24 mx-auto mb-4"></div>
                     <p class="text-white italic font-medium text-lg font-heading">
                         "Glück ist das einzige, was sich verdoppelt, wenn man es teilt."<br>
                         <span class="text-sm mt-2 block">- Albert Schweitzer</span>
