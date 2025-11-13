@@ -123,8 +123,18 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
         <div class="flex flex-col md:flex-row items-center">
             <!-- Service Image -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
-                <div class="w-full relative h-96 md:h-[30rem] rounded-lg overflow-hidden shadow-xl aspect-[4/3]">
-                    {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Kinderbetreuung: Suzana mit Kind", "(min-width: 768px) 50vw, 100vw", "w-full h-full object-cover" %}
+                <!-- Slideshow container -->
+                <div id="slideshow-kinderbetreuung" class="css-slideshow-fade relative w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-white">
+                    <!-- Bild 1: Suzana mit Kind -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Kinderbetreuung: Suzana mit Kind", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">Kinderbetreuung: Suzana mit Kind</div>
+                    </div>
+                    <!-- Bild 2: Süßes Bärchen -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/baerchen-dessert.jpg', "'Süßes Bãrchen' - Spaß in der Küche - ein Dessert zum Mitmachen", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">'Süßes Bãrchen' - Spaß in der Küche - ein Dessert zum Mitmachen</div>
+                    </div>
                 </div>
             </div>
 
@@ -215,10 +225,6 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <div class="slide">
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/mini-schokotoertchen.jpg', "Kleine Schokoladentörtchen", "100vw", "w-full h-full object-cover" %}
                         <div class="slide-caption">Kleine Schokoladentörtchen</div>
-                    </div>
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/baerchen-dessert.jpg', "Süßes Bärchen-Dessert", "100vw", "w-full h-full object-cover" %}
-                        <div class="slide-caption">Süßes Bärchen-Dessert</div>
                     </div>
                     <div class="slide">
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/abendessen-zu-hause.jpg', "Frisch zubereitetes Abendessen zu Hause", "100vw", "w-full h-full object-cover" %}
@@ -377,7 +383,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <!-- Profile Thumbnail -->
                     <div class="flex items-center mb-6">
                         <div class="w-16 h-16 rounded-full overflow-hidden shadow-md mr-4 flex-shrink-0 bg-gray-100">
-                            {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna High 2.jpeg', "Zuzana Jancova", "100vw", "w-full h-full object-contain" %}
+                            {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna-Kontakt-2.jpg', "Zuzana Jancova", "100vw", "w-full h-full object-contain" %}
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 font-heading">Kontaktformular</h3>
                     </div>
