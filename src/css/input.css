@@ -143,11 +143,27 @@
 }
 
 /* Regular slideshow animations (for non-testimonial sections) */
+#slideshow-kinderbetreuung .slide {
+  animation: fadeEffect 8s infinite; /* 2 slides at 4s each */
+}
+
 #slideshow-personenbetreuung .slide {
   animation: fadeEffect 36s infinite; /* Updated duration for 9 slides at 4s each */
 }
 
 /* Stagger animation delays for regular slideshows */
+/* Kinderbetreuung slideshow (2 slides) */
+#slideshow-kinderbetreuung .slide:nth-child(1) {
+  animation-delay: 0s;
+  position: relative; /* First slide defines the container height */
+  opacity: 1; /* Ensure first slide is visible */
+}
+
+#slideshow-kinderbetreuung .slide:nth-child(2) {
+  animation-delay: 4s;
+}
+
+/* Personenbetreuung slideshow (9 slides) */
 #slideshow-personenbetreuung .slide:nth-child(1) {
   animation-delay: 0s;
   position: relative; /* First slide defines the container height */
