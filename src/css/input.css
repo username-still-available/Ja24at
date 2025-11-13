@@ -153,18 +153,16 @@
 
 /* Stagger animation delays for regular slideshows */
 /* Kinderbetreuung slideshow (2 slides) */
-/* All slides absolute, container height from aspect-square */
-#slideshow-kinderbetreuung .slide {
-  position: absolute !important;
-}
-
 #slideshow-kinderbetreuung .slide:nth-child(1) {
   animation-delay: 0s;
+  position: relative; /* First slide defines the container height */
   opacity: 1; /* Ensure first slide is visible */
+  z-index: 0; /* Layer below other slides during transition */
 }
 
 #slideshow-kinderbetreuung .slide:nth-child(2) {
   animation-delay: 4s;
+  z-index: 1; /* Layer above first slide during transition */
 }
 
 /* Personenbetreuung slideshow (9 slides) */
