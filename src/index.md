@@ -124,10 +124,10 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <!-- Service Image -->
             <div class="w-full md:w-1/2 mb-10 md:mb-0 md:pr-10">
                 <!-- Slideshow container -->
-                <div id="slideshow-kinderbetreuung" class="css-slideshow-fade relative w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-white">
+                <div id="slideshow-kinderbetreuung" class="css-slideshow-fade relative w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-gray-200">
                     <!-- Bild 1: Suzana mit Kind -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Kinderbetreuung: Suzana mit Kind", "100vw", "w-full h-full object-cover object-[center_60%]" %}
+                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Kinderbetreuung: Suzana mit Kind", "100vw", "w-full h-full object-cover object-[center_65%]" %}
                         <div class="slide-caption">Kinderbetreuung: Suzana mit Kind</div>
                     </div>
                     <!-- Bild 2: Süßes Bärchen -->
