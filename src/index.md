@@ -127,10 +127,25 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 <div id="slideshow-kinderbetreuung" class="css-slideshow-fade relative w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-white">
                     <!-- Bild 1: Suzana mit Kind -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Kinderbetreuung: Suzana mit Kind", "100vw", "w-full h-full object-cover object-[center_70%]" %}
+                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Kinderbetreuung: Suzana mit Kind", "100vw", "w-full h-full object-cover object-center" %}
                         <div class="slide-caption">Kinderbetreuung: Suzana mit Kind</div>
                     </div>
-                    <!-- Bild 2: Süßes Bärchen -->
+                    <!-- Bild 2: Kinderbetreuung I -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/Kinderbetreuung.jpeg', "Professionelle Kinderbetreuung", "100vw", "w-full h-full object-cover object-center" %}
+                        <div class="slide-caption">Professionelle Kinderbetreuung</div>
+                    </div>
+                    <!-- Bild 3: Kinderbetreuung II -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/Kinderbetreuung II.jpeg', "Spielerisches Lernen", "100vw", "w-full h-full object-cover object-center" %}
+                        <div class="slide-caption">Spielerisches Lernen</div>
+                    </div>
+                    <!-- Bild 4: Kinderbetreuung III -->
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/Kinderbetreuung III.jpeg', "Kreative Aktivitäten", "100vw", "w-full h-full object-cover object-center" %}
+                        <div class="slide-caption">Kreative Aktivitäten</div>
+                    </div>
+                    <!-- Bild 5: Süßes Bärchen -->
                     <div class="slide">
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/baerchen-dessert.jpg', "'Süßes Bãrchen' - Spaß in der Küche - ein Dessert zum Mitmachen", "100vw", "w-full h-full object-cover" %}
                         <div class="slide-caption">'Süßes Bãrchen' - Spaß in der Küche - ein Dessert zum Mitmachen</div>
