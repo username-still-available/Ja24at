@@ -127,8 +127,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 <div id="slideshow-kinderbetreuung" class="css-slideshow-fade relative w-full aspect-square rounded-lg overflow-hidden shadow-xl bg-white">
                     <!-- Bild 1: Suzana mit Kind -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Kinderbetreuung: Suzana mit Kind", "100vw", "w-full h-full object-cover object-center" %}
-                        <div class="slide-caption">Kinderbetreuung: Suzana mit Kind</div>
+                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Ein kleines Herz im Schoß, ein Augenblick voller zarter Wärme…", "100vw", "w-full h-full object-cover object-center" %}
+                        <div class="slide-caption">Ein kleines Herz im Schoß, ein Augenblick voller zarter Wärme…</div>
                     </div>
                     <!-- Bild 2: Kinderbetreuung I -->
                     <div class="slide">
@@ -149,6 +149,22 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <div class="slide">
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/baerchen-dessert.jpg', "'Süßes Bãrchen' - Spaß in der Küche - ein Dessert zum Mitmachen", "100vw", "w-full h-full object-cover" %}
                         <div class="slide-caption">'Süßes Bãrchen' - Spaß in der Küche - ein Dessert zum Mitmachen</div>
+                    </div>
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/Zuzanna/WhatsApp Image 2025-11-14 at 17.24.14.jpeg', "Ein Augenblick voller Fantasie", "100vw", "w-full h-full object-cover object-center" %}
+                        <div class="slide-caption">Ein Augenblick voller Fantasie...</div>
+                    </div>
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/Zuzanna/WhatsApp Image 2025-11-14 at 17.32.50.jpeg', "Bereit für ein zauberhaftes Abenteuer voller Magie…", "100vw", "w-full h-full object-cover object-center" %}
+                        <div class="slide-caption">Bereit für ein zauberhaftes Abenteuer voller Magie…</div>
+                    </div>
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/Zuzanna/WhatsApp Image 2025-11-14 at 17.39.33.jpeg', "Hier tanzen die Spiegel – und die Fantasie gleich mit!", "100vw", "w-full h-full object-cover object-center" %}
+                        <div class="slide-caption">Hier tanzen die Spiegel – und die Fantasie gleich mit!</div>
+                    </div>
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/Zuzanna/WhatsApp Image 2025-11-14 at 17.43.24.jpeg', "Hier werden Beine länger, Köpfe kleiner – und das Lachen größer!", "100vw", "w-full h-full object-cover object-center" %}
+                        <div class="slide-caption">Hier werden Beine länger, Köpfe kleiner – und das Lachen größer!</div>
                     </div>
                 </div>
             </div>
@@ -260,6 +276,10 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <div class="slide">
                         {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/gericht-2.jpg', "Wunderbare Köstlichkeit", "100vw", "w-full h-full object-cover" %}
                         <div class="slide-caption">Wunderbare Köstlichkeit</div>
+                    </div>
+                    <div class="slide">
+                        {% picture site.imagePrefix + '/assets/images/original/Zuzanna/WhatsApp Image 2025-11-14 at 17.01.43.jpeg', "Demeter-Kaffee und frische Rohmilch – ein stiller Moment der Achtsamkeit", "100vw", "w-full h-full object-cover" %}
+                        <div class="slide-caption">Demeter-Kaffee und frische Rohmilch – ein stiller Moment der Achtsamkeit.</div>
                     </div>
                 </div>
             </div>
