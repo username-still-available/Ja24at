@@ -131,7 +131,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         <div class="slide-caption">Ein kleines Herz im Schoß, ein Augenblick voller zarter Wärme…</div>
                     </div>
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/Zuzanna/WhatsApp Image 2025-11-14 at 17.24.14.jpeg', "Ein Augenblick voller Fantasie", "100vw", "w-full h-full object-cover object-center" %}
+                        {% picture site.imagePrefix + '/assets/images/original/Zuzanna/WhatsApp Image 2025-11-14 at 17.24.14.jpeg', "Ein Augenblick voller Fantasie", "100vw", "w-full h-full object-cover object-top" %}
                         <div class="slide-caption">Ein Augenblick voller Fantasie...</div>
                     </div>
                     <div class="slide">

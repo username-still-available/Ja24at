@@ -132,6 +132,7 @@
 /* Testimonials specific settings */
 #testimonials .css-slideshow-fade .slide {
   padding-bottom: 2rem; /* Space for author info */
+  height: auto;
 }
 
 @keyframes fadeEffect {
