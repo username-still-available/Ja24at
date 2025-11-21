@@ -12,8 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
   const nextBtn = document.getElementById('testimonial-next');
   const dotsContainer = document.getElementById('testimonial-dots');
   
-  // Pre-calculate heights once at the beginning and store them
-  const slideHeights = Array.from(slides).map(slide => slide.offsetHeight + 30); // Adding buffer
+  const HEIGHT_BUFFER = 30;
+  const getSlideHeight = (index) => {
+    if (index < 0 || index >= slides.length) return 0;
+    return slides[index].offsetHeight + HEIGHT_BUFFER;
+  };
   
   // Keep track of current slide
   let currentSlideIndex = 0;
@@ -22,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Initial setup
   slides[0].style.opacity = 1;
   slides[0].style.zIndex = 10;
-  testimonialContainer.style.height = `${slideHeights[0]}px`;
+  testimonialContainer.style.height = `${getSlideHeight(0)}px`;
   
   // Apply styles directly instead of relying on CSS animations
   slides.forEach((slide, index) => {
@@ -75,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Change height with smooth transition
     testimonialContainer.style.transition = 'height 0.5s ease-in-out';
-    testimonialContainer.style.height = `${slideHeights[nextIndex]}px`;
+    testimonialContainer.style.height = `${getSlideHeight(nextIndex)}px`;
     
     // Start fade out of current slide
     currentSlide.style.opacity = 0;
@@ -127,13 +130,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Debounce the resize to avoid excessive calculations
     clearTimeout(window.testimonialResizeTimer);
     window.testimonialResizeTimer = setTimeout(function() {
-      // Re-measure all slides
-      for (let i = 0; i < slides.length; i++) {
-        slideHeights[i] = slides[i].offsetHeight + 30;
-      }
-      
-      // Update the current slide's height
-      testimonialContainer.style.height = `${slideHeights[currentSlideIndex]}px`;
+      testimonialContainer.style.height = `${getSlideHeight(currentSlideIndex)}px`;
     }, 250);
+  });
+
+  window.addEventListener('load', function() {
+    testimonialContainer.style.height = `${getSlideHeight(currentSlideIndex)}px`;
   });
 }); 

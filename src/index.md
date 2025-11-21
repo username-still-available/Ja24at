@@ -130,28 +130,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/suzanna-kind-1.jpg', "Ein kleines Herz im Schoß, ein Augenblick voller zarter Wärme…", "100vw", "w-full h-full object-cover object-center" %}
                         <div class="slide-caption">Ein kleines Herz im Schoß, ein Augenblick voller zarter Wärme…</div>
                     </div>
-                    <!-- Bild 2: Kinderbetreuung I -->
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/Kinderbetreuung.jpeg', "Professionelle Kinderbetreuung", "100vw", "w-full h-full object-cover object-center" %}
-                        <div class="slide-caption">Professionelle Kinderbetreuung</div>
-                    </div>
-                    <!-- Bild 3: Kinderbetreuung II -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/Kinderbetreuung II.jpeg', "Spielerisches Lernen", "100vw", "w-full h-full object-cover object-center" %}
-                        <div class="slide-caption">Spielerisches Lernen</div>
-                    </div>
-                    <!-- Bild 4: Kinderbetreuung III -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/kinderbetreuung/Kinderbetreuung III.jpeg', "Kreative Aktivitäten", "100vw", "w-full h-full object-cover object-center" %}
-                        <div class="slide-caption">Kreative Aktivitäten</div>
-                    </div>
-                    <!-- Bild 5: Süßes Bärchen -->
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/erwachsenenbetreuung/baerchen-dessert.jpg', "'Süßes Bãrchen' - Spaß in der Küche - ein Dessert zum Mitmachen", "100vw", "w-full h-full object-cover" %}
-                        <div class="slide-caption">'Süßes Bãrchen' - Spaß in der Küche - ein Dessert zum Mitmachen</div>
-                    </div>
-                    <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/Zuzanna/WhatsApp Image 2025-11-14 at 17.24.14.jpeg', "Ein Augenblick voller Fantasie", "100vw", "w-full h-full object-cover object-center" %}
+                        {% picture site.imagePrefix + '/assets/images/original/Zuzanna/WhatsApp Image 2025-11-14 at 17.24.14.jpeg', "Ein Augenblick voller Fantasie", "100vw", "w-full h-full object-contain object-center bg-black" %}
                         <div class="slide-caption">Ein Augenblick voller Fantasie...</div>
                     </div>
                     <div class="slide">
@@ -217,8 +197,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
                     <h3 class="text-lg font-bold text-brand-green mb-2 font-heading">Mein Angebot umfasst:</h3>
                     <ul class="list-disc list-inside text-gray-700 space-y-2">
-                        <li>Begleitung zum Geschäftsessen, Kulturveranstaltungen usw.</li>
-                        <li>Begleitung bei Familienfeiern oder wichtigen sozialen Anlässen</li>
+                        <li>Begleitung zu Opern, Vernissagen und herausragenden kulturellen Highlights</li>
+                        <li>Begleitung zu wichtigen gesellschaftlichen Anlässen (für betagte Damen und Herren)</li>
                     </ul>
                 </div>
 
@@ -292,11 +272,15 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
                     <h3 class="text-lg font-bold text-brand-green mb-2 font-heading">Im Angebot sind folgende haushaltsnahe Dienstleistungen enthalten:</h3>
                     <ul class="list-disc list-inside text-gray-700 space-y-2">
-                       <li><strong>Erledigung von Besorgungen:</strong> Unterstützung bei Einkäufen und anderen notwendigen Erledigungen.</li>
-                       <li><strong>Durchführung von verschiedenen Hausarbeiten:</strong> Reinigung, Wäschewaschen und weitere Aufgaben im Haushalt.</li>
-                       <li><strong>Hilfestellung bei alltäglichen Verrichtungen:</strong> Unterstützung bei persönlichen Aktivitäten wie Körperpflege und Mobilität.</li>
-                       <li><strong>Zubereitung von Mahlzeiten:</strong> Planung, Einkauf der Zutaten und das Kochen gesunder und schmackhafter Gerichte, die auf Ihre individuellen Vorlieben abgestimmt sind. </li>
-                       <li><strong>Fachkundige Unterstützung in sozialen Angelegenheiten.</strong></li>
+                        <li>
+                            <strong>Zubereitung von Mahlzeiten:</strong>
+                            <span class="block mt-2">Planung, sorgfältige Auswahl der Zutaten und Zubereitung gesunder, köstlicher Gerichte – individuell abgestimmt auf Ihre Vorlieben, eventuelle Unverträglichkeiten oder spezielle Ernährungsweisen, etwa nach dem Blutgruppen-, Vegan-, Carnivore-, Keto- oder histaminarmen Prinzip.</span>
+                            <span class="block mt-2">Die Zutaten werden, wann immer möglich, frisch am Biomarkt in Demeter-Qualität von österreichischen Landwirten bezogen.</span>
+                        </li>
+                        <li><strong>Erledigung von Besorgungen:</strong> Unterstützung bei Einkäufen und anderen notwendigen Erledigungen.</li>
+                        <li><strong>Durchführung von verschiedenen Hausarbeiten:</strong> Reinigung, Wäschewaschen und weitere Aufgaben im Haushalt.</li>
+                        <li><strong>Hilfestellung bei alltäglichen Verrichtungen:</strong> Unterstützung bei persönlichen Aktivitäten wie Körperpflege und Mobilität.</li>
+                        <li><strong>Fachkundige Unterstützung in sozialen Angelegenheiten.</strong></li>
                     </ul>
                 </div>
 
@@ -418,7 +402,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <!-- Profile Thumbnail -->
                     <div class="flex items-center mb-6">
                         <div class="w-16 h-16 rounded-full overflow-hidden shadow-md mr-4 flex-shrink-0 bg-gray-100">
-                            {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna-Kontakt-2.jpg', "Zuzana Jancova", "100vw", "w-full h-full object-contain" %}
+                            {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna-Kontakt-2.jpg', "Zuzana Jancova", "100vw", "w-full h-full object-cover object-center" %}
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 font-heading">Kontaktformular</h3>
                     </div>
