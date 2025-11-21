@@ -131,7 +131,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         <div class="slide-caption">Ein kleines Herz im Schoß, ein Augenblick voller zarter Wärme…</div>
                     </div>
                     <div class="slide">
-                        {% picture site.imagePrefix + '/assets/images/original/Zuzanna/WhatsApp Image 2025-11-14 at 17.24.14.jpeg', "Ein Augenblick voller Fantasie", "100vw", "w-full h-full object-contain object-center bg-black" %}
+                        {% picture site.imagePrefix + '/assets/images/original/Zuzanna/WhatsApp Image 2025-11-14 at 17.24.14.jpeg', "Ein Augenblick voller Fantasie", "100vw", "w-full h-full object-cover object-center" %}
                         <div class="slide-caption">Ein Augenblick voller Fantasie...</div>
                     </div>
                     <div class="slide">
@@ -402,7 +402,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <!-- Profile Thumbnail -->
                     <div class="flex items-center mb-6">
                         <div class="w-16 h-16 rounded-full overflow-hidden shadow-md mr-4 flex-shrink-0 bg-gray-100">
-                            {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna-Kontakt-2.jpg', "Zuzana Jancova", "100vw", "w-full h-full object-cover object-center" %}
+                            {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna-Kontakt-2.jpg', "Zuzana Jancova", "100vw", "w-full h-full object-cover object-[center_35%]" %}
                         </div>
                         <h3 class="text-xl font-bold text-gray-800 font-heading">Kontaktformular</h3>
                     </div>

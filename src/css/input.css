@@ -143,13 +143,16 @@
 }
 
 /* Regular slideshow animations (for non-testimonial sections) */
-#slideshow-kinderbetreuung .slide,
+#slideshow-kinderbetreuung .slide {
+  animation: fadeEffect 20s infinite; /* 5 slides at 4s each */
+}
+
 #slideshow-personenbetreuung .slide {
   animation: fadeEffect 36s infinite; /* 9 slides at 4s each */
 }
 
 /* Stagger animation delays for regular slideshows */
-/* Kinderbetreuung slideshow (9 slides) */
+/* Kinderbetreuung slideshow (5 slides) */
 #slideshow-kinderbetreuung .slide:nth-child(1) {
   animation-delay: 0s;
   position: relative; /* First slide defines the container height */
@@ -174,26 +177,6 @@
 
 #slideshow-kinderbetreuung .slide:nth-child(5) {
   animation-delay: 16s;
-  z-index: 1;
-}
-
-#slideshow-kinderbetreuung .slide:nth-child(6) {
-  animation-delay: 20s;
-  z-index: 1;
-}
-
-#slideshow-kinderbetreuung .slide:nth-child(7) {
-  animation-delay: 24s;
-  z-index: 1;
-}
-
-#slideshow-kinderbetreuung .slide:nth-child(8) {
-  animation-delay: 28s;
-  z-index: 1;
-}
-
-#slideshow-kinderbetreuung .slide:nth-child(9) {
-  animation-delay: 32s;
   z-index: 1;
 }
 

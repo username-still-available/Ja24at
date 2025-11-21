@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const HEIGHT_BUFFER = 30;
   const getSlideHeight = (index) => {
     if (index < 0 || index >= slides.length) return 0;
-    return slides[index].offsetHeight + HEIGHT_BUFFER;
+    return slides[index].scrollHeight + HEIGHT_BUFFER;
   };
   
   // Keep track of current slide
