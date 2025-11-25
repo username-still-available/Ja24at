@@ -71,9 +71,9 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 font-heading">
-                        <span class="block text-3xl md:text-4xl text-brand-green">Kinderbetreuung</span>
-                        <span class="text-base font-normal text-gray-600"><strong><em>durch pädagogische Fachkraft mit Magister-Abschluss</em></strong></span>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4 font-heading">
+                        <span class="block text-3xl text-brand-green">Kinderbetreuung</span>
+                        <span class="text-base font-normal text-gray-600 leading-tight"><strong><em>durch pädagogische Fachkraft mit Magister-Abschluss</em></strong></span>
                     </h3>
                     <p class="text-gray-600 mb-6 flex-grow">Ich unterstütze Sie in Ihrem Alltag, sodass Sie sich auf Ihre wichtigen geschäftlichen Termine konzentrieren können, ohne sich Sorgen um Ihre Kinder machen zu müssen.</p>
                     <a href="/#service-kinderbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
@@ -85,9 +85,9 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 font-heading">
-                        <span class="block text-3xl md:text-4xl text-brand-green">Begleitung zu Kulturveranstaltungen</span>
-                        <span class="text-base font-normal text-gray-600"><strong><em>durch Mitarbeiter mit Magister-Abschluss</em></strong></span>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4 font-heading">
+                        <span class="block text-3xl text-brand-green">Begleitung zu Kulturveranstaltungen</span>
+                        <span class="text-base font-normal text-gray-600 leading-tight"><strong><em>durch Mitarbeiter mit Magister-Abschluss</em></strong></span>
                     </h3>
                     <p class="text-gray-600 mb-6 flex-grow">Ich unterstütze Sie gern, falls Sie für Ihren wichtigen Termin eine Begleitperson brauchen.</p>
                     <a href="/#service-begleitung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
@@ -99,9 +99,9 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col transition-transform duration-300 hover:-translate-y-2">
                 <div class="bg-brand-green-light h-2"></div>
                 <div class="p-6 flex flex-col flex-grow">
-                    <h3 class="text-2xl md:text-3xl font-bold text-gray-800 mb-4 font-heading">
-                        <span class="block text-3xl md:text-4xl text-brand-green">Alltagsassistenz</span>
-                        <span class="text-base font-normal text-gray-600"><strong><em>durch Fachkraft mit Magister-Abschluss</em></strong></span>
+                    <h3 class="text-3xl font-bold text-gray-800 mb-4 font-heading">
+                        <span class="block text-3xl text-brand-green">Alltagsassistenz</span>
+                        <span class="text-base font-normal text-gray-600 leading-tight"><strong><em>durch Fachkraft mit Magister-Abschluss</em></strong></span>
                     </h3>
                     <p class="text-gray-600 mb-6 flex-grow">Nach einem anstrengenden Tag würden Sie gerne nach Hause kommen, wo bereits ein frisch gekochtes Essen auf dem Tisch auf Sie wartet?</p>
                     <a href="/#service-personenbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
