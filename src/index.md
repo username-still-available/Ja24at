@@ -152,7 +152,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
 
             <!-- Service Content -->
             <div class="w-full md:w-1/2">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Kinderbetreuung durch Fachkraft mit Magister-Abschluss</h2>
+                <h2 class="text-4xl font-bold text-gray-800 mb-2 font-heading">Kinderbetreuung</h2>
+                <p class="text-lg font-semibold text-gray-700 italic leading-snug mb-6">durch pädagogische Fachkraft mit Magister-Abschluss</p>
 
                 <!-- Feature Box -->
                 <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
@@ -192,7 +193,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
 
             <!-- Service Content -->
             <div class="w-full md:w-1/2">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Begleitung zu Kulturveranstaltungen durch Mitarbeiter mit Magister-Abschluss</h2>
+                <h2 class="text-4xl font-bold text-gray-800 mb-2 font-heading">Begleitung zu Kulturveranstaltungen</h2>
+                <p class="text-lg font-semibold text-gray-700 italic leading-snug mb-6">durch Mitarbeiter mit Magister-Abschluss</p>
 
                 <!-- Feature Box -->
                 <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
@@ -267,7 +269,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
 
             <!-- Service Content -->
             <div class="w-full md:w-1/2">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Alltagsassistenz durch Fachkraft mit Magister-Abschluss</h2>
+                <h2 class="text-4xl font-bold text-gray-800 mb-2 font-heading">Alltagsassistenz</h2>
+                <p class="text-lg font-semibold text-gray-700 italic leading-snug mb-6">durch Fachkraft mit Magister-Abschluss</p>
 
                 <!-- Feature Box -->
                 <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
