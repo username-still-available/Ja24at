@@ -11,7 +11,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
             <!-- Image Container - Reduced by 30% from original size and placed in background -->
             <div class="w-full max-w-xs mb-4 mx-auto scale-70 transform" style="transform: scale(0.7); opacity: 0.85;">
                 <div class="rounded-lg shadow-xl overflow-hidden flex items-center justify-center aspect-[3/4]">
-                    {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna Foto.jpg', "Zuzana Jancova - Professionelle Betreuung", "100vw", "w-full h-full object-cover" %}
+                    {% picture site.imagePrefix + '/assets/images/original/Zuzanna/Zuzanna-Kontakt-2.jpg', "Zuzana Jancova - Professionelle Betreuung", "100vw", "w-full h-full object-cover object-center" %}
                 </div>
             </div>
 
@@ -73,7 +73,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">
                         <span class="text-2xl text-brand-green">Kinderbetreuung</span><br>
-                        <span class="text-base font-normal text-gray-600">durch pädagogische Fachkraft mit Magister-Abschluss</span>
+                        <span class="text-base font-normal text-gray-600"><strong><em>durch pädagogische Fachkraft mit Magister-Abschluss</em></strong></span>
                     </h3>
                     <p class="text-gray-600 mb-6 flex-grow">Ich unterstütze Sie in Ihrem Alltag, sodass Sie sich auf Ihre wichtigen geschäftlichen Termine konzentrieren können, ohne sich Sorgen um Ihre Kinder machen zu müssen.</p>
                     <a href="/#service-kinderbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
@@ -87,6 +87,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">
                         <span class="text-2xl text-brand-green">Begleitung zu Kulturveranstaltungen</span>
+                        <br>
+                        <span class="text-base font-normal text-gray-600"><strong><em>durch Mitarbeiter mit Magister-Abschluss</em></strong></span>
                     </h3>
                     <p class="text-gray-600 mb-6 flex-grow">Ich unterstütze Sie gern, falls Sie für Ihren wichtigen Termin eine Begleitperson brauchen.</p>
                     <a href="/#service-begleitung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
@@ -100,7 +102,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                 <div class="p-6 flex flex-col flex-grow">
                     <h3 class="text-xl font-bold text-gray-800 mb-4 font-heading">
                         <span class="text-2xl text-brand-green">Alltagsassistenz</span><br>
-                        <span class="text-base font-normal text-gray-600">durch Fachkraft mit Magister-Abschluss</span>
+                        <span class="text-base font-normal text-gray-600"><strong><em>durch Fachkraft mit Magister-Abschluss</em></strong></span>
                     </h3>
                     <p class="text-gray-600 mb-6 flex-grow">Nach einem anstrengenden Tag würden Sie gerne nach Hause kommen, wo bereits ein frisch gekochtes Essen auf dem Tisch auf Sie wartet?</p>
                     <a href="/#service-personenbetreuung" class="text-brand-green hover:text-brand-green-light font-medium transition-colors mt-auto">
@@ -191,7 +193,7 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
 
             <!-- Service Content -->
             <div class="w-full md:w-1/2">
-                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Gesellschaftliche Begleitung durch Mitarbeiter mit Magister-Abschluss</h2>
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 font-heading">Begleitung zu Kulturveranstaltungen durch Mitarbeiter mit Magister-Abschluss</h2>
 
                 <!-- Feature Box -->
                 <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-brand-green mb-8">
@@ -274,8 +276,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                     <ul class="list-disc list-inside text-gray-700 space-y-2">
                         <li>
                             <strong>Zubereitung von Mahlzeiten:</strong>
-                            <span class="block mt-2">Planung, sorgfältige Auswahl der Zutaten und Zubereitung gesunder, köstlicher Gerichte – individuell abgestimmt auf Ihre Vorlieben, eventuelle Unverträglichkeiten oder spezielle Ernährungsweisen, etwa nach dem Blutgruppen-, Vegan-, Carnivore-, Keto- oder histaminarmen Prinzip.</span>
-                            <span class="block mt-2">Die Zutaten werden, wann immer möglich, frisch am Biomarkt in Demeter-Qualität von österreichischen Landwirten bezogen.</span>
+                            <span class="block mt-2">Planung, sorgfältige Auswahl der Zutaten und Zubereitung gesunder, köstlicher Gerichte – individuell abgestimmt auf Ihre Vorlieben, eventuelle Unverträglichkeiten oder spezielle Ernährungsweisen, etwa nach dem <strong><em>Blutgruppen-, Vegan-, Carnivore-, Keto- oder histaminarmen Prinzip</em></strong>.</span>
+                            <span class="block mt-2">Die Zutaten werden, wann immer möglich, frisch am Biomarkt in <span class="font-bold text-orange-500">Demeter-Qualität</span> von österreichischen Landwirten bezogen.</span>
                         </li>
                         <li><strong>Erledigung von Besorgungen:</strong> Unterstützung bei Einkäufen und anderen notwendigen Erledigungen.</li>
                         <li><strong>Durchführung von verschiedenen Hausarbeiten:</strong> Reinigung, Wäschewaschen und weitere Aufgaben im Haushalt.</li>
@@ -427,8 +429,8 @@ title: 24ja.at | Kinderbetreuung, Personenbetreuung & Begleitung in Wien
                         <h3 class="block text-gray-700 font-medium mb-3">Ich interessiere mich für:</h3>
                         <div class="space-y-2">
                             <div class="flex items-center">
-                                <input type="checkbox" id="checkbox-kinderbetreuung" name="service[]" value="Kinderbetreuung durch Fachkraft mit Magister-Abschluss" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
-                                <label for="checkbox-kinderbetreuung" class="ml-2 block text-gray-700">Kinderbetreuung durch Fachkraft mit Magister-Abschluss</label>
+                                <input type="checkbox" id="checkbox-kinderbetreuung" name="service[]" value="Kinderbetreuung durch pädagogische Fachkraft mit Magister-Abschluss" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
+                                <label for="checkbox-kinderbetreuung" class="ml-2 block text-gray-700">Kinderbetreuung durch pädagogische Fachkraft mit Magister-Abschluss</label>
                             </div>
                             <div class="flex items-center">
                                 <input type="checkbox" id="checkbox-begleitung" name="service[]" value="Gesellschaftliche Begleitung durch Mitarbeiter mit Magister-Abschluss" class="h-4 w-4 text-brand-green focus:ring-brand-green-light border-gray-300">
